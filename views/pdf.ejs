@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RMI/INSIGHTS |Dashboard</title>
+ 
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+   
+    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      
+      <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
+     
+      <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
+    </a>
+    
+        
+     
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      
+    <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
+        <span class="sr-only">Toggle navigation</span>
+   </a>-->
+        <div class="pull-right">
+            
+<ul class="nav navbar-nav">
+    <h2><li class="logoo"></li></h2>
+            </ul>
+        
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown user user-menu">
+            <div>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              <a href="/subscribe" class="btn btn-primary" style="width:250px;height:40px;margin-top:5px">Subscription Type (90 days left)</a>
+                     
+            </a>
+             
+                </div>          
+              
+              
+    
+          </li>
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome report?</p>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 2 notifications</li>
+              <li>
+               
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                 
+                  
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+        
+               <li>
+            <a href="#" data-toggle="control-sidebar" style="color:white"><i class="fa fa-gears"></i></a>
+          </li>
+                      <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <img src="\Public\dist\img\user.png" class="user-image" alt="User Image">
+             <span>  </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+
+                <p>
+                  
+                  <small>CEO</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                 
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+ 
+   <aside class="main-sidebar"> 
+    <section class="sidebar"> 
+    <!--  <div class="user-panel">
+        <div class="pull-left image">
+          <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <small style="font-size:25px;color:black">Varun Balan<br>CEO</small>
+        </div>
+      </div>-->
+     
+      <ul class="sidebar-menu" data-widget="tree">
+       
+          
+          <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
+          
+          <li><a href="/index"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
+        
+          
+          
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Monthly Budget</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/adjust"><i class="fa fa-circle-o"></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o"></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+          </ul>
+        </li>
+          
+          
+          
+          
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Financial Model</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+          
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+    
+    
+    
+     
+       <div class="content-wrapper" style="min-height:699px">
+    
+         <section class="content-header">
+             
+      <h1 style="color:#3c8dbc;text-align:left">
+     Monthly Budget: Target v/s Actuals
+             </h1>
+             <div class="container">
+           <div class="form-group" style="width:150px;float:right;margin-top:-70px">
+          
+      <label for="sel1"></label>
+      <select class="form-control" id="sel1" style="margin-left: -120px">
+          <form>
+          <option> Select Senario</option>
+              <option>Base Senario</option>
+              <option>Custom Senario1</option>
+              <option>Custom Senario2</option>
+              <option>Custom Senario3</option>
+          </form>
+               </select>
+               <div class="btn-group">
+                   
+        <a href="#"><button type="button" style="color:black;margin-top:-70px;margin-right: 38px">Export</button></a>
+             </div>
+             </div>
+             </div>
+             
+             
+     
+      <div class="btn-group" style="margin-right:5px;margin-top:20px">
+        <a href="target"><button type="button" style="color:black;width:50px;margin-top:5px">Visual</button></a>
+          <a href="excel"> <button type="button" style="color:black;width:50px;margin-top:5px">Excel</button></a>
+          <a href="pdf"><button type="button" style="color:black;width:50px;margin-top:5">PDF</button></a>
+       
+      </div>
+             <div class="btn-group" style="float:left;margin-top:20px">
+        <a href="#"><button type="button" style="color:black;width:150px">All</button></a>
+          <a href="#"><button type="button" style="color:black;width:150px">T12M</button></a>
+          <a href="#"><button type="button" style="color:black;width:150px">T6M</button></a>
+                  <a href="#"><button type="button" style="color:black;width:150px">T3M</button></a>
+                  <a href="#"><button type="button" style="color:black;width:150px">YTD</button></a>
+                  <a href="#"><button type="button" style="color:black;width:150px">Current Month</button></a>
+       
+      </div>
+    </section>
+  
+     
+        
+         <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/dist/js/rmi.min.js"></script>
+<script src="/public/dist/js/demo.js"></script>
+    
+    
+    <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="/public/dist/js/pages/dashboard.js"></script> 
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+ 
+    
+    
+    </body></html>

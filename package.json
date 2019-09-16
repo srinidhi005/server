@@ -1,0 +1,39 @@
+{
+  "name": "solution",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --inspect ./bin/www"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.4.2",
+    "cookie-parser": "~1.4.3",
+    "csvtojson": "^2.0.8",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "html": "^1.0.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonfile": "^5.0.0",
+    "kue": "^0.11.6",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "objects-to-csv": "^1.2.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pm2": "^3.5.1",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "rimraf": "^2.6.3",
+    "sequelize": "^4.44.3",
+    "startup": "^1.1.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}

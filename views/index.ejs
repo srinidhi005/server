@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RMI/INSIGHTS |Dashboard</title>
+ 
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+   
+    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      
+      <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
+     
+      <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
+    </a>
+    
+        
+     
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      
+    <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
+        <span class="sr-only">Toggle navigation</span>
+   </a>-->
+        <div class="pull-right">
+            
+<ul class="nav navbar-nav">
+    <h2><li class="logoo"></li></h2>
+            </ul>
+        
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown user user-menu">
+            <div>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              <a href="/subscribe" class="btn btn-primary" style="width:250px;height:40px;margin-top:5px">Subscription Type (90 days left)</a>
+                     
+            </a>
+             
+                </div>          
+              
+              
+    
+          </li>
+          <li class="dropdown messages-menu" >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome report?</p>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 2 notifications</li>
+              <li>
+               
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                 
+                  
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+        
+               <li>
+            <a href="#" data-toggle="control-sidebar" style="color:white"><i class="fa fa-gears"></i></a>
+          </li>
+                      <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" >
+              <img src="\Public\dist\img\user.png" class="user-image" alt="User Image">
+             <span> </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+
+                <p>
+                  
+                  <small>CEO</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                 
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+ 
+   <aside class="main-sidebar"> 
+    <section class="sidebar"> 
+    <!--  <div class="user-panel">
+        <div class="pull-left image">
+          <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <small style="font-size:25px;color:black">Varun Balan<br>CEO</small>
+        </div>
+      </div>-->
+     
+      <ul class="sidebar-menu" data-widget="tree">
+       
+          
+          <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
+          
+          <li><a href="/index"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
+        
+          
+          
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Monthly Budget</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/adjust"><i class="fa fa-circle-o"></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o"></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+          </ul>
+        </li>
+          
+          
+          
+          
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Financial Model</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+          
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+    
+    
+    
+    
+    
+     <div class="content-wrapper">
+         <section class="content-header">
+      <h1 style="color:#3c8dbc;text-align:left">
+        KPI Dashboard
+        
+      </h1>
+      <ol class="breadcrumb">
+        <a href="#"><button type="button" style="color:black">Edit Dashboard</button></a>
+          
+       
+      </ol>
+    </section>
+         
+         
+         <section class="content">
+     
+      <div class="row">
+       
+        <section class="col-lg-7 connectedSortable ui-sortable" style="width:510px">
+          
+                    <div class="nav-tabs-custom" style="margin-right: 5px;height:275px">
+              <div class="box-header ui-sortable-handle" style="cursor: move;">
+    <ul class="nav nav-tabs" >
+        <li class="pull-left header" style="line-height: 35px;padding: 0 10px;font-size: 20px; color: #444;float:right" > Total Revenue</li>
+      <li class="active" style="padding-left: 200px" ><a href="#home2" data-toggle="tab" style="color:black;margin-left:120px" >Table</a></li>
+      <li><a href="#container" data-toggle="tab" style="color:black">Visual</a></li>
+    </ul>
+                  <div class="tab-content no-padding">
+    <div id="myTabContent" class="tab-content">
+      <div class="chart tab-pane active" id="home2">
+        <table class="table" border="0">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"></th>
+      <th scope="col"  style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+      <th scope="col"  style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
+      <th scope="col"  style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+   
+    <tr>
+      <th scope="row" style="color:skyblue" style="width:30px">Current Month (Oct.2019)</th>
+      <td style="color:black;text-align:right" >$15,442,262</td>
+      <td  style="color:black;text-align:right">$14,515,726</td>
+      <td  style="color:red;text-align:right">(6.0%)</td>
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
+      <td  style='color:black;text-align:right'>$156,352,901</td>
+      <td  style='color:black;text-align:right'>$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div  class="chart tab-pane" id="container" style="width:100%; height:200px;">
+    	
+      </div>
+        
+  </div>
+                  
+        </div>  
+                        
+            </div>
+            
+        
+         </div>
+               
+               
+            
+          
+            
+                  <div class="nav-tabs-custom" style="margin-right: 5px;height:275px" >
+          
+               <div class="box-header ui-sortable-handle" style="cursor: move;">
+    <ul class="nav nav-tabs" >
+        <li class="pull-left header" style="line-height: 35px;padding: 0 10px;font-size: 20px; color: #444;float:right" > Net Income</li>
+      <li class="active" style="padding-left: 200px" ><a href="#home1" data-toggle="tab" style="color:black;margin-left:120px" >Table</a></li>
+      <li><a href="#container1" data-toggle="tab" style="color:black">Visual</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="chart tab-pane active" id="home1">
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"></th>
+       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
+      <td style="color:black;text-align:right">$15,442,262</td>
+      <td style="color:black;text-align:right">$14,515,726</td>
+      <td  style="color:red;text-align:right">(6.0%)</td>
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
+      <td style="color:black;text-align:right">$156,352,901</td>
+      <td style="color:black;text-align:right">$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="chart tab-pane"  id="container1" style="width:100%;height:225px">
+      </div>
+  </div>
+        </div>  
+            </div>
+        
+               
+               
+            
+               <div class="nav-tabs-custom" style="margin-right: 5px;height:275px" >
+          
+               <div class="box-header ui-sortable-handle" style="cursor: move;">
+    <ul class="nav nav-tabs" >
+        <li class="pull-left header" style="line-height: 35px;padding: 0 10px;font-size: 20px; color: #444;float:right" > EBIT</li>
+      <li class="active" style="padding-left: 275px" ><a href="#home" data-toggle="tab" style="color:black;margin-left:-20px" >Table</a></li>
+      <li><a href="#container2" data-toggle="tab" style="color:black">Visual</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="chart tab-pane active" id="home">
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"></th>
+       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
+      <td style="color:black;text-align:right">$15,442,262</td>
+      <td style="color:black;text-align:right">$14,515,726</td>
+      <td  style="color:red;text-align:right">(6.0%)</td>
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
+      <td style="color:black;text-align:right">$156,352,901</td>
+      <td style="color:black;text-align:right">$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="chart tab-pane"  id="container2" style="width:100%;height:225px">
+      </div>
+  </div>
+        </div>  
+            </div>
+        </section>
+            
+            
+          
+       <div class="row">
+           
+        <section class="col-lg-5 connectedSortable ui-sortable" style="width:510px">
+            
+            
+            <div class="nav-tabs-custom"  style="height:275px;margin-right:5px"id="nav-tabs-custom">
+                  
+               <div class="box-header ui-sortable-handle" style="cursor: move;" >
+                  
+    <ul class="nav nav-tabs" >
+        <li class="pull-left header" style="line-height: 35px;padding: 0 10px;font-size: 20px; color: #444;float:right" > Gross Profit</li>
+      <li class="active" style="padding-left: 175px" ><a href="#home3" data-toggle="tab" style="color:black;margin-left:140px" >Table</a></li>
+      <li><a href="#container3" data-toggle="tab" style="color:black">Visual</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="chart tab-pane active"  id="home3">
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"></th>
+       <th scope="col"  style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
+      <td style="color:black;text-align:right">$15,442,262</td>
+      <td style="color:black;text-align:right">$14,515,726</td>
+      <td  style="color:red;text-align:right">(6.0%)</td>
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
+      <td style="color:black;text-align:right">$156,352,901</td>
+      <td style="color:black;text-align:right">$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      <div class="chart tab-pane"  id="container3" style="width:100%;height:225px">
+    	
+      </div>
+  </div>
+        </div>  
+            </div>
+            
+            
+            
+                     <!--<div class="nav-tabs-custom" style="height:275px;margin-right:30px">-->
+               
+         
+                   <div class="nav-tabs-custom" style="height:275px;margin-right:5px">
+               <div class="box-header ui-sortable-handle" style="cursor: move;">
+    <ul class="nav nav-tabs" >
+        <li class="pull-left header" style="line-height: 35px;padding: 0 10px;font-size: 20px; color: #444;float:right" > EBITDA</li>
+      <li class="active" style="padding-left:185px" ><a href="#home4" data-toggle="tab" style="color:black;margin-left:135px" >Table</a></li>
+      <li><a href="#container4" data-toggle="tab" style="color:black">Visual</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="chart tab-pane active"  id="home4">
+       <table class="table">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"></th>
+       <th scope="col"  style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
+      <td style="color:black;text-align:right">$15,442,262</td>
+      <td style="color:black;text-align:right">$14,515,726</td>
+      <td  style="color:red;text-align:right">(6.0%)</td>
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
+      <td style="color:black;text-align:right">$156,352,901</td>
+      <td style="color:black;text-align:right">$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="chart tab-pane"  id="container4" style="width:100%;height:225px">
+    	
+      </div>
+  </div>
+        </div>  
+                    
+            </div> 
+            
+            
+   
+          
+                   <div class="nav-tabs-custom"  style="height:275px;margin-right:5px" >
+               <div class="box-header ui-sortable-handle" style="cursor: move" id="title_bar">
+                  
+    <ul class="nav nav-tabs" >
+        <li class="pull-left header" style="line-height: 35px;padding: 0 10px;font-size: 20px; color: #444;float:right" > EBT</li>
+      <li class="active" style="padding-left:230px" ><a href="#home5" data-toggle="tab" style="color:black;margin-left:30px" >Table</a></li>
+      <li><a href="#container5" data-toggle="tab" style="color:black">Visual</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content" >
+      <div class="chart tab-pane active"  id="home5">
+       <table class="table">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"></th>
+       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
+      <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
+      <td style="color:black;text-align:right">$15,442,262</td>
+      <td style="color:black;text-align:right">$14,515,726</td>
+      <td  style="color:red;text-align:right">(6.0%)</td>
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
+      <td style="color:black;text-align:right">$156,352,901</td>
+      <td style="color:black;text-align:right">$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="chart tab-pane"  id="container5" style="width:100%;height:225px">
+    	
+      </div>
+  </div>
+        </div>  
+                    
+            </div>
+        
+                           
+                           
+    
+          <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/dist/js/rmi.min.js"></script>
+<script src="/public/dist/js/demo.js"></script>
+    
+    
+    <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="/public/dist/js/pages/dashboard.js"></script> 
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+         <script type='text/javascript'>
+$(function(){
+$('.input-group.date').datepicker({
+    calendarWeeks: true,
+    todayHighlight: true,
+    autoclose: true
+});  
+});
+              </script>
+    
+  <!--       <script>
+    $( function() {
+  $('#sortable').sortable({
+      connectWith: ".column",
+      handle: ".widget-header",
+      cancel: ".fa-cog",
+      placeholder: "portlet-placeholder ui-corner-all"
+   });
+  $('#sortable').disableSelection();
+});
+            </script>-->
+           
+  
+         </section>
+    </div>
+    </div>
+         </section>
+    </div>
+    </div>
+        
+
+    </body>
+         </html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RMI/INSIGHTS |Dashboard</title>
+ 
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+ <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+ 
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+   
+    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      
+      <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
+     
+      <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
+    </a>
+    
+        
+     
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      
+    <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
+        <span class="sr-only">Toggle navigation</span>
+   </a>-->
+        <div class="pull-right">
+            
+<ul class="nav navbar-nav">
+    <h2><li class="logoo"></li></h2>
+            </ul>
+        
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown user user-menu">
+            <div>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              <a href="/subscribe" class="btn btn-primary" style="width:250px;height:40px;margin-top:5px">Subscription Type (90 days left)</a>
+                     
+            </a>
+             
+                </div>          
+              
+              
+    
+          </li>
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome report?</p>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 2 notifications</li>
+              <li>
+               
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                 
+                  
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+        
+               <li>
+            <a href="#" data-toggle="control-sidebar" style="color:white"><i class="fa fa-gears"></i></a>
+          </li>
+                      <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <img src="\Public\dist\img\user.png" class="user-image" alt="User Image">
+             <span>  </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+
+                <p>
+                  
+                  <small>CEO</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                 
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  
+  <aside class="main-sidebar"> 
+    <section class="sidebar"> 
+    <!--  <div class="user-panel">
+        <div class="pull-left image">
+          <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <small style="font-size:25px;color:black">Varun Balan<br>CEO</small>
+        </div>
+      </div>-->
+     
+      <ul class="sidebar-menu" data-widget="tree">
+       
+          
+          <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
+          
+          <li><a href="/index"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
+        
+          
+          
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Monthly Budget</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/adjust"><i class="fa fa-circle-o"></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o"></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+          </ul>
+        </li>
+          
+          
+          
+          
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Financial Model</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+          
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+    
+    
+    
+     <div class="content-wrapper" >
+   
+
+          <section class="content-header">
+      <h1 style="color:#3c8dbc;text-align:left">
+        Source Data
+        
+      </h1>
+      
+    </section>
+      
+         
+<div class="dropdown user user-menu">    
+   <div>   
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:160px">
+  Import New Statement
+    </button>
+         </div>
+         
+         
+<div>
+
+         
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      
+      
+      
+      
+    <div class="modal-content" style="width: 450px;height: -webkit-fill-available;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" text-align="center">Import New Statement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -22px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+             <form>
+      <div class="modal-body">
+
+              <div class="form-group" >
+                  <p>  <input type="text" id="company" value="Enter Company Name" style="width: -webkit-fill-available; line-height:2 ;  text-indent: 15px;" onfocus="if (this.value == 'Enter Company Name' ) {this.value = '';}" onblur="if (this.value == 'Enter Company Name') {this.value = 'Enter Company Name';} "></p>
+                      </div>
+               	      
+              
+              
+   
+    <div class="form-group">
+      <select class="form-control" id="period">
+          <option selected disabled>Select Financial Statement Duration</option>
+         <option value="M">Monthly </option>
+        <option value="Q">Quarterly</option> 
+        <option value="Y">Yearly</option>
+        </select></div>
+          
+          
+    <div class="form-group">
+      <select class="form-control" id="statementtype" >
+          <option selected disabled>Select Statement Type</option>
+          <option>Income Statement</option>
+        <option>Balance Sheet</option> 
+        <option>Cash Flow Statement</option>
+          <option>All Statements</option>
+       
+     
+        </select></div>
+          
+          
+          
+    <div class="form-group" >
+      <select class="form-control" id="industry">
+          <option selected disabled>Select Industry</option>
+        <option>Communications</option>
+        <option>Consumer & Retail</option> 
+        <option>Distribution & Logistics</option>
+        <option>Energy & Natural Resources</option>
+        <option>Entertainment & Media</option>
+        <option>Financial Institutions & Sponsors</option>
+        <option>Food & Beverage</option>
+        <option>General Services</option>
+        <option>Healthcare</option>
+        <option>Hospitality</option>
+        <option>Industrials</option>
+        <option>Power, Infrastructure, & Utilities</option>
+        <option>Real Estate</option>
+        <option>Technology</option>
+        <option>Telecommunications</option>
+        <option>Transportation</option>
+        </select></div>
+   
+         
+      
+        
+      
+   <div class="container">
+	<div class="row"
+    style="margin-top: 250px;
+    margin-left: 350px">
+	  <div class="col-md-6">
+	        
+           
+                
+              <div class="file-upload-wrapper"  style="width: 500px;padding-right: 100px">
+  <input type="file" value="Drag and drop files here" id="input-file-now"  class="file-upload" style="margin-top: -250px;margin-left: -365px" />
+</div>
+              
+            
+         
+        </div>
+       </div>
+        </div>
+       
+      <div class="modal-footer"  style="text-align:-webkit-center"  >
+          <button  text-align="center" class="btn btn-success" onclick="upload(event)" >Start Import</button>
+        
+      </div>
+         
+        </div>
+		</form>
+		
+    </div>
+      
+  </div>
+         </div>
+    
+
+    </div>  
+   
+    
+    
+    
+    
+    
+    <div>
+   
+       <div>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1" style="width:160px">
+       Connect to QuickBooks
+</button>
+    </div> 
+    
+    
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 450px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" text-align="center" >Import From QuickBooks</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="form-group" >
+                   <p>  <input type="text"  value="Enter Company Name" style="width: -webkit-fill-available; line-height:2 ;  text-indent: 15px;" onfocus="if (this.value == 'Enter Company Name' ) {this.value = '';}" onblur="if (this.value == 'Enter Company Name') {this.value = 'Enter Company Name';} "></p>
+              </div>
+            
+          
+          
+    <div class="form-group">
+      <select class="form-control">
+          <option>Select Financial Statement Duration</option>
+         <option>Monthly</option>
+        <option>Quarterly</option> 
+        <option>Yearly</option>
+          
+        </select></div>
+         
+               
+              
+              <div class="container" style=" margin-left: -30px">
+    <div class='col-md-6' style="width: 250px;float:left;margin-right: -75px;" >
+        <div class="form-group" >
+             <span style="float:left;padding:0px"> </span>
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' value="From" class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+                  </div>
+  
+    <div class='col-md-6' style="width: 175px;float:left;margin-left: 100px;" >
+        <div class="form-group" style="margin-left: -60px;">
+            <span style="float:left;padding:0px"> </span>
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' value="To" class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div class="form-group">
+      <select class="form-control">
+          <option>Select Financial Statement Duration</option>
+         <option value="M">Monthly </option>
+        <option value="Q">Quarterly</option> 
+        <option value="Y">Yearly</option>
+        </select></div>
+                
+   
+    <div class="form-group">
+      <select class="form-control" >
+          <option>Select Industry</option>
+        <option>Communications</option>
+        <option>Consumer & Retail</option> 
+        <option>Distribution & Logistics</option>
+        <option>Energy & Natural Resources</option>
+        <option>Entertainment & Media</option>
+        <option>Financial Institutions & Sponsors</option>
+        <option>Food & Beverage</option>
+        <option>General Services</option>
+        <option>Healthcare</option>
+        <option>Hospitality</option>
+        <option>Industrials</option>
+        <option>Power, Infrastructure, & Utilities</option>
+        <option>Real Estate</option>
+        <option>Technology</option>
+        <option>Telecommunications</option>
+        <option>Transportation</option>
+        </select></div>
+          </form>
+      
+   
+       
+      <div class="modal-footer" style="text-align:-webkit-center">
+        <button onclick="upload" type="button"  text-align="center" class="btn btn-success" >Start Import</button>  
+      </div>
+    
+         
+        </div>
+      </div>
+        </div>
+        </div>
+    </div>
+         </div>
+    </div>
+    </div>
+    
+        
+         <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+    <script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="/public/dist/js/rmi.min.js"></script>
+<script src="/public/dist/js/demo.js"></script>
+    
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/dist/js/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+
+
+		<script type="text/javascript">
+	
+                function upload(ev){ 
+					ev.preventDefault();
+					var file = document.getElementById('input-file-now').files[0]; 
+					var company = document.getElementById('company').value; 
+					var period = document.getElementById('period').value; 
+					var statementtype = document.getElementById('statementtype').value; 
+					var industry = document.getElementById('industry').value; 
+					var data = new FormData();	
+					data.append("file", file);
+					data.append("company",company)//company);
+            		data.append("period",period);//period);
+					data.append("statementtype",statementtype)
+					data.append("industry",industry)
+					$.ajax({
+						type: 'POST',
+						enctype: 'multipart/form-data',
+						processData: false,
+						contentType: false,
+						//data: JSON.stringify(data),
+				        //contentType: 'multipart/form-data',
+                        url: '/upload',
+					 	data:data,
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+							alert("File Uploded Successfully")
+					},
+    					error: function(data){
+        				alert("Failed Some Field are Missing");
+					},
+                    });
+			
+						return false;
+				}
+  
+	</script>
+
+
+    </body></html>

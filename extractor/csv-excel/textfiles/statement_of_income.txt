@@ -1,0 +1,27 @@
+INCOME STATEMENT        
+Fiscal Year:  2015  2016  2017  2018    
+(FYR Ending):  (31JAN2016 ) (31JAN2017 ) (31JAN2018 ) ( N/A )   
+Sales (Net)  30944.938 33183.744 35864.664    
+Â Â Â Â Cost of Goods Sold  21412.523 22901.254 24774.967    
+        
+Gross Profit  9532.415 10282.49 11089.697    
+Â Â Â Â Selling, General, & Admin Expenses  5205.715 5768.467 6275.071    
+        
+Operating Income Before Depreciation  4326.7 4514.023 4814.626    
+Â Â Â Â Depreciation, Depletion, & Amortiz  622 664.5 727.2    
+        
+Operating Income After Depreciation  3704.7 3849.523 4087.426    
+Â Â Â Â Interest Expense  68.253 69.219 69.237    
+Â Â Â Â Non-Operating Income/Expense  21.853 25.685 37.649    
+Â Â Â Â Special Items  0 -82.946 -199.25    
+        
+Pretax Income  3658.3 3723.043 3856.588    
+Â Â Â Â Income Taxes - Total  1380.642 1424.809 1248.64    
+Â Â Â Â Minority Interest  0 0 0    
+Income Before EI&DO  2277.658 2298.234 2607.948    
+Â Â Â Â Extraordinary Items  0 0 0    
+Â Â Â Â Discontinued Operations  0 0 0    
+        
+Net Income (Loss)  2277.658 2298.234 2607.948    
+        
+        

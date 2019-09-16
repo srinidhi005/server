@@ -1,0 +1,44 @@
+STATEMENT OF CASH FLOWS        
+Fiscal Year:  2015  2016  2017  2018    
+(FYR Ending):  (31JAN2016 ) (31JAN2017 ) (31JAN2018 ) ( N/A )   
+INDIRECT OPERATING ACTIVITIES        
+Income Before Extraordinary Items  2277.658 2298.234 2607.948    
+Depreciation and Amortizations  616.696 658.796 725.957    
+Extraordinary Items and Disc. Operations  0 0 0    
+Deferred Taxes  31.204 -5.503 -137.44    
+Equity in Net Loss (Earnings)  0 0 0    
+Sale of PPEq and Investments - Loss (Gain)        
+Funds from Operations - Other  16.67 86.922 214.603    
+Receivables - Decrease (Increase)  -27.357 -23.235 -62.358    
+Inventory - Decrease (Increase)  -506.633 11.862 -450.377    
+Accounts/P and Accrued Liabs - Inc(Dec)        
+Income Taxes - Accrued - Increase(Decrease)  68.014 146.766 -94.492    
+Other Assets and Liabilities - Net Change  461.091 428.052 221.783    
+        
+Operating Actiities - Net Cash Flow  2937.343 3601.894 3025.624    
+        
+INVESTING ACTIVITIES        
+Investments - Increase  0 0 0    
+Sale of Investments  0 0 0    
+Short term Investments - Change  -116.631 -187.807 44.881    
+Capital Expenditures  889.38 1024.747 1057.617    
+Sale of Property Plant and Equipment  0 0 0    
+Acquisitions  57.104 2.324 0    
+Investing Activities - Other  0 0 0    
+        
+Investing Activites - Net Cash Flow  -1063.115 -1214.878 -1012.736    
+        
+FINANCING ACTIVITIES        
+Sale of Common and Preferred Stock  132.033 164.19 133.687    
+Purchase of Common and Preferred Stock  1828.297 1699.998 1663.855    
+Cash Dividends  544.271 650.988 764.04    
+Long Term Debt - Issuance  0 992.54 0    
+Long Term Debt - Reduction  0 425.584 0    
+Current Debt - Changes  0 0 0    
+Financing Activities - Other  0 -13.071 -3.138    
+        
+Financing Activities - Net Cash Flow  -2175.855 -1561.912 -2297.346    
+        
+Exchange Rate Effect  -96.675 9.272 113.086    
+        
+Cash and Cash Equivalents - Change  -398.302 834.376 -171.372    

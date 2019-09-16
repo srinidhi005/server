@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RMI/INSIGHTS |Dashboard</title>
+ 
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    
+    
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap-combined.min.css" >
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap1.min.js"></script>
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+   
+    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      
+      <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
+     
+      <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
+    </a>
+    
+        
+     
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      
+    <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
+        <span class="sr-only">Toggle navigation</span>
+   </a>-->
+        <div class="pull-right">
+            
+<ul class="nav navbar-nav">
+    <h2><li class="logoo"></li></h2>
+            </ul>
+        
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav" >
+            
+            
+                <li class="dropdown user user-menu">
+            <div>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              <a href="/subscribe" class="btn btn-primary" style="width:250px;height:40px;margin-top:5px">Subscription Type (90 days left)</a>
+                     
+            </a>
+             
+                </div>          
+              
+              
+    
+          </li>
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome report?</p>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 2 notifications</li>
+              <li>
+               
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                 
+                  
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+        
+               <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears" style="color:white"></i></a>
+          </li>
+                      <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" style="color:white"style="color:white">
+              <img src="\Public\dist\img\user.png" class="user-image" alt="User Image">
+             <span> </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+
+                <p>
+                  
+                  <small>CEO</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                 
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+ 
+   <aside class="main-sidebar"> 
+    <section class="sidebar"> 
+     
+      <ul class="sidebar-menu" data-widget="tree">
+       
+           
+          <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
+          <li><a href="/index"><i class="fa fa-circle-o" ></i> <span>KPI Dashboard</span></a></li>
+        
+      
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i>
+            <span>Monthly Budget</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/adjust"><i class="fa fa-circle-o" ></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o" ></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+          </ul>
+        </li>
+          
+          
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i>
+            <span>Financial Model</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+          
+          </ul>
+        </li>
+  
+           <li ><a href="/source"><i class="fa fa-paperclip"></i><span>Valuations</span></a></li>
+             
+                 
+        
+           
+      </ul>
+    </section>
+
+  </aside>        
+     <div class="content-wrapper">
+    
+         <section class="content-header">
+      <h1 style="color:#3c8dbc;text-align:left">
+     Adjust Financial Model Drivers
+        
+      </h1>
+      <div class="btn-group">
+        <a href="#chart-container"><button type="button" style="color:black;width:50px">Visual</button></a>
+          <a href="#"><button type="button" style="color:black;width:50px">Excel</button></a>
+          <a href="#"><button type="button" style="color:black;width:50px">PDF</button></a>
+       
+      </div>
+    </section>
+         
+         
+         
+     <section class="content">
+<div class="container" style="margin-top:175px">
+    <div class="row">
+        <div class="col-md-12" style="margin-top: -220px;margin-right: -40px">
+            <p>
+                <button id="btn-add-tab" type="button" class="btn btn-primary pull-right" style="margin-right:-120px">Add Senario</button>
+            </p>
+            <!-- Nav tabs -->
+            <ul id="tab-list" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#chart-container1" role="tab" data-toggle="tab" style="margin-left: 70px"><span>Basic Historic Ratio </span><span class="glyphicon glyphicon-pencil text-muted edit"></span></a></li>
+                                
+            </ul>
+        </div>
+
+            <!-- Tab panes -->
+            
+                <div class="tab-pane fade in active" id="chart-container" style="margin-top:-120px;margin-right:300px"> </div>
+                    </div>
+        </div>
+         
+    
+    </section>
+    </div>
+    
+    </div>
+    
+    <script>
+        
+        
+        
+        var button='<button class="close" type="button" title="Remove this page">×</button>';
+var tabID = 0;
+function resetTab(){
+	var tabs=$("#tab-list li:not(:first)");
+	var len=1
+	$(tabs).each(function(k,v){
+		len++;
+		$(this).find('a').html('Tab ' + len + button);
+	})
+	tabID--;
+}
+
+$(document).ready(function() {
+    $('#btn-add-tab').click(function() {
+        tabID++;
+        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">×</button></a></li>'));
+        $('#tab-content').append($('<div class="tab-pane fade" id="chart-container' + tabID + '">Custom Senario ' + tabID + ' content</div>'));
+        $(".edit").click(editHandler);
+    });
+    
+    $('#tab-list').on('click', '.close', function() {
+        var tabID = $(this).parents('a').attr('href');
+        $(this).parents('li').remove();
+        $(tabID).remove();
+
+        //display first tab
+        var tabFirst = $('#tab-list a:first');
+        resetTab();
+        tabFirst.tab('show');
+    });
+
+    var list = document.getElementById("tab-list");
+});
+
+var editHandler = function() {
+  var t = $(this);
+  t.css("visibility", "hidden");
+  $(this).prev().attr("contenteditable", "true").focusout(function() {
+    $(this).removeAttr("contenteditable").off("focusout");
+    t.css("visibility", "visible");
+  });
+};
+
+$(".edit").click(editHandler);
+
+</script>
+    <script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script src="/public/dist/js/rmi.min.js"></script>
+
+<script src="/public/dist/js/demo.js"></script>
+    <script type="text/javascript">
+		FusionCharts.ready(function(){
+			var chartObj = new FusionCharts({
+    type: 'dragcolumn2d',
+    renderAt: 'chart-container',
+    width: '500',
+    height: '500',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "",
+            
+            
+            
+            "theme": "fusion"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Revenue Growth"
+            }, {
+                "label": "Cogs(%Revenue)"
+            }, {
+                "label": "SG&A(%Revenue)"
+            }, {
+                "label": "D&A(%Revenue)"
+            }, {
+                "label": "Other income(%Revenue)"
+            }]
+        }],
+        "dataset": [{
+            "seriesname": "",
+            "dashed": "1",
+            "data": [{
+                "value": "19000"
+            }, {
+                "value": "16500"
+            }, {
+                "value": "14300"
+            }, {
+                "value": "10000"
+            }, {
+                "value": "9800"
+            }],
+            backgroundColor: ["#3e95cd","#3e95cd","#3e95cd","#3e95cd","#3e95cd"]
+        }]
+    },
+    events: {
+        'beforeRender': function(event, args) {
+            var tableCont = document.createElement('div'),
+                thStyle = "background-color: #008ee4;color: #fff; border: 1px solid #6baa01;padding: 10px 5px;min-width: 70px;text-align: center",
+                tdStyle = "background-color: #fff;color: #6baa01; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center",
+                strHTML = "";
+            /*tableCont.setAttribute('id', 'tableCont');
+            tableCont.setAttribute('style', 'padding-left: 10px; width: 470px;');
+            strHTML = "<table style='margin: 25px auto;border-collapse: collapse;border: 1px solid;border-bottom: 2px solid #6baa01'><tr><td style='border: 1px solid #fff;padding: 10px 5px;min-width: 70px;text-align: center'></td><th style='" + thStyle + "'>Poultry</th><th style='" + thStyle + "'>Rice</th><th style='" + thStyle + "'>Peanut Butter</th><th style='" + thStyle + "'>Salmon</th><th style='" + thStyle + "'>Cereal</th></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Available Stock</td><td id='est-0-0' style='" + tdStyle + "'>6000</td><td id='est-0-1' style='" + tdStyle + "'>9500</td><td id='est-0-2' style='" + tdStyle + "'>11900</td><td id='est-0-3' style='" + tdStyle + "'>8000</td><td id='est-0-4' style='" + tdStyle + "'>9700</td></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Estimated Demand</td><td id='est-1-0' style='" + tdStyle + "'>19000</td><td id='est-1-1' style='" + tdStyle + "'>16500</td><td id='est-1-2' style='" + tdStyle + "'>14300</td><td id='est-1-3' style='" + tdStyle + "'>10000</td><td id='est-1-4' style='" + tdStyle + "'>9800</td></tr></table>";*/
+            tableCont.innerHTML = strHTML;
+            args.container.parentNode.insertBefore(tableCont, args.container.nextSibling);
+        },
+        'dataplotDragEnd': function(evt, arg) {
+            var dtIndx = arg && arg.dataIndex,
+                datasetIndex = arg && arg.datasetIndex,
+                val = arg && parseInt(arg.endValue, 10);
+
+            document.getElementById('est-' + datasetIndex + '-' + dtIndx).innerHTML = val;
+        },
+        'dataRestored': function(evtObj) {
+            var estimatedOrigValues = ["19000", "16500", "14300", "10000", "9800"],
+                numVals = estimatedOrigValues.length,
+                i,
+                val;
+            for (var i = 0; i < numVals; i += 1) {
+                estimatedVal = estimatedOrigValues[i];
+                document.getElementById('est-0-' + i).innerHTML = estimatedVal;
+            }
+        }
+    }
+});
+			chartObj.render();
+		});
+	</script>
+    <script src="/public/dist/js/demo.js"></script>
+    <script type="text/javascript">
+		FusionCharts.ready(function(){
+			var chartObj = new FusionCharts({
+    type: 'dragcolumn2d',
+    renderAt: 'chart-container',
+    width: '500',
+    height: '500',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "",
+            
+            
+            
+            "theme": "fusion"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Revenue Growth"
+            }, {
+                "label": "Cogs(%Revenue)"
+            }, {
+                "label": "SG&A(%Revenue)"
+            }, {
+                "label": "D&A(%Revenue)"
+            }, {
+                "label": "Other income(%Revenue)"
+            }]
+        }],
+        "dataset": [{
+            "seriesname": "",
+            "dashed": "1",
+            "data": [{
+                "value": "19000"
+            }, {
+                "value": "16500"
+            }, {
+                "value": "14300"
+            }, {
+                "value": "10000"
+            }, {
+                "value": "9800"
+            }],
+            backgroundColor: ["#3e95cd","#3e95cd","#3e95cd","#3e95cd","#3e95cd"]
+        }]
+    },
+    events: {
+        'beforeRender': function(event, args) {
+            var tableCont = document.createElement('div'),
+                thStyle = "background-color: #008ee4;color: #fff; border: 1px solid #6baa01;padding: 10px 5px;min-width: 70px;text-align: center",
+                tdStyle = "background-color: #fff;color: #6baa01; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center",
+                strHTML = "";
+            /*tableCont.setAttribute('id', 'tableCont');
+            tableCont.setAttribute('style', 'padding-left: 10px; width: 470px;');
+            strHTML = "<table style='margin: 25px auto;border-collapse: collapse;border: 1px solid;border-bottom: 2px solid #6baa01'><tr><td style='border: 1px solid #fff;padding: 10px 5px;min-width: 70px;text-align: center'></td><th style='" + thStyle + "'>Poultry</th><th style='" + thStyle + "'>Rice</th><th style='" + thStyle + "'>Peanut Butter</th><th style='" + thStyle + "'>Salmon</th><th style='" + thStyle + "'>Cereal</th></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Available Stock</td><td id='est-0-0' style='" + tdStyle + "'>6000</td><td id='est-0-1' style='" + tdStyle + "'>9500</td><td id='est-0-2' style='" + tdStyle + "'>11900</td><td id='est-0-3' style='" + tdStyle + "'>8000</td><td id='est-0-4' style='" + tdStyle + "'>9700</td></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Estimated Demand</td><td id='est-1-0' style='" + tdStyle + "'>19000</td><td id='est-1-1' style='" + tdStyle + "'>16500</td><td id='est-1-2' style='" + tdStyle + "'>14300</td><td id='est-1-3' style='" + tdStyle + "'>10000</td><td id='est-1-4' style='" + tdStyle + "'>9800</td></tr></table>";*/
+            tableCont.innerHTML = strHTML;
+            args.container.parentNode.insertBefore(tableCont, args.container.nextSibling);
+        },
+        'dataplotDragEnd': function(evt, arg) {
+            var dtIndx = arg && arg.dataIndex,
+                datasetIndex = arg && arg.datasetIndex,
+                val = arg && parseInt(arg.endValue, 10);
+
+            document.getElementById('est-' + datasetIndex + '-' + dtIndx).innerHTML = val;
+        },
+        'dataRestored': function(evtObj) {
+            var estimatedOrigValues = ["19000", "16500", "14300", "10000", "9800"],
+                numVals = estimatedOrigValues.length,
+                i,
+                val;
+            for (var i = 0; i < numVals; i += 1) {
+                estimatedVal = estimatedOrigValues[i];
+                document.getElementById('est-0-' + i).innerHTML = estimatedVal;
+            }
+        }
+    }
+});
+			chartObj.render();
+		});
+	</script>
+    
+    
+    </body>
+</html>
+  

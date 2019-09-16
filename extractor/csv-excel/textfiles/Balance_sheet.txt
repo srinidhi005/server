@@ -1,0 +1,57 @@
+STATEMENT OF FINANCIAL POSITION        
+Fiscal Year:  2015  2016  2017  2018    
+(FYR Ending):  (31JAN2016 ) (31JAN2017 ) (31JAN2018 ) ( N/A )   
+ASSETS        
+Â Â Â Â Cash & Equivalents  2447.786 3473.091 3264.642    
+Â Â Â Â Receivables - Total (Net)  249.131 258.831 327.166    
+Â Â Â Â Inventories - Total  3695.113 3644.959 4187.243    
+Â Â Â Â Prepaid Expenses        
+Â Â Â Â Current Assets - Other  380.53 373.893 706.676    
+        
+Current Assets - Total  6772.56 7750.774 8485.727    
+        
+Â Â Â Â Plant, Property & Equip (Gross)  9068.667 9003.403 9968.308    
+Â Â Â Â Accumulated Depreciation  4931.092 4470.509 4962.255    
+        
+Plant, Property & Equip (Net)  4137.575 4532.894 5006.053    
+        
+Â Â Â Â Investments at Equity  0 0 0    
+Â Â Â Â Investments and Advances - Other  0 0 0    
+Â Â Â Â Intangibles  343.796 342.556 244.954    
+Â Â Â Â Deferred Charges  0 0 0    
+Â Â Â Â Assets - Other  245.551 257.584 321.281    
+        
+TOTAL ASSETS  11499.482 12883.808 14058.015    
+        
+LIABILITIES        
+Â Â Â Â Accounts Payable  2203.05 2230.904 2488.373    
+Â Â Â Â Notes Payable  0 0 0    
+Â Â Â Â Accrued Expenses        
+Â Â Â Â Taxes Payable  129.521 206.288 114.203    
+Â Â Â Â Debt (Long-Term) Due In One Year  0 0 0    
+Â Â Â Â Other Current Liabilities  2069.659 2320.464 2522.961    
+        
+Total Current Liabilities  4402.23 4757.656 5125.537    
+        
+Â Â Â Â Long Term Debt  1709.268 2403.831 2452.524    
+Â Â Â Â Deferred Taxes (Balance Sheet)  285.102 314 233.057    
+Â Â Â Â Investment Tax Credit  0 0 0    
+Â Â Â Â Liabilities - Other  795.807 897.722 1098.588    
+Â Â Â Â Noncontrolling Interest - Redeemable  0 0 0    
+        
+TOTAL LIABILITIES  7192.407 8373.209 8909.706    
+        
+SHAREHOLDERS' EQUITY        
+Â Â Â Â Preferred Stock  0 0 0    
+Â Â Â Â Common Stock  663.496 646.319 628.009    
+Â Â Â Â Capital Surplus  0 0 0    
+Â Â Â Â Retained Earnings (Net Other)  3643.579 3864.28 4520.3    
+Â Â Â Â Less: Treasury Stock  0 0 0    
+Shareholders Equity - Parent  4307.075 4510.599 5148.309    
+Noncontrolling Interest - Nonredeemable  0 0 0    
+        
+TOTAL SHAREHOLDERS EQUITY  4307.075 4510.599 5148.309    
+        
+TOTAL LIABILITIES AND EQUITY  11499.482 12883.808 14058.015    
+        
+        
