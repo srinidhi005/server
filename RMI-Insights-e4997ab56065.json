@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rmi-insights",
+  "private_key_id": "e4997ab560655c4e029fc37496d8d574da221d8a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC74kVlEUIIGenH\nX7CS32Iq3UzCz9Sb2W3YLbGamJnQdulDEsj5qCZLsXuLqYYlZCH3dEvX1toZ22aw\niCHIYReI78Fxo+qIbHRKvYk60VTkHiblGNnIXXqvNGjAKCJLqYkfQ+ePOsCwJfhy\n+HIDc2iIdQScIHbxhKW4EqZU/zRgrYlfq1hgPre+CCcFDXX+hq/N0Af9ALx1BK5u\ns3u0a1Se0zlBg3OTTHq7n705X//pNEQ7sviWUP/CAcgIidyPNlJ3DncLkbXFxIMw\nsZlRw+nss36tsoomLn7JLyfrqjKf4kQuG6j+d/3KH9g9XDZY1C81EZNjfDcO748+\npWwqhJ2jAgMBAAECggEAJmWgO/7yaThug/3k1qdLZyox4VBbCXy+i6MO/GK6cJWU\np04D/62jIe4EKy86iJK1tF4yj8pLaWRi0KoJiWt6RVSGSqSurjHH9GxWysv0Fuio\nl0JkY6PjCkJiM/8fvynHKboVbTqbHYStCUYH+vePge+0QPoLhOFQgtVg49cCC82h\nclzKUKFOe+FNSW6w7hDSdYY5CAFluQqUDww+P46o/Up+Ke8VFz85AgJJGr2APuhM\ndBsqnv4C6TatEBo1hZhKLEKHjfKj0LUXRUPPHPiEHMg/Vw7AuXELaKMXdH74iOXJ\nr/ynBF1KoEtKNBVPLdaV/Bu/J6d341lMJEBfk4RQhQKBgQDspt+YXJrs+jJLu+K9\n4VOH9R/A2tJ2pSX/hXPksJ6MU6o3BjUw9H3fJirXXy5XXbUcvAHzQCZYz2QsqEkv\nNLSOopcllVYV0lwwRroxcZJvhvm1c9prsSD+9uyqeoWpHGHzql4DUghOxmNx7flw\noBLLtK1uBMGOGkFa0OR1ercPJwKBgQDLPq7k+1Kwsyc2CI2irsF55SgmD/d6kS45\nI6xhNDKcKS+TPVFHnL8QOwiPGDJsVp4fCIFikgdBXQegKJ3r1KDUSTMOl8Om/0T2\nwAxnkIjE3k630Sp+bHS52OH0SiIKz6dfME/2fHbjxFPivjd3E0rNAXZAUBEIweRH\nHIoGQclLJQKBgCXIEoSBrF5PJ3591ZpZAfv/v30LsnQss59S0AjfxcBDjzZPsGhL\ncFkS/934nS5nkIWw4mLSiAy/t4+FooF92aG4BYeDiwXa2sr+T7WbGzThCLbWczWk\nRs9N3sTs4K/6Dw1W0sGW9CqXc8L5qkw30ihhhRq+eaRVPr/f/8lduSIbAoGBAIIJ\nkgbpkgeCKIVWxaAfpaRi7OQldRbTirp+S41Jw1PMuia/paBm9ovg6WH8fk54wORk\nIbw6aC/24KklM50uxtPsHaGpkkHns20YhRdCD2++OKk9R63poGlEDZWqVMuL/q9V\njuPK0Jp8A5vgTkZ+bm5qEAmn8K4kt/STmu/T6YGNAoGBAM42mWzIR08gQ6h/KUsE\nLhNTkY2YzT3gGO3JAQ9aYjdyfGYQ0gXjxgh+OIDOcb216nKgt31yjGESA9bzFpqT\nFrfnFQCBy0LFWiEg89OdEH8Sz870GMXlcKXrEkDf1lUfTD+/OzwquLvPV/weZO7v\npYPG+MRXX2fPHeI6KAVnPcg0\n-----END PRIVATE KEY-----\n",
+  "client_email": "extraction-engine-web@rmi-insights.iam.gserviceaccount.com",
+  "client_id": "101039584954307459100",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/extraction-engine-web%40rmi-insights.iam.gserviceaccount.com"
+}

@@ -94,6 +94,8 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use('/public' ,express.static('public'))
+app.use('/output' ,express.static('output'))
+app.use('/2ExtractionJSON' ,express.static('2ExtractionJSON'))
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -106,7 +108,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/', indexRouter(passport));
+app.use('/index', indexRouter(passport));
 
 app.post('/upload', upload.single('file'), function (req, res, next) {
   var {company, period} = req.body;
@@ -122,9 +124,9 @@ app.post('/upload', upload.single('file'), function (req, res, next) {
     period: req.body.period,
     filename: req.file.filename
   }).then(data => {
-    company = company.replace(/ /g, '_')
+    var company = '2ExtractionJSON'//company.replace(/ /g, '_')
     var job = queue.create('pdf', Object.assign({}, req.file, req.body, {statementId: data.get('id')}));
-    var folderName = path.join(__dirname, 'output', company+'-'+period);
+    var folderName = path.join(__dirname, 'output', company); //company+'-'+period
     if (!fs.existsSync(folderName)) {
       fs.mkdirSync(folderName);
     }
@@ -185,8 +187,8 @@ app.post('/doc', function (req, res, next) {
               filename: filename,
               originalname: filename
             }));
-            var company = req.body.companyName.replace(/ /g, '_')
-            var folderName = path.join(__dirname, 'output', company+'-'+req.body.period);
+            var company = '2ExtractionJSON'//req.body.companyName.replace(/ /g, '_')
+            var folderName = path.join(__dirname, 'output',company );//company+'-'+req.body.period
             if (!fs.existsSync(folderName)) {
               fs.mkdirSync(folderName);
             }
@@ -216,8 +218,8 @@ app.post('/doc', function (req, res, next) {
 
 app.post('/file_data', function(req, res, next) {
   var {id, company, documentUUID, period} = req.query;
-  var foldername = company.replace(/ /g, '_');
-  foldername = foldername + '-' + (period || 'N');
+  var foldername = '2ExtractionJSON'//company.replace(/ /g, '_');
+  foldername = foldername //+ '-' + (period || 'N');
   var getPeriodValue = function(value, date) {
     if (typeof value !== 'string') {
       return "";
@@ -353,8 +355,10 @@ app.post('/file_data', function(req, res, next) {
       var obj = jsonData[0], filepath = path.join(__dirname, 'output', el);
       if (index == 1) obj = jsonData[1];
       if (index == 2) obj = jsonData[2];
+	console.log(filepath);	
       promises.push(jsonfile.writeFile (filepath, obj));
-    })
+    
+	})
     return Promise.all(promises);
   }).then(() => {
     var promises = [];
@@ -394,8 +398,9 @@ app.post('/file_data', function(req, res, next) {
 })
 
 app.get('/file_output', function(req, res, next) {
-  var foldername = req.query.file.replace(/ /g, '_'), files;
-  foldername = foldername + '-' + req.query.period;
+  // var foldername = req.query.file.replace(/ /g, '_');
+  var files;
+  var foldername =  '2ExtractionJSON'// + '-' + req.query.period;// foldername + '-' + req.query.period;
   var promises = [], resp = {tab1: null, tab2: null, tab3: null};
   if (!fs.existsSync('./output/'+foldername)){
     fs.mkdirSync('./output/'+foldername);
@@ -543,7 +548,7 @@ app.get('/file_output', function(req, res, next) {
   })
 })
 
-app.get("/index",function(req,res){
+app.get("/",function(req,res){
 	res.render('index');
 })
 app.get("/index2",function(req,res){
@@ -553,7 +558,8 @@ app.get("/subscribe",function(req,res){
 	res.render('subscribe');
 })
  
-app.get("/",function(req,res){
+app.get("/login",function(req,res){
+
     res.render('login');
 })
 app.get("/register",function(req,res){

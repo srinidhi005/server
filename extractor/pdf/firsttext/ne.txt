@@ -1,0 +1,112 @@
+   PART II
+   NIKE, Inc. Consolidated Statements of Income
+                                                                                                                     Year Ended May 31,
+    (In millions, except per share data)                                                                     2018            2017        2016
+    Revenues                                                                                               $    36,397 $        34,350 $    32,376
+    Cost of sales                                                                                               20,441          19,038      17,405
+    Gross profit                                                                                                15,956          15,312      14,971
+    Demand creation expense                                                                                      3,577           3,341       3,278
+    Operating overhead expense                                                                                   7,934           7,222       7,191
+    Total selling and administrative expense                                                                    11,511          10,563      10,469
+    Interest expense (income), net                                                                                  54              59          19
+    Other expense (income), net                                                                                     66            (196)       (140)
+    Income before income taxes                                                                                   4,325           4,886       4,623
+    Income tax expense                                                                                           2,392             646         863
+    NET INCOME                                                                                             $     1,933 $         4,240 $     3,760
+    Earnings per common share:
+      Basic                                                                                                $      1.19 $          2.56 $      2.21
+      Diluted                                                                                              $      1.17 $          2.51 $      2.16
+    Dividends declared per common share                                                                    $      0.78 $          0.70 $      0.62
+   The accompanying Notes to the Consolidated Financial Statements are an integral part of this statement.
+94
+   PART II
+   NIKE, Inc. Consolidated Balance Sheets
+                                                                                                                     May 31,
+    (In millions)                                                                                            2018            2017
+    ASSETS
+    Current assets:
+      Cash and equivalents                                                                                 $    4,249 $         3,808
+      Short-term investments                                                                                      996           2,371
+      Accounts receivable, net                                                                                  3,498           3,677
+      Inventories                                                                                               5,261           5,055
+      Prepaid expenses and other current assets                                                                 1,130           1,150
+    Total current assets                                                                                       15,134          16,061
+      Property, plant and equipment, net                                                                        4,454           3,989
+      Identifiable intangible assets, net                                                                         285              283
+      Goodwill                                                                                                    154              139
+      Deferred income taxes and other assets                                                                    2,509           2,787
+    TOTAL ASSETS                                                                                           $   22,536 $        23,259
+    LIABILITIES AND SHAREHOLDERS’ EQUITY
+    Current liabilities:
+      Current portion of long-term debt                                                                    $         6 $             6
+      Notes payable                                                                                               336              325
+      Accounts payable                                                                                          2,279           2,048
+      Accrued liabilities                                                                                       3,269           3,011
+      Income taxes payable                                                                                        150               84
+    Total current liabilities                                                                                   6,040           5,474
+      Long-term debt                                                                                            3,468           3,471
+      Deferred income taxes and other liabilities                                                               3,216           1,907
+      Commitments and contingencies (Note 15)
+      Redeemable preferred stock                                                                                    —               —
+      Shareholders’ equity:
+      Common stock at stated value:
+        Class A convertible — 329 and 329 shares outstanding                                                        —               —
+        Class B — 1,272 and 1,314 shares outstanding                                                                 3               3
+      Capital in excess of stated value                                                                         6,384           5,710
+      Accumulated other comprehensive loss                                                                         (92)           (213)
+      Retained earnings                                                                                         3,517           6,907
+    Total shareholders’ equity                                                                                  9,812          12,407
+    TOTAL LIABILITIES AND SHAREHOLDERS’ EQUITY                                                             $   22,536 $        23,259
+   The accompanying Notes to the Consolidated Financial Statements are an integral part of this statement.
+96
+                                                                                                                                                                  PART II
+NIKE, Inc. Consolidated Statements of Cash Flows
+                                                                                                                                       Year Ended May 31,
+(In millions)                                                                                                               2018              2017               2016
+Cash provided by operations:
+Net income                                                                                                             $         1,933 $          4,240 $           3,760
+Adjustments to reconcile net income to net cash provided by operations:
+ Depreciation                                                                                                                      747               706                649
+ Deferred income taxes                                                                                                             647              (273)                (80)
+ Stock-based compensation                                                                                                          218               215                236
+ Amortization and other                                                                                                              27               10                  13
+ Net foreign currency adjustments                                                                                                   (99)            (117)                 98
+Changes in certain working capital components and other assets and liabilities:
+ Decrease (increase) in accounts receivable                                                                                         187             (426)                 60
+ (Increase) in inventories                                                                                                         (255)            (231)               (590)
+ Decrease (increase) in prepaid expenses and other current and non-current assets                                                    35             (120)               (161)
+ Increase (decrease) in accounts payable, accrued liabilities and other current and
+ non-current liabilities                                                                                                         1,515             (158)             (586)
+Cash provided by operations                                                                                                      4,955            3,846             3,399
+Cash provided (used) by investing activities:
+ Purchases of short-term investments                                                                                            (4,783)           (5,928)           (5,367)
+ Maturities of short-term investments                                                                                            3,613             3,623             2,924
+                                                                                                                                                                                     FORM 10-K
+ Sales of short-term investments                                                                                                 2,496             2,423             2,386
+ Investments in reverse repurchase agreements                                                                                        —                 —               150
+ Additions to property, plant and equipment                                                                                     (1,028)           (1,105)           (1,143)
+ Disposals of property, plant and equipment                                                                                           3                13               10
+ Other investing activities                                                                                                         (25)              (34)               6
+Cash provided (used) by investing activities                                                                                       276            (1,008)           (1,034)
+Cash used by financing activities:
+ Net proceeds from long-term debt issuance                                                                                           —             1,482               981
+ Long-term debt payments, including current portion                                                                                   (6)             (44)            (106)
+ Increase (decrease) in notes payable                                                                                                13              327                (67)
+ Payments on capital lease and other financing obligations                                                                          (23)              (17)                (7)
+ Proceeds from exercise of stock options and other stock issuances                                                                 733               489               507
+ Repurchase of common stock                                                                                                     (4,254)           (3,223)           (3,238)
+ Dividends — common and preferred                                                                                               (1,243)           (1,133)           (1,022)
+ Tax payments for net share settlement of equity awards                                                                             (55)              (29)              (22)
+Cash used by financing activities                                                                                               (4,835)           (2,148)           (2,974)
+Effect of exchange rate changes on cash and equivalents                                                                              45               (20)            (105)
+Net increase (decrease) in cash and equivalents                                                                                    441               670              (714)
+Cash and equivalents, beginning of year                                                                                          3,808             3,138             3,852
+CASH AND EQUIVALENTS, END OF YEAR                                                                                      $         4,249 $           3,808 $           3,138
+Supplemental disclosure of cash flow information:
+Cash paid during the year for:
+ Interest, net of capitalized interest                                                                                 $           125     $         98      $           70
+ Income taxes                                                                                                                      529              703                 748
+Non-cash additions to property, plant and equipment                                                                                294              266                 252
+Dividends declared and not paid                                                                                                    320              300                 271
+The accompanying Notes to the Consolidated Financial Statements are an integral part of this statement.
+                                                                                                          NIKE, INC.       2018 Annual Report and Notice of Annual Meeting      97

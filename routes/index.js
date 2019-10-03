@@ -8,9 +8,9 @@ var csvtojson = require('csvtojson');
 
 /* GET home page. */
 module.exports = function(passport) {
-  router.get('/', function(req, res, next) {
+  router.get('/index', function(req, res, next) {
     if (req.user) {
-      res.render('app', {username: req.user.username, role: req.user.role});
+      res.render('index', {username: req.user.username, role: req.user.role});
     } else {
       res.render('login');
     }

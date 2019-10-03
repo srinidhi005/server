@@ -1,0 +1,642 @@
+{
+    "currency": "USD",
+    "title": "consolidated statements of income",
+    "units": "millions",
+    "type": "statement_of_income",
+    "company": "marriott international inc",
+    "period": [
+        {
+            "Additional": [
+                {
+                    "desc": "(-) Selling, General, & Administrative ('SG&A')",
+                    "code": "AM_IS_EXP",
+                    "value": 2422000.0
+                },
+                {
+                    "desc": "EBITDA",
+                    "code": "EB1",
+                    "value": -56000.0
+                },
+                {
+                    "desc": "EBIT",
+                    "code": "EB2",
+                    "value": -340000.0
+                },
+                {
+                    "desc": "(+) Depreciation & Amortization ('D&A')",
+                    "code": "AM_IS_DEP_AMO",
+                    "value": 284000.0
+                },
+                {
+                    "desc": "EBT",
+                    "code": "EB3",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(-) Net Interest Expense",
+                    "code": "AM_IS_NIEXP",
+                    "value": -340000.0
+                },
+                {
+                    "desc": "Net Income",
+                    "code": "AM_IS_NI",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(+ / -) Other Income / (Expense)",
+                    "code": "AM_IS_OE",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(-) Taxes",
+                    "code": "AM_IS_TX",
+                    "value": 0.0
+                }
+            ],
+            "asof": "2018",
+            "statement": [
+                {
+                    "transformed": "Net revenue",
+                    "code": "AM_IS_I",
+                    "heading": "REVENUES",
+                    "items": [
+                        {
+                            "desc": "Base management fees -1",
+                            "transformed": "Base management fees",
+                            "code": "",
+                            "value": 1140000.0
+                        },
+                        {
+                            "desc": "Franchise fees",
+                            "transformed": "Franchise fees",
+                            "code": "",
+                            "value": 1849000.0
+                        },
+                        {
+                            "desc": "Incentive management fees -1",
+                            "transformed": "Incentive management fees",
+                            "code": "",
+                            "value": 649000.0
+                        },
+                        {
+                            "desc": "Gross fee revenues",
+                            "transformed": "Gross fee revenues",
+                            "code": "",
+                            "value": 3638000.0
+                        },
+                        {
+                            "desc": "Contract investment amortization -1",
+                            "transformed": "Contract investment amortization",
+                            "code": "",
+                            "value": -58000.0
+                        },
+                        {
+                            "desc": "Net fee revenues",
+                            "transformed": "Net fee revenues",
+                            "code": "",
+                            "value": 3580000.0
+                        },
+                        {
+                            "desc": "Owned leased and other revenue -1",
+                            "transformed": "Owned leased and other revenue",
+                            "code": "",
+                            "value": 1635000.0
+                        },
+                        {
+                            "desc": "Cost reimbursement revenue -1",
+                            "transformed": "Cost reimbursement revenue",
+                            "code": "",
+                            "value": 15543000.0
+                        }
+                    ]
+                },
+                {
+                    "transformed": "Operating costs and expenses",
+                    "code": "",
+                    "heading": "OPERATING COSTS AND EXPENSES",
+                    "items": [
+                        {
+                            "desc": "Owned leased and other-direct",
+                            "transformed": "Owned leased and other direct",
+                            "code": "",
+                            "value": 1306000.0
+                        },
+                        {
+                            "desc": "Depreciation amortization and other -1",
+                            "transformed": "Depreciation amortization and other",
+                            "code": "",
+                            "value": 226000.0
+                        },
+                        {
+                            "desc": "General administrative and other -1",
+                            "transformed": "General administrative and other",
+                            "code": "",
+                            "value": 927000.0
+                        },
+                        {
+                            "desc": "Merger-related costs and charges",
+                            "transformed": "Merger related costs and charges",
+                            "code": "",
+                            "value": 155000.0
+                        },
+                        {
+                            "desc": "Reimbursed expenses -1",
+                            "transformed": "Reimbursed expenses",
+                            "code": "",
+                            "value": 15778000.0
+                        },
+                        {
+                            "desc": "OPERATING INCOME",
+                            "transformed": "Operating income/loss",
+                            "code": "AM_IS_NOI",
+                            "value": 2366000.0
+                        },
+                        {
+                            "desc": "Gains and other income net -1",
+                            "transformed": "Gains and other income net",
+                            "code": "",
+                            "value": 194000.0
+                        },
+                        {
+                            "desc": "Interest expense",
+                            "transformed": "Interest expense",
+                            "code": "",
+                            "value": -340000.0
+                        },
+                        {
+                            "desc": "Interest income -1",
+                            "transformed": "Interest income",
+                            "code": "",
+                            "value": 22000.0
+                        },
+                        {
+                            "desc": "Equity in earnings -1",
+                            "transformed": "Equity in earnings",
+                            "code": "",
+                            "value": 103000.0
+                        },
+                        {
+                            "desc": "INCOME BEFORE INCOME TAXES",
+                            "transformed": "Income before income taxes",
+                            "code": "",
+                            "value": 2345000.0
+                        },
+                        {
+                            "desc": "Provision for income taxes",
+                            "transformed": "Provision for income taxes",
+                            "code": "",
+                            "value": -438000.0
+                        },
+                        {
+                            "desc": "NET INCOME",
+                            "transformed": "Net income/loss",
+                            "code": "AM_BS_NI",
+                            "value": 1907000.0
+                        }
+                    ]
+                },
+                {
+                    "transformed": "Earnings per share",
+                    "code": "",
+                    "heading": "EARNINGS PER SHARE",
+                    "items": [
+                        {
+                            "desc": "Earnings per share - basic",
+                            "transformed": "Earnings per share basic",
+                            "code": "",
+                            "value": 5.45
+                        },
+                        {
+                            "desc": "Earnings per share - diluted",
+                            "transformed": "Earnings per share diluted",
+                            "code": "",
+                            "value": 5.38
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Additional": [
+                {
+                    "desc": "(-) Selling, General, & Administrative ('SG&A')",
+                    "code": "AM_IS_EXP",
+                    "value": 2513000.0
+                },
+                {
+                    "desc": "EBITDA",
+                    "code": "EB1",
+                    "value": -9000.0
+                },
+                {
+                    "desc": "EBIT",
+                    "code": "EB2",
+                    "value": -288000.0
+                },
+                {
+                    "desc": "(+) Depreciation & Amortization ('D&A')",
+                    "code": "AM_IS_DEP_AMO",
+                    "value": 279000.0
+                },
+                {
+                    "desc": "EBT",
+                    "code": "EB3",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(-) Net Interest Expense",
+                    "code": "AM_IS_NIEXP",
+                    "value": -288000.0
+                },
+                {
+                    "desc": "Net Income",
+                    "code": "AM_IS_NI",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(+ / -) Other Income / (Expense)",
+                    "code": "AM_IS_OE",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(-) Taxes",
+                    "code": "AM_IS_TX",
+                    "value": 0.0
+                }
+            ],
+            "asof": "2017",
+            "statement": [
+                {
+                    "transformed": "Net revenue",
+                    "code": "AM_IS_I",
+                    "heading": "REVENUES",
+                    "items": [
+                        {
+                            "desc": "Base management fees -1",
+                            "transformed": "Base management fees",
+                            "code": "",
+                            "value": 1102000.0
+                        },
+                        {
+                            "desc": "Franchise fees",
+                            "transformed": "Franchise fees",
+                            "code": "",
+                            "value": 1586000.0
+                        },
+                        {
+                            "desc": "Incentive management fees -1",
+                            "transformed": "Incentive management fees",
+                            "code": "",
+                            "value": 607000.0
+                        },
+                        {
+                            "desc": "Gross fee revenues",
+                            "transformed": "Gross fee revenues",
+                            "code": "",
+                            "value": 3295000.0
+                        },
+                        {
+                            "desc": "Contract investment amortization -1",
+                            "transformed": "Contract investment amortization",
+                            "code": "",
+                            "value": -50000.0
+                        },
+                        {
+                            "desc": "Net fee revenues",
+                            "transformed": "Net fee revenues",
+                            "code": "",
+                            "value": 3245000.0
+                        },
+                        {
+                            "desc": "Owned leased and other revenue -1",
+                            "transformed": "Owned leased and other revenue",
+                            "code": "",
+                            "value": 1752000.0
+                        },
+                        {
+                            "desc": "Cost reimbursement revenue -1",
+                            "transformed": "Cost reimbursement revenue",
+                            "code": "",
+                            "value": 15455000.0
+                        }
+                    ]
+                },
+                {
+                    "transformed": "Operating costs and expenses",
+                    "code": "",
+                    "heading": "OPERATING COSTS AND EXPENSES",
+                    "items": [
+                        {
+                            "desc": "Owned leased and other-direct",
+                            "transformed": "Owned leased and other direct",
+                            "code": "",
+                            "value": 1411000.0
+                        },
+                        {
+                            "desc": "Depreciation amortization and other -1",
+                            "transformed": "Depreciation amortization and other",
+                            "code": "",
+                            "value": 229000.0
+                        },
+                        {
+                            "desc": "General administrative and other -1",
+                            "transformed": "General administrative and other",
+                            "code": "",
+                            "value": 921000.0
+                        },
+                        {
+                            "desc": "Merger-related costs and charges",
+                            "transformed": "Merger related costs and charges",
+                            "code": "",
+                            "value": 159000.0
+                        },
+                        {
+                            "desc": "Reimbursed expenses -1",
+                            "transformed": "Reimbursed expenses",
+                            "code": "",
+                            "value": 15228000.0
+                        },
+                        {
+                            "desc": "OPERATING INCOME",
+                            "transformed": "Operating income/loss",
+                            "code": "AM_IS_NOI",
+                            "value": 2504000.0
+                        },
+                        {
+                            "desc": "Gains and other income net -1",
+                            "transformed": "Gains and other income net",
+                            "code": "",
+                            "value": 688000.0
+                        },
+                        {
+                            "desc": "Interest expense",
+                            "transformed": "Interest expense",
+                            "code": "",
+                            "value": -288000.0
+                        },
+                        {
+                            "desc": "Interest income -1",
+                            "transformed": "Interest income",
+                            "code": "",
+                            "value": 38000.0
+                        },
+                        {
+                            "desc": "Equity in earnings -1",
+                            "transformed": "Equity in earnings",
+                            "code": "",
+                            "value": 40000.0
+                        },
+                        {
+                            "desc": "INCOME BEFORE INCOME TAXES",
+                            "transformed": "Income before income taxes",
+                            "code": "",
+                            "value": 2982000.0
+                        },
+                        {
+                            "desc": "Provision for income taxes",
+                            "transformed": "Provision for income taxes",
+                            "code": "",
+                            "value": -1523000.0
+                        },
+                        {
+                            "desc": "NET INCOME",
+                            "transformed": "Net income/loss",
+                            "code": "AM_BS_NI",
+                            "value": 1459000.0
+                        }
+                    ]
+                },
+                {
+                    "transformed": "Earnings per share",
+                    "code": "",
+                    "heading": "EARNINGS PER SHARE",
+                    "items": [
+                        {
+                            "desc": "Earnings per share - basic",
+                            "transformed": "Earnings per share basic",
+                            "code": "",
+                            "value": 3.89
+                        },
+                        {
+                            "desc": "Earnings per share - diluted",
+                            "transformed": "Earnings per share diluted",
+                            "code": "",
+                            "value": 3.84
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Additional": [
+                {
+                    "desc": "(-) Selling, General, & Administrative ('SG&A')",
+                    "code": "AM_IS_EXP",
+                    "value": 1499000.0
+                },
+                {
+                    "desc": "EBITDA",
+                    "code": "EB1",
+                    "value": -75000.0
+                },
+                {
+                    "desc": "EBIT",
+                    "code": "EB2",
+                    "value": -234000.0
+                },
+                {
+                    "desc": "(+) Depreciation & Amortization ('D&A')",
+                    "code": "AM_IS_DEP_AMO",
+                    "value": 159000.0
+                },
+                {
+                    "desc": "EBT",
+                    "code": "EB3",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(-) Net Interest Expense",
+                    "code": "AM_IS_NIEXP",
+                    "value": -234000.0
+                },
+                {
+                    "desc": "Net Income",
+                    "code": "AM_IS_NI",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(+ / -) Other Income / (Expense)",
+                    "code": "AM_IS_OE",
+                    "value": 0.0
+                },
+                {
+                    "desc": "(-) Taxes",
+                    "code": "AM_IS_TX",
+                    "value": 0.0
+                }
+            ],
+            "asof": "2016",
+            "statement": [
+                {
+                    "transformed": "Net revenue",
+                    "code": "AM_IS_I",
+                    "heading": "REVENUES",
+                    "items": [
+                        {
+                            "desc": "Base management fees -1",
+                            "transformed": "Base management fees",
+                            "code": "",
+                            "value": 806000.0
+                        },
+                        {
+                            "desc": "Franchise fees",
+                            "transformed": "Franchise fees",
+                            "code": "",
+                            "value": 1157000.0
+                        },
+                        {
+                            "desc": "Incentive management fees -1",
+                            "transformed": "Incentive management fees",
+                            "code": "",
+                            "value": 425000.0
+                        },
+                        {
+                            "desc": "Gross fee revenues",
+                            "transformed": "Gross fee revenues",
+                            "code": "",
+                            "value": 2388000.0
+                        },
+                        {
+                            "desc": "Contract investment amortization -1",
+                            "transformed": "Contract investment amortization",
+                            "code": "",
+                            "value": -40000.0
+                        },
+                        {
+                            "desc": "Net fee revenues",
+                            "transformed": "Net fee revenues",
+                            "code": "",
+                            "value": 2348000.0
+                        },
+                        {
+                            "desc": "Owned leased and other revenue -1",
+                            "transformed": "Owned leased and other revenue",
+                            "code": "",
+                            "value": 1125000.0
+                        },
+                        {
+                            "desc": "Cost reimbursement revenue -1",
+                            "transformed": "Cost reimbursement revenue",
+                            "code": "",
+                            "value": 11934000.0
+                        }
+                    ]
+                },
+                {
+                    "transformed": "Operating costs and expenses",
+                    "code": "",
+                    "heading": "OPERATING COSTS AND EXPENSES",
+                    "items": [
+                        {
+                            "desc": "Owned leased and other-direct",
+                            "transformed": "Owned leased and other direct",
+                            "code": "",
+                            "value": 901000.0
+                        },
+                        {
+                            "desc": "Depreciation amortization and other -1",
+                            "transformed": "Depreciation amortization and other",
+                            "code": "",
+                            "value": 119000.0
+                        },
+                        {
+                            "desc": "General administrative and other -1",
+                            "transformed": "General administrative and other",
+                            "code": "",
+                            "value": 743000.0
+                        },
+                        {
+                            "desc": "Merger-related costs and charges",
+                            "transformed": "Merger related costs and charges",
+                            "code": "",
+                            "value": 386000.0
+                        },
+                        {
+                            "desc": "Reimbursed expenses -1",
+                            "transformed": "Reimbursed expenses",
+                            "code": "",
+                            "value": 11834000.0
+                        },
+                        {
+                            "desc": "OPERATING INCOME",
+                            "transformed": "Operating income/loss",
+                            "code": "AM_IS_NOI",
+                            "value": 1424000.0
+                        },
+                        {
+                            "desc": "Gains and other income net -1",
+                            "transformed": "Gains and other income net",
+                            "code": "",
+                            "value": 5000.0
+                        },
+                        {
+                            "desc": "Interest expense",
+                            "transformed": "Interest expense",
+                            "code": "",
+                            "value": -234000.0
+                        },
+                        {
+                            "desc": "Interest income -1",
+                            "transformed": "Interest income",
+                            "code": "",
+                            "value": 35000.0
+                        },
+                        {
+                            "desc": "Equity in earnings -1",
+                            "transformed": "Equity in earnings",
+                            "code": "",
+                            "value": 9000.0
+                        },
+                        {
+                            "desc": "INCOME BEFORE INCOME TAXES",
+                            "transformed": "Income before income taxes",
+                            "code": "",
+                            "value": 1239000.0
+                        },
+                        {
+                            "desc": "Provision for income taxes",
+                            "transformed": "Provision for income taxes",
+                            "code": "",
+                            "value": -431000.0
+                        },
+                        {
+                            "desc": "NET INCOME",
+                            "transformed": "Net income/loss",
+                            "code": "AM_BS_NI",
+                            "value": 808000.0
+                        }
+                    ]
+                },
+                {
+                    "transformed": "Earnings per share",
+                    "code": "",
+                    "heading": "EARNINGS PER SHARE",
+                    "items": [
+                        {
+                            "desc": "Earnings per share - basic",
+                            "transformed": "Earnings per share basic",
+                            "code": "",
+                            "value": 2.78
+                        },
+                        {
+                            "desc": "Earnings per share - diluted",
+                            "transformed": "Earnings per share diluted",
+                            "code": "",
+                            "value": 2.73
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

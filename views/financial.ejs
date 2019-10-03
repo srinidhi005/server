@@ -8,37 +8,19 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   
   <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
- 
   <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
-  
   <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
-  
   <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
   <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
-  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
-  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
-  <link rel="stylesheet" href="/public/bower_components/bootstrap-daterangepicker/daterangepicker.css">
-    
-    
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-<link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap-combined.min.css" >
-<script src="/public/bower_components/bootstrap/dist/js/bootstrap1.min.js"></script>
-    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
 
     
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
-  
+<script src="https://rawgithub.com/highcharts/draggable-points/master/draggable-points.js"></script>
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     
@@ -211,7 +193,7 @@
        
            
           <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
-          <li><a href="/index"><i class="fa fa-circle-o" ></i> <span>KPI Dashboard</span></a></li>
+          <li><a href="/"><i class="fa fa-circle-o" ></i> <span>KPI Dashboard</span></a></li>
         
       
         <li class="treeview">
@@ -273,20 +255,30 @@
      <section class="content">
 <div class="container" style="margin-top:175px">
     <div class="row">
-        <div class="col-md-12" style="margin-top: -220px;margin-right: -40px">
+      <!--  <div class="col-md-12" style="margin-top: -220px;margin-right: -40px">
             <p>
                 <button id="btn-add-tab" type="button" class="btn btn-primary pull-right" style="margin-right:-120px">Add Senario</button>
             </p>
-            <!-- Nav tabs -->
+             Nav tabs 
             <ul id="tab-list" class="nav nav-tabs" role="tablist">
                 <li class="active"><a href="#chart-container1" role="tab" data-toggle="tab" style="margin-left: 70px"><span>Basic Historic Ratio </span><span class="glyphicon glyphicon-pencil text-muted edit"></span></a></li>
                                 
             </ul>
-        </div>
+			
+        </div>-->
+		
+		<div id="cona">
+			<div id="cona2">
+		<div class="box one" id="revenuegrowth" style="height: 400px;width:450px"></div>
+		<div class="box two"id="cogs" style="height: 400px;width:450px"></div>
+		<div class="box three"id="SG&A" style="height: 400px;width:450px"></div>
+		<div class="box four"id="D&A" style="height: 400px;width:450px"></div>
+		<!--<div class="box one"id="otheincome" style="height: 400px;width:450px"></div>-->
+			</div>
+		</div>
 
-            <!-- Tab panes -->
-            
-                <div class="tab-pane fade in active" id="chart-container" style="margin-top:-120px;margin-right:300px"> </div>
+        
+                
                     </div>
         </div>
          
@@ -295,7 +287,7 @@
     </div>
     
     </div>
-    
+ <!--   
     <script>
         
         
@@ -346,178 +338,337 @@ var editHandler = function() {
 $(".edit").click(editHandler);
 
 </script>
-    <script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+            -->
+         <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
 <script src="/public/dist/js/rmi.min.js"></script>
-
 <script src="/public/dist/js/demo.js"></script>
-    <script type="text/javascript">
-		FusionCharts.ready(function(){
-			var chartObj = new FusionCharts({
-    type: 'dragcolumn2d',
-    renderAt: 'chart-container',
-    width: '500',
-    height: '500',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "",
-            
-            
-            
-            "theme": "fusion"
-        },
-        "categories": [{
-            "category": [{
-                "label": "Revenue Growth"
-            }, {
-                "label": "Cogs(%Revenue)"
-            }, {
-                "label": "SG&A(%Revenue)"
-            }, {
-                "label": "D&A(%Revenue)"
-            }, {
-                "label": "Other income(%Revenue)"
-            }]
-        }],
-        "dataset": [{
-            "seriesname": "",
-            "dashed": "1",
-            "data": [{
-                "value": "19000"
-            }, {
-                "value": "16500"
-            }, {
-                "value": "14300"
-            }, {
-                "value": "10000"
-            }, {
-                "value": "9800"
-            }],
-            backgroundColor: ["#3e95cd","#3e95cd","#3e95cd","#3e95cd","#3e95cd"]
-        }]
-    },
-    events: {
-        'beforeRender': function(event, args) {
-            var tableCont = document.createElement('div'),
-                thStyle = "background-color: #008ee4;color: #fff; border: 1px solid #6baa01;padding: 10px 5px;min-width: 70px;text-align: center",
-                tdStyle = "background-color: #fff;color: #6baa01; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center",
-                strHTML = "";
-            /*tableCont.setAttribute('id', 'tableCont');
-            tableCont.setAttribute('style', 'padding-left: 10px; width: 470px;');
-            strHTML = "<table style='margin: 25px auto;border-collapse: collapse;border: 1px solid;border-bottom: 2px solid #6baa01'><tr><td style='border: 1px solid #fff;padding: 10px 5px;min-width: 70px;text-align: center'></td><th style='" + thStyle + "'>Poultry</th><th style='" + thStyle + "'>Rice</th><th style='" + thStyle + "'>Peanut Butter</th><th style='" + thStyle + "'>Salmon</th><th style='" + thStyle + "'>Cereal</th></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Available Stock</td><td id='est-0-0' style='" + tdStyle + "'>6000</td><td id='est-0-1' style='" + tdStyle + "'>9500</td><td id='est-0-2' style='" + tdStyle + "'>11900</td><td id='est-0-3' style='" + tdStyle + "'>8000</td><td id='est-0-4' style='" + tdStyle + "'>9700</td></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Estimated Demand</td><td id='est-1-0' style='" + tdStyle + "'>19000</td><td id='est-1-1' style='" + tdStyle + "'>16500</td><td id='est-1-2' style='" + tdStyle + "'>14300</td><td id='est-1-3' style='" + tdStyle + "'>10000</td><td id='est-1-4' style='" + tdStyle + "'>9800</td></tr></table>";*/
-            tableCont.innerHTML = strHTML;
-            args.container.parentNode.insertBefore(tableCont, args.container.nextSibling);
-        },
-        'dataplotDragEnd': function(evt, arg) {
-            var dtIndx = arg && arg.dataIndex,
-                datasetIndex = arg && arg.datasetIndex,
-                val = arg && parseInt(arg.endValue, 10);
-
-            document.getElementById('est-' + datasetIndex + '-' + dtIndx).innerHTML = val;
-        },
-        'dataRestored': function(evtObj) {
-            var estimatedOrigValues = ["19000", "16500", "14300", "10000", "9800"],
-                numVals = estimatedOrigValues.length,
-                i,
-                val;
-            for (var i = 0; i < numVals; i += 1) {
-                estimatedVal = estimatedOrigValues[i];
-                document.getElementById('est-0-' + i).innerHTML = estimatedVal;
-            }
-        }
-    }
-});
-			chartObj.render();
-		});
-	</script>
-    <script src="/public/dist/js/demo.js"></script>
-    <script type="text/javascript">
-		FusionCharts.ready(function(){
-			var chartObj = new FusionCharts({
-    type: 'dragcolumn2d',
-    renderAt: 'chart-container',
-    width: '500',
-    height: '500',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "",
-            
-            
-            
-            "theme": "fusion"
-        },
-        "categories": [{
-            "category": [{
-                "label": "Revenue Growth"
-            }, {
-                "label": "Cogs(%Revenue)"
-            }, {
-                "label": "SG&A(%Revenue)"
-            }, {
-                "label": "D&A(%Revenue)"
-            }, {
-                "label": "Other income(%Revenue)"
-            }]
-        }],
-        "dataset": [{
-            "seriesname": "",
-            "dashed": "1",
-            "data": [{
-                "value": "19000"
-            }, {
-                "value": "16500"
-            }, {
-                "value": "14300"
-            }, {
-                "value": "10000"
-            }, {
-                "value": "9800"
-            }],
-            backgroundColor: ["#3e95cd","#3e95cd","#3e95cd","#3e95cd","#3e95cd"]
-        }]
-    },
-    events: {
-        'beforeRender': function(event, args) {
-            var tableCont = document.createElement('div'),
-                thStyle = "background-color: #008ee4;color: #fff; border: 1px solid #6baa01;padding: 10px 5px;min-width: 70px;text-align: center",
-                tdStyle = "background-color: #fff;color: #6baa01; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center",
-                strHTML = "";
-            /*tableCont.setAttribute('id', 'tableCont');
-            tableCont.setAttribute('style', 'padding-left: 10px; width: 470px;');
-            strHTML = "<table style='margin: 25px auto;border-collapse: collapse;border: 1px solid;border-bottom: 2px solid #6baa01'><tr><td style='border: 1px solid #fff;padding: 10px 5px;min-width: 70px;text-align: center'></td><th style='" + thStyle + "'>Poultry</th><th style='" + thStyle + "'>Rice</th><th style='" + thStyle + "'>Peanut Butter</th><th style='" + thStyle + "'>Salmon</th><th style='" + thStyle + "'>Cereal</th></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Available Stock</td><td id='est-0-0' style='" + tdStyle + "'>6000</td><td id='est-0-1' style='" + tdStyle + "'>9500</td><td id='est-0-2' style='" + tdStyle + "'>11900</td><td id='est-0-3' style='" + tdStyle + "'>8000</td><td id='est-0-4' style='" + tdStyle + "'>9700</td></tr><tr><td style='background-color: #6baa01;color: #fff; border: 1px solid #6baa01; padding: 10px 5px;min-width: 70px;text-align: center'>Estimated Demand</td><td id='est-1-0' style='" + tdStyle + "'>19000</td><td id='est-1-1' style='" + tdStyle + "'>16500</td><td id='est-1-2' style='" + tdStyle + "'>14300</td><td id='est-1-3' style='" + tdStyle + "'>10000</td><td id='est-1-4' style='" + tdStyle + "'>9800</td></tr></table>";*/
-            tableCont.innerHTML = strHTML;
-            args.container.parentNode.insertBefore(tableCont, args.container.nextSibling);
-        },
-        'dataplotDragEnd': function(evt, arg) {
-            var dtIndx = arg && arg.dataIndex,
-                datasetIndex = arg && arg.datasetIndex,
-                val = arg && parseInt(arg.endValue, 10);
-
-            document.getElementById('est-' + datasetIndex + '-' + dtIndx).innerHTML = val;
-        },
-        'dataRestored': function(evtObj) {
-            var estimatedOrigValues = ["19000", "16500", "14300", "10000", "9800"],
-                numVals = estimatedOrigValues.length,
-                i,
-                val;
-            for (var i = 0; i < numVals; i += 1) {
-                estimatedVal = estimatedOrigValues[i];
-                document.getElementById('est-0-' + i).innerHTML = estimatedVal;
-            }
-        }
-    }
-});
-			chartObj.render();
-		});
-	</script>
     
     
+    <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'revenuegrowth',
+        animation: false
+    },
+    
+    title: {
+        text: 'REVENUE GROWTH'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020","may2021"]
+    },
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        data: [0, 71.5, 106.4, 129.2, 144.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'cogs',
+        animation: false
+    },
+    
+    title: {
+        text: 'COGS'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020","may2021"]
+    },
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        data: [0, 71.5, 106.4, 129.2, 144.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+   
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'SG&A',
+        animation: false
+    },
+    
+    title: {
+        text: 'SG&A'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020","may2021"]
+    },
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        data: [0, 71.5, 106.4, 129.2, 144.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+   
+    <script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'D&A',
+        animation: false
+    },
+    
+    title: {
+        text: 'D&A'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020","may2021"]
+    },
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        data: [0, 71.5, 106.4, 129.2, 144.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'otheincome',
+        animation: false
+    },
+    
+    title: {
+        text: 'OtherIncome'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020","may2021"]
+    },
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        data: [0, 71.5, 106.4, 129.2, 144.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
     </body>
 </html>
   

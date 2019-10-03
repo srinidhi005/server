@@ -18,13 +18,40 @@
   <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
     
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
-  
-  
+<!--<script>
+		
+		$.ajax({
+    url: '/file_output?file='+file.company+'&period='+file.period',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (Data) {
+		var trHTML = '';
+		$(Data).each(function(i,item){
+			
+			console.log(Data.period[0].Additional[1].desc);
+			console.log(Data.period[0].Additional[2].desc);
+			console.log(Data.period[0].Additional[4].desc);
+			console.log(Data.period[0].Additional[6].desc);
+			console.log(Data.period[0].statement[2].desc);
+			console.log(Data.period[0].statement[10].desc);
+			
+		
+			
+            trHTML += '<tr><td scope="row" style="color:skyblue">' + item.period[0].Additional[1].value + '</td><td style="color:black;text-align:right">' + item.period[0].Additional[4].value + '</td><td style="color:black;text-align:right">' + item.period[0].Additional[4].value+ '</td><td style="color:black;text-align:right">' + item.period[0].statement[2].value+ '</td></tr>';
+        });
+        $('#records_table').append(trHTML);
+		
+		}
+		});
+		
+		
+			</script>-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     
 </head>
@@ -205,7 +232,7 @@
           
           <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
           
-          <li><a href="/index"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
+          <li><a href="/"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
         
           
           
@@ -288,7 +315,7 @@
     
     </tr>
   </thead>
-  <tbody>
+  <!--<tbody>
    
     <tr>
       <th scope="row" style="color:skyblue" style="width:30px">Current Month (Oct.2019)</th>
@@ -305,7 +332,7 @@
       <td  style='color:black;text-align:right'>$150,832,293</td>
       <td  style="color:red;text-align:right">(3.5%)</td>
     </tr>
-  </tbody>
+  </tbody>-->
 </table>
 
 
@@ -337,7 +364,7 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="chart tab-pane active" id="home1">
-        <table class="table">
+        <table class="table" id="table2">
   <thead class="thead-dark">
     <tr>
         <th scope="col"></th>
@@ -346,7 +373,7 @@
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
     </tr>
   </thead>
-  <tbody>
+  <!--<tbody>
     <tr>
       <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
       <td style="color:black;text-align:right">$15,442,262</td>
@@ -362,7 +389,7 @@
       <td style="color:black;text-align:right">$150,832,293</td>
       <td  style="color:red;text-align:right">(3.5%)</td>
     </tr>
-  </tbody>
+  </tbody>-->
 </table>
 
 
@@ -386,7 +413,7 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="chart tab-pane active" id="home">
-        <table class="table">
+        <table class="table" id="home3">
   <thead class="thead-dark">
     <tr>
         <th scope="col"></th>
@@ -395,23 +422,7 @@
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
-      <td style="color:black;text-align:right">$15,442,262</td>
-      <td style="color:black;text-align:right">$14,515,726</td>
-      <td  style="color:red;text-align:right">(6.0%)</td>
-    </tr>
-      
-      
-      
-      <tr>
-      <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
-      <td style="color:black;text-align:right">$156,352,901</td>
-      <td style="color:black;text-align:right">$150,832,293</td>
-      <td  style="color:red;text-align:right">(3.5%)</td>
-    </tr>
-  </tbody>
+
 </table>
 
 
@@ -441,7 +452,7 @@
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="chart tab-pane active"  id="home3">
-        <table class="table">
+        <table class="table" id="tib2">
   <thead class="thead-dark">
     <tr>
         <th scope="col"></th>
@@ -450,7 +461,7 @@
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
     </tr>
   </thead>
-  <tbody>
+  <!--<tbody>
     <tr>
       <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
       <td style="color:black;text-align:right">$15,442,262</td>
@@ -466,7 +477,7 @@
       <td style="color:black;text-align:right">$150,832,293</td>
       <td  style="color:red;text-align:right">(3.5%)</td>
     </tr>
-  </tbody>
+  </tbody>-->
 </table>
 
       </div>
@@ -490,40 +501,42 @@
       <li><a href="#container4" data-toggle="tab" style="color:black">Visual</a></li>
     </ul>
     <div id="myTabContent" class="tab-content">
-      <div class="chart tab-pane active"  id="home4">
-       <table class="table">
+      <div class="chart tab-pane active"  >
+       <table class="table" id="records_table">
   <thead class="thead-dark">
     <tr>
         <th scope="col"></th>
-       <th scope="col"  style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
+		
+		
+        <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Targets</th>
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
     </tr>
+	   
   </thead>
   <tbody>
-    <tr>
+	  
+    <!--<tr>
       <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
       <td style="color:black;text-align:right">$15,442,262</td>
       <td style="color:black;text-align:right">$14,515,726</td>
       <td  style="color:red;text-align:right">(6.0%)</td>
-    </tr>
+    </tr>-->
       
       
       
-      <tr>
+      <!--<tr>
       <th scope="row"  style="color:skyblue">Year to Date (Jan.-Oct.2019)</th>
       <td style="color:black;text-align:right">$156,352,901</td>
       <td style="color:black;text-align:right">$150,832,293</td>
       <td  style="color:red;text-align:right">(3.5%)</td>
-    </tr>
+    </tr>-->
   </tbody>
 </table>
 
 
       </div>
-      <div class="chart tab-pane"  id="container4" style="width:100%;height:225px">
-    	
-      </div>
+   
   </div>
         </div>  
                     
@@ -542,7 +555,7 @@
     </ul>
     <div id="myTabContent" class="tab-content" >
       <div class="chart tab-pane active"  id="home5">
-       <table class="table">
+       <table class="table" id="table4">
   <thead class="thead-dark">
     <tr>
         <th scope="col"></th>
@@ -550,8 +563,9 @@
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Actuals</th>
       <th scope="col"   style="color:skyblue;text-align:center;margin-left:40px;width:100px">Variance</th>
     </tr>
+	 
   </thead>
-  <tbody>
+  <!--<tbody>
     <tr>
       <th scope="row" style="color:skyblue">Current Month (Oct.2019)</th>
       <td style="color:black;text-align:right">$15,442,262</td>
@@ -567,14 +581,12 @@
       <td style="color:black;text-align:right">$150,832,293</td>
       <td  style="color:red;text-align:right">(3.5%)</td>
     </tr>
-  </tbody>
+  </tbody>-->
 </table>
 
 
       </div>
-      <div class="chart tab-pane"  id="container5" style="width:100%;height:225px">
-    	
-      </div>
+     
   </div>
         </div>  
                     
@@ -582,10 +594,10 @@
         
                            
                            
-    
-          <!-- jQuery 3 -->
+    <!--
+           jQuery 3 
 <script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>-->
 <!-- Bootstrap 3.3.7 -->
 <script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/public/dist/js/rmi.min.js"></script>
@@ -599,8 +611,150 @@
 <script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <script src="/public/dist/js/pages/dashboard.js"></script> 
-    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+   
+			
+			
+			
 
+					<!--<script>
+// jQ DOM ready function:
+$(function() {
+  // AJAX call
+  $.ajax({
+	  method:'GET',
+	  
+    url: "../echo/Demo.json",
+  }).done(function(data) {
+	  console.log(data);
+    // When AJAX receives data from .json file
+
+    // Set a 5 s timeout delay
+  
+  });
+});
+</script>	-->
+				
+		<script>
+		
+		$.ajax({
+    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/file0.json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (Data) {
+		var trHTML = '';
+		$(Data).each(function(i,item){
+			
+		
+			
+            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">' +'$'+item.period[0].Additional[1].value+ '</td></tr>';
+        });
+        $('#records_table').append(trHTML);
+		
+		}
+		});
+		
+		
+			</script>
+	
+				<script>
+		
+		$.ajax({
+    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/file0.json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (Data) {
+		var trHTML = '';
+		$(Data).each(function(i,item){
+			
+			
+			
+            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">'+'$'+ item.period[0].Additional[2].value + '</td></tr>';
+        });
+        $('#home3').append(trHTML);
+		
+		}
+		});
+		
+		
+			</script>
+					<script>
+		
+		$.ajax({
+    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/file0.json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (Data) {
+		var trHTML = '';
+		$(Data).each(function(i,item){
+		
+			
+            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">' +'$' + item.period[0].Additional[4].value + '</td></tr>';
+        });
+        $('#table4').append(trHTML);
+		
+		}
+		});
+		
+		
+			</script>
+			
+							<script>
+		
+		$.ajax({
+    url: 'https://storage.cloud.google.com/extraction-engine/2ExtractionJSON/file0.json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (Data) {
+		var trHTML = '';
+		$(Data).each(function(i,item){
+			
+			
+			console.log(Data);
+			
+		
+			
+            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">'+ '$' + item.period[0].Additional[6].value + '</td></tr>';
+        });
+        $('#table2').append(trHTML);
+		
+		}
+		});
+		
+		
+			</script>
+			
+			
+			
+			
+				<script>
+		
+		$.ajax({
+    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/file0.json?v=2&alt=json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (Data) {
+		var trHTML = '';
+		$(Data).each(function(i,item){
+			
+			Console.log(Data);
+		
+			
+          trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">' +'$'+ item.period[0].statement[2].value + '</td></tr>';
+        });
+        $('#tib2').append(trHTML);
+		
+		}
+		});
+	
+		
+			</script>
+			
+		<!--	
          <script type='text/javascript'>
 $(function(){
 $('.input-group.date').datepicker({
@@ -610,7 +764,7 @@ $('.input-group.date').datepicker({
 });  
 });
               </script>
-    
+    -->
   <!--       <script>
     $( function() {
   $('#sortable').sortable({
