@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
+<script src="/public/dist/js/highcharts.src.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 	
@@ -205,22 +206,22 @@
           
           <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
           
-          <li><a href="/"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
+          <li><a href="/index"><i class="fa fa-desktop"></i> KPI Dashboard</a></li>
         
           
           
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-pie-chart"></i>
+            <i class="fa fa-desktop"></i>
             <span>Monthly Budget</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/adjust"><i class="fa fa-circle-o"></i> Adjust Assumption</a></li>
-            <li><a href="/actual"><i class="fa fa-circle-o"></i> Actuals</a></li>
-            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+            <li><a href="/adjust"><i class="fa fa-bar-chart-o"></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-bar-chart-o"></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-bar-chart-o"></i> Target v/s Actuals</a></li>
           </ul>
         </li>
           
@@ -229,14 +230,14 @@
           
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-pie-chart"></i>
+            <i class="fa fa-desktop""></i>
             <span>Financial Model</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+		  <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -256,16 +257,7 @@
              <div class="container">
            <div class="form-group" style="width:150px;float:right;margin-top:-30px">
           
-      <label for="sel1"></label>
-      <select class="form-control" id="sel1" style="margin-left: -160px">
-          <form>
-          <option> Select Senario</option>
-              <option>Base Senario</option>
-              <option>Custom Senario1</option>
-              <option>Custom Senario2</option>
-              <option>Custom Senario3</option>
-          </form>
-               </select>
+    
                <div class="btn-group">
                    
         <a href="#"><button type="button" style="color:black;margin-top:-70px;margin-right: 45px">Export</button></a>
@@ -302,7 +294,7 @@
           
                     <div class="box box-success">
             <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">Total Revenue</h3>
+              <h3 class="box-title" style="margin-right:125px;font-size:25px;margin-top:10px">Total Revenue</h3>
 <div id="totalrevenue" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 						</div>
             </div>
@@ -316,7 +308,7 @@
             
                   <div class="box box-success">
             <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">Net Income</h3>
+              <h3 class="box-title" style="margin-right:125px;font-size:25px;margin-top:10px">Net Income</h3>
 				<div id="netincome" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
          
             </div>        
@@ -325,7 +317,7 @@
             
           <div class="box box-success">
 <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">EBIT</h3>
+              <h3 class="box-title" style="margin-right:125px;font-size:25px;margin-top:10px">EBIT</h3>
 			  </div>
           <div id="ebit" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
             <!-- /.box-body -->
@@ -420,33 +412,45 @@ $('.input-group.date').datepicker({
     
     
     <script type="text/javascript">
-	$(document).ready(function(){
-		 $.ajax({url: "https://storage.googleapis.com/extraction-engine/2ExtractionJSON/total.json", 
-				 method:"GET",
-				 success: function(result){
-					 console.log(result);
+	var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+  },
+  "processData": false,
+  /*"data": "[{\"asof\": \"2018-01-15\", \"cogs\": 20441000.0, \"companyname\": \"Nike-Y\", \"da\": 716000.0, \"ebit\": 4945000.0, \"ebitda\": 5661000.0, \"ebt\": 4886000.0, \"grossprofit\": 87359485.0, \"latest\": 1, \"netincome\": 4240000.0, \"netinterest\": 59000.0, \"otherincome\": -196000.0, \"sga\": 9651000.0, \"taxes\": 646000.0, \"totalrevenue\": 36397000.0}]"*/
+}
+
+$.ajax(settings).done(function (response){		 
+					 console.log(response);
+	  var obj = JSON.parse(response);
 					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
-					 	for(var i in result){
-							categories.push(result[i].asof);
-   								var name = (result[i].asof);
-   								data1.push(parseInt(result[i].totalrevenue));
-								}
-					 console.log(result);
-					
-			 Highcharts.chart('totalrevenue', {
+					 	for(var i in obj){
+							categories.push(obj[i].asof);
+   								var name = (obj[i].asof);
+   								data1.push(parseInt(obj[i].totalrevenue));
+					 console.log(obj);
+			  Highcharts.chart('totalrevenue', {
 				    chart: {
 				        type: 'column'
 				    },
 				    title: {
-				        text: 'Expenses Report 2016'
+				        text: ''
 				    },
 				    xAxis: {
-				        categories:categories 
+				        categories: categories
+				          
 				    },
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'USD'
 				        }
 				    },
 				    series: [{
@@ -454,189 +458,42 @@ $('.input-group.date').datepicker({
 						data:data1
 					}]
 				});
-		    }});
-	});
+		    }}
+	);
 	</script>
   
   
      <script type="text/javascript">
-	$(document).ready(function(){
-		 $.ajax({url: "https://storage.googleapis.com/extraction-engine/2ExtractionJSON/total.json", 
-				 
-				 	 method:"GET",
-				 success: function(result){
-					 console.log(result);
+	var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-y",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+  },
+  "processData": false,
+  /*"data": "[{\"asof\": \"2018-01-15\", \"cogs\": 20441000.0, \"companyname\": \"Nike-Y\", \"da\": 716000.0, \"ebit\": 4945000.0, \"ebitda\": 5661000.0, \"ebt\": 4886000.0, \"grossprofit\": 87359485.0, \"latest\": 1, \"netincome\": 4240000.0, \"netinterest\": 59000.0, \"otherincome\": -196000.0, \"sga\": 9651000.0, \"taxes\": 646000.0, \"totalrevenue\": 36397000.0}]"*/
+}
+
+$.ajax(settings).done(function (response){		 
+					 console.log(response);
+	  var obj = JSON.parse(response);
 					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
-					 	for(var i in result){
-							categories.push(result[i].asof);
-   								var name = (result[i].asof);
-   								data1.push(parseInt(result[i].netincome));
-								}
-					 console.log(result);
-					
-			 Highcharts.chart('netincome', {
+					 	for(var i in obj){
+							categories.push(obj[i].asof);
+   								var name = (obj[i].asof);
+   								data1.push(parseInt(obj[i].netincome));
+					 console.log(obj);
+			  Highcharts.chart('netincome', {
 				    chart: {
 				        type: 'column'
 				    },
 				    title: {
-				        text: 'Expenses Report 2016'
-				    },
-				    xAxis: {
-				        categories: categories
-				    },
-				    yAxis: {
-				        min: 0,
-				        title: {
-				            text: 'Expenses'
-				        }
-				    },
-				    series: [{
-						name:"value1",
-						data:data1
-					}]
-				});
-		    }});
-	});
-	</script>
-	 <script type="text/javascript">
-	$(document).ready(function(){
-		 $.ajax({url: "https://storage.googleapis.com/extraction-engine/2ExtractionJSON/total.json", 
-				 	 method:"GET",
-				 success: function(result){
-					 console.log(result);
-					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
-					 	for(var i in result){
-							categories.push(result[i].asof);
-   								var name = (result[i].asof);
-   								data1.push(parseInt(result[i].ebit));
-								}
-					 console.log(result);
-					
-			 Highcharts.chart('ebit', {
-				    chart: {
-				        type: 'column'
-				    },
-				    title: {
-				        text: 'Expenses Report 2016'
-				    },
-				    xAxis: {
-				        categories:categories
-				    },
-				    yAxis: {
-				        min: 0,
-				        title: {
-				            text: 'Expenses'
-				        }
-				    },
-				    series: [{
-						name:"value1",
-						data:data1
-					}]
-				});
-		    }});
-	});
-	</script>
-  
-   <script type="text/javascript">
-	$(document).ready(function(){
-		 $.ajax({url: "https://storage.googleapis.com/extraction-engine/2ExtractionJSON/total.json", 
-				 	 method:"GET",
-				 success: function(result){
-					 console.log(result);
-					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
-					 	for(var i in result){
-							categories.push(result[i].asof);
-   								var name = (result[i].asof);
-   								data1.push(parseInt(result[i].grossprofit));
-								}
-					 console.log(result);
-					
-			 Highcharts.chart('grossprofit', {
-				    chart: {
-				        type: 'column'
-				    },
-				    title: {
-				        text: 'Expenses Report 2016'
-				    },
-				    xAxis: {
-				        categories: categories
-				    },
-				    yAxis: {
-				        min: 0,
-				        title: {
-				            text: 'Expenses'
-				        }
-				    },
-				    series: [{
-						name:"value1",
-						data:data1
-					}]
-				});
-		    }});
-	});
-	</script>
-  
-   <script type="text/javascript">
-	$(document).ready(function(){
-		 $.ajax({url: "https://storage.googleapis.com/extraction-engine/2ExtractionJSON/total.json", 
-				 
-				 	 method:"GET",
-				 success: function(result){
-					 console.log(result);
-					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
-					 	for(var i in result){
-							categories.push(result[i].asof);
-   								var name = (result[i].asof);
-   								data1.push(parseInt(result[i].ebitda));
-								}
-					 console.log(result);
-					
-			 Highcharts.chart('ebitda', {
-				    chart: {
-				        type: 'column'
-				    },
-				    title: {
-				        text: 'Expenses Report 2016'
-				    },
-				    xAxis: {
-				        categories:categories
-				    },
-				    yAxis: {
-				        min: 0,
-				        title: {
-				            text: 'Expenses'
-				        }
-				    },
-				    series: [{
-						name:"value1",
-						data:data1
-					}]
-				});
-		    }});
-	});
-	</script>
-  
-   <script type="text/javascript">
-	$(document).ready(function(){
-		 $.ajax({url: "https://storage.googleapis.com/extraction-engine/2ExtractionJSON/total.json", 
-				 method:"GET",
-				 success: function(result){
-					 console.log(result);
-					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
-					 	for(var i in result){
-							categories.push(result[i].asof);
-   								var name = (result[i].asof);
-   								data1.push(parseInt(result[i].ebt));
-								}
-					 console.log(result);
-					
-					 
-			 Highcharts.chart('ebt', {
-				    chart: {
-				        type: 'column'
-				    },
-				    title: {
-				        text: 'Expenses Report 2016'
+				        text: ''
 				    },
 				    xAxis: {
 				        categories: categories
@@ -653,8 +510,212 @@ $('.input-group.date').datepicker({
 						data:data1
 					}]
 				});
-		    }});
-	});
+		    }}
+	);
+	</script>
+	 <script type="text/javascript">
+	var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-y",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+  },
+  "processData": false,
+  /*"data": "[{\"asof\": \"2018-01-15\", \"cogs\": 20441000.0, \"companyname\": \"Nike-Y\", \"da\": 716000.0, \"ebit\": 4945000.0, \"ebitda\": 5661000.0, \"ebt\": 4886000.0, \"grossprofit\": 87359485.0, \"latest\": 1, \"netincome\": 4240000.0, \"netinterest\": 59000.0, \"otherincome\": -196000.0, \"sga\": 9651000.0, \"taxes\": 646000.0, \"totalrevenue\": 36397000.0}]"*/
+}
+
+$.ajax(settings).done(function (response){		 
+					 console.log(response);
+	  var obj = JSON.parse(response);
+					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
+					 	for(var i in obj){
+							categories.push(obj[i].asof);
+   								var name = (obj[i].asof);
+   								data1.push(parseInt(obj[i].ebit));
+					 console.log(obj);
+			  Highcharts.chart('ebit', {
+				    chart: {
+				        type: 'column'
+				    },
+				    title: {
+				        text: ''
+				    },
+				    xAxis: {
+				        categories: categories
+				          
+				    },
+				    yAxis: {
+				        min: 0,
+				        title: {
+				            text: 'Expenses'
+				        }
+				    },
+				    series: [{
+						name:"value1",
+						data:data1
+					}]
+				});
+		    }}
+	);
+	</script>
+  
+   <script type="text/javascript">
+	var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+  },
+  "processData": false,
+  /*"data": "[{\"asof\": \"2018-01-15\", \"cogs\": 20441000.0, \"companyname\": \"Nike-Y\", \"da\": 716000.0, \"ebit\": 4945000.0, \"ebitda\": 5661000.0, \"ebt\": 4886000.0, \"grossprofit\": 87359485.0, \"latest\": 1, \"netincome\": 4240000.0, \"netinterest\": 59000.0, \"otherincome\": -196000.0, \"sga\": 9651000.0, \"taxes\": 646000.0, \"totalrevenue\": 36397000.0}]"*/
+}
+
+$.ajax(settings).done(function (response){		 
+					 console.log(response);
+	  var obj = JSON.parse(response);
+					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
+					 	for(var i in obj){
+							categories.push(obj[i].asof);
+   								var name = (obj[i].asof);
+   								data1.push(parseInt(obj[i].grossprofit));
+					 console.log(obj);
+			 Highcharts.chart('grossprofit', {
+				    chart: {
+				        type: 'column'
+				    },
+				    title: {
+				        text: ''
+				    },
+				    xAxis: {
+				        categories: categories
+				          
+				    },
+				    yAxis: {
+				        min: 0,
+				        title: {
+				            text: 'Expenses'
+				        }
+				    },
+				    series: [{
+						name:"value1",
+						data:data1
+					}]
+				});
+		    }}
+	);
+	</script>
+  
+   <script type="text/javascript">
+	var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+  },
+  "processData": false,
+  /*"data": "[{\"asof\": \"2018-01-15\", \"cogs\": 20441000.0, \"companyname\": \"Nike-Y\", \"da\": 716000.0, \"ebit\": 4945000.0, \"ebitda\": 5661000.0, \"ebt\": 4886000.0, \"grossprofit\": 87359485.0, \"latest\": 1, \"netincome\": 4240000.0, \"netinterest\": 59000.0, \"otherincome\": -196000.0, \"sga\": 9651000.0, \"taxes\": 646000.0, \"totalrevenue\": 36397000.0}]"*/
+}
+
+$.ajax(settings).done(function (response){		 
+					 console.log(response);
+	  var obj = JSON.parse(response);
+					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
+					 	for(var i in obj){
+							categories.push(obj[i].asof);
+   								var name = (obj[i].asof);
+   								data1.push(parseInt(obj[i].ebitda));
+			 Highcharts.chart('ebitda', {
+				    chart: {
+				        type: 'column'
+				    },
+				    title: {
+				        text: ''
+				    },
+				    xAxis: {
+				        categories: categories
+				          
+				    },
+				    yAxis: {
+				        min: 0,
+				        title: {
+				            text: 'Expenses'
+				        }
+				    },
+				    series: [{
+						name:"value1",
+						data:data1
+					}]
+				});
+		    }}
+	);
+	</script>
+  
+   <script type="text/javascript">
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "method": "GET",
+  "headers": {
+    "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+    "content-type": "application/json",
+    "cache-control": "no-cache",
+    "postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+  },
+  "processData": false,
+  /*"data": "[{\"asof\": \"2018-01-15\", \"cogs\": 20441000.0, \"companyname\": \"Nike-Y\", \"da\": 716000.0, \"ebit\": 4945000.0, \"ebitda\": 5661000.0, \"ebt\": 4886000.0, \"grossprofit\": 87359485.0, \"latest\": 1, \"netincome\": 4240000.0, \"netinterest\": 59000.0, \"otherincome\": -196000.0, \"sga\": 9651000.0, \"taxes\": 646000.0, \"totalrevenue\": 36397000.0}]"*/
+}
+
+$.ajax(settings).done(function (response){		 
+					 console.log(response);
+	  var obj = JSON.parse(response);
+					 var categories = [], data1 = [], data2 = [], data3 = [], data4 = [];
+					 	for(var i in obj){
+							categories.push(obj[i].asof);
+   								var name = (obj[i].asof);
+   								data1.push(parseInt(obj[i].ebt));
+					 console.log(obj);
+					
+					 
+			 Highcharts.chart('ebt', {
+				    chart: {
+				        type: 'column'
+				    },
+				    title: {
+				        text: ''
+				    },
+				    xAxis: {
+				        categories: categories
+				          
+				    },
+				    yAxis: {
+				        min: 0,
+				        title: {
+				            text: 'Expenses'
+				        }
+				    },
+				    series: [{
+						name:"value1",
+						data:data1
+					}]
+				});
+		    }}
+	);
 	</script>
   
   

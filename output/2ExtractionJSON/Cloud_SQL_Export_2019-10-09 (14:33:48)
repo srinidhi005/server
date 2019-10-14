@@ -1,0 +1,98 @@
+-- MySQL dump 10.13  Distrib 5.7.14, for Linux (x86_64)
+--
+-- Host: localhost    Database: finance
+-- ------------------------------------------------------
+-- Server version	5.7.14-google-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `finance`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `finance` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `finance`;
+
+--
+-- Table structure for table `company_actuals`
+--
+
+DROP TABLE IF EXISTS `company_actuals`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `company_actuals` (
+  `companyname` varchar(255) NOT NULL,
+  `asof` date NOT NULL,
+  `latest` int(11) DEFAULT NULL,
+  `totalrevenue` double DEFAULT NULL,
+  `cogs` double DEFAULT NULL,
+  `grossprofit` double DEFAULT NULL,
+  `sga` double DEFAULT NULL,
+  `ebit` double DEFAULT NULL,
+  `da` double DEFAULT NULL,
+  `ebitda` double DEFAULT NULL,
+  `netinterest` double DEFAULT NULL,
+  `otherincome` double DEFAULT NULL,
+  `ebt` double DEFAULT NULL,
+  `taxes` double DEFAULT NULL,
+  `netincome` double DEFAULT NULL,
+  PRIMARY KEY (`companyname`,`asof`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `company_actuals`
+--
+
+LOCK TABLES `company_actuals` WRITE;
+/*!40000 ALTER TABLE `company_actuals` DISABLE KEYS */;
+INSERT INTO `company_actuals` VALUES ('Nike-Y','2018-01-15',1,36397000,20441000,15956000,9651000,4945000,716000,5661000,59000,-196000,4886000,646000,4240000),('Nike-Y','2019-01-15',2,258522,255622,554885,588585,562585,5885555,4582558,5882588,2552588,5252525,2585525,5968258),('Nike-Y','2020-01-15',2,258522,255622,554885,588585,562585,5885555,4582558,5882588,2552588,5252525,2585525,5968258),('Nike-Y','2021-01-15',4,258522,255622,554885,588585,562585,5885555,4582558,5882588,2552588,5252525,2585525,5968258),('Nike-Y','2022-01-15',5,258522,255622,554885,588585,562585,5885555,4582558,5882588,2552588,5252525,2585525,5968258);
+/*!40000 ALTER TABLE `company_actuals` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `company_master`
+--
+
+DROP TABLE IF EXISTS `company_master`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `company_master` (
+  `companyname` varchar(255) NOT NULL,
+  `company` varchar(255) DEFAULT NULL,
+  `period` varchar(1) DEFAULT NULL,
+  `actuals` int(11) DEFAULT NULL,
+  `projections` int(11) DEFAULT NULL,
+  PRIMARY KEY (`companyname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `company_master`
+--
+
+LOCK TABLES `company_master` WRITE;
+/*!40000 ALTER TABLE `company_master` DISABLE KEYS */;
+/*!40000 ALTER TABLE `company_master` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-10-09  9:04:17

@@ -52,6 +52,7 @@ passport.use(new Strategy(
           },
           raw: true
         }).then(user => {
+			console.log(user)
           if (!user) { return cb(null, false); }
           if (user.password != password) { return cb(null, false); }
           return cb(null, user);
@@ -74,7 +75,7 @@ passport.serializeUser(function(user, cb) {
 });
   
 passport.deserializeUser(function(id, cb) {
-  db.users.findById(id).then(data => {
+  db.users.findByPk(id).then(data => {
     var user = data.get({plain: true})
     cb(null, user);
   }).catch(err => {
@@ -91,7 +92,6 @@ var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
 app.use(logger('dev'));
 app.use('/public' ,express.static('public'))
 app.use('/output' ,express.static('output'))
@@ -108,7 +108,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/index', indexRouter(passport));
+app.use('/', indexRouter(passport));
 
 app.post('/upload', upload.single('file'), function (req, res, next) {
   var {company, period} = req.body;
@@ -548,7 +548,7 @@ app.get('/file_output', function(req, res, next) {
   })
 })
 
-app.get("/",function(req,res){
+app.get("/index",function(req,res){
 	res.render('index');
 })
 app.get("/index2",function(req,res){
@@ -559,7 +559,6 @@ app.get("/subscribe",function(req,res){
 })
  
 app.get("/login",function(req,res){
-
     res.render('login');
 })
 app.get("/register",function(req,res){
@@ -585,7 +584,7 @@ app.get("/connect",function(req,res){
     res.render('quickbooks');
 })
 
-app.get("/finan",function(req,res){
+app.get("/financial",function(req,res){
 	res.render('financial');
 })
 app.get("/target",function(req,res){
@@ -597,8 +596,8 @@ app.get("/actual",function(req,res){
 app.get("/adjust",function(req,res){
 	res.render('AdjustAsm');
 })
-app.get("/pdf",function(req,res){
-	res.render('pdf');
+app.get("/statement",function(req,res){
+	res.render('statements');
 })
 
 // catch 404 and forward to error handler

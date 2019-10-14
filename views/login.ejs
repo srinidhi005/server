@@ -55,7 +55,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4" style="color:skyblue">
-          <button type="submit" class="btn btn-primary btn-block btn-flat" >Sign In</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat" onclick="upload(event)" >Sign In</button>
         </div>
         <!-- /.col -->
       </div>
@@ -78,8 +78,97 @@
 <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- iCheck -->
 <script src="public/plugins/iCheck/icheck.min.js"></script>
-<script>
-
+<script type="text/javascript">
 	
-               </body>
+                function upload(ev){ 
+	ev.preventDefault();
+			var username = document.getElementById("username").value; 
+			var password = document.getElementById("password").value;
+		       var data= JSON.stringify({username, password});
+			console.log(`username is ${username} password is ${password}`);
+	var data = {username: username,password: password};
+           $.post('/login', data, function(data, status) {
+                if (data.status == 'SUCCESS') {
+                    window.location = '/index';
+                }
+            })
+	
+        	return false;
+				}
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+             /*   function upload(ev){ 
+	ev.preventDefault();
+			var username = document.getElementById("username").value; 
+			var password = document.getElementById("password").value;
+		       var data= JSON.stringify({username, password});
+			console.log(`username is ${username} password is ${password}`);
+			$.ajax({
+			type: 'POST',
+			enctype:'application/json',
+			processData:'true',
+			contentType:'true',
+			url:'/login',																				if(data)
+			{app.get("/index", (req, res) => {res.render("index")})},
+		});
+			return false;
+		};
+            		/*$.ajax({
+					type: 'POST',
+					enctype: 'application/json',
+					contentType: 'true',
+                			body: data,
+				//	dataType: 'json',
+				//	if(data){
+				//	success:function login(req, res)
+				//	{
+				//		res.render("index")
+				//	}}
+				//});
+				//(req, res) => {console.log("it is here")}//res.render("/index")};*/
+        			//};*/
+		/*var data = JSON.stringify({username: req.body.username, password: req.body.password});
+		$.ajax({
+						type: 'POST',
+						enctype: 'application/json',
+						processData: false,
+						contentType: false,
+						//data: JSON.stringify(data),
+				        //contentType: 'multipart/form-data',
+                        url: '/login',
+					 	data:data,
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+//							alert("Invalid Login Details")
+				
+					},
+    					error: function(data){
+        				alert("Failed Some Field are Missing");
+					},
+                    //});
+			
+						return false;
+				}*/
+	
+	</script>
+
+</body>
 </html>

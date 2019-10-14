@@ -8,15 +8,17 @@ var csvtojson = require('csvtojson');
 
 /* GET home page. */
 module.exports = function(passport) {
-  router.get('/index', function(req, res, next) {
-    if (req.user) {
-      res.render('index', {username: req.user.username, role: req.user.role});
-    } else {
-      res.render('login');
-    }
-  });
 
-  router.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), function(req, res) {
+		  router.get('/', function(req, res, next) {
+			      if (req.username) {
+				            res.render('index',{username: req.user.username, role: req.user.role});
+				          } else {
+						        res.render('login');
+						      }
+			    });
+
+
+	 router.post('/login', passport.authenticate('local', { failureRedirect: '/login'}), function(req, res) {
     console.log(req.user)
     console.log(req.session)
     res.status(200).json({status: "SUCCESS"});

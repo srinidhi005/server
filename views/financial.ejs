@@ -16,16 +16,18 @@
 
     
     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="/public/dist/js/highcharts.src.js"></script>
+<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
 <script src="https://rawgithub.com/highcharts/draggable-points/master/draggable-points.js"></script>
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+  <link type="text/css" rel="stylesheet" href="/public/dist/css/Graph-adjust.css">
 <div class="wrapper">
 
   <header class="main-header">
@@ -193,7 +195,7 @@
        
            
           <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
-          <li><a href="/"><i class="fa fa-circle-o" ></i> <span>KPI Dashboard</span></a></li>
+          <li><a href="/"><i class="fa fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
         
       
         <li class="treeview">
@@ -205,9 +207,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/adjust"><i class="fa fa-circle-o" ></i> Adjust Assumption</a></li>
-            <li><a href="/actual"><i class="fa fa-circle-o" ></i> Actuals</a></li>
-            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+            <li><a href="/adjust"><i class="fa fa-bar-chart-o" ></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-bar-chart-o" ></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-bar-chart-o"></i> Target v/s Actuals</a></li>
           </ul>
         </li>
           
@@ -221,7 +223,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+		  <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -245,6 +247,7 @@
       <div class="btn-group">
         <a href="#chart-container"><button type="button" style="color:black;width:50px">Visual</button></a>
           <a href="#"><button type="button" style="color:black;width:50px">Excel</button></a>
+          <a href="#"><button type="button" style="color:black;width:50px">Save</button></a>
           <a href="#"><button type="button" style="color:black;width:50px">PDF</button></a>
        
       </div>
@@ -252,7 +255,7 @@
          
          
          
-     <section class="content">
+     <section class="content" style="height: 2103px;padding-left: 0px;padding-right: 372px;border-right-width: 0px;margin-right: 90px;padding-bottom: 0px;padding-top: 9px;">
 <div class="container" style="margin-top:175px">
     <div class="row">
       <!--  <div class="col-md-12" style="margin-top: -220px;margin-right: -40px">
@@ -267,32 +270,51 @@
 			
         </div>-->
 		
+		<div class="scrollbar">
+			<!--<div id="cona2">-->
+			
+		<div class="box" id="revenuegrowth" style="width:315px"></div>
+		
+		<div class="box" id="cogs" style="width:315px" ></div>
+		<div class="box" id="SG&A" style="width:315px"></div>
+		<div class="box" id="D&A" style="width:315px"></div>
+		<div class="box" id="otheincome"style="width:315px"></div>
+		<div class="box"id="net-ie" style="width:315px"></div>
+		</div>
+		
+		
+		
 		<div id="cona">
-			<div id="cona2">
-		<div class="box one" id="revenuegrowth" style="height: 400px;width:450px"></div>
-		<div class="box two"id="cogs" style="height: 400px;width:450px"></div>
-		<div class="box three"id="SG&A" style="height: 400px;width:450px"></div>
-		<div class="box four"id="D&A" style="height: 400px;width:450px"></div>
-		<!--<div class="box one"id="otheincome" style="height: 400px;width:450px"></div>-->
-			</div>
+		<div class="box one"id="projectionOne" style="height: 300px;width: 325px;overflow: hidden;padding-left:30px">Total Revenue</div>
+		<div class="box one"id="projectionTwo" style="height: 300px;width: 325px;overflow: hidden;left:5px;right:0px">Total Revenue</div>
+		<div class="box one"id="projectionThree" style="height: 300px;width: 325px;overflow: hidden;right:0px;left:10px;right:0px"></div>
+		
+		<div class="box one"id="projectionFour" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px"></div>
+		<div class="box one"id="projectionFive" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;left:5px;right:0px"></div>
+		<div class="box one"id="projectionSix" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;left:10px;right:0px"></div>
+				</div>
+		
+
+		
 		</div>
 
         
-                
+		 
                     </div>
-        </div>
+    
          
     
     </section>
+    <hr>
     </div>
     
     </div>
- <!--   
+ 
     <script>
         
         
         
-        var button='<button class="close" type="button" title="Remove this page">Ã—</button>';
+        var button='<button class="close" type="button" title="Remove this page">×</button>';
 var tabID = 0;
 function resetTab(){
 	var tabs=$("#tab-list li:not(:first)");
@@ -307,7 +329,7 @@ function resetTab(){
 $(document).ready(function() {
     $('#btn-add-tab').click(function() {
         tabID++;
-        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">Ã—</button></a></li>'));
+        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">×</button></a></li>'));
         $('#tab-content').append($('<div class="tab-pane fade" id="chart-container' + tabID + '">Custom Senario ' + tabID + ' content</div>'));
         $(".edit").click(editHandler);
     });
@@ -358,7 +380,60 @@ $(".edit").click(editHandler);
     <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
 
 	<script>
-	
+
+	var previousAmount =36397000;
+	var obj = new Map();
+	obj.set("2019",{"oldTotalRevenue" : 36397000, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
+	obj.set("2020",{"oldTotalRevenue" : 38580820, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
+	obj.set("2021",{"oldTotalRevenue" : 40895669, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
+	obj.set("2022",{"oldTotalRevenue" : 43349409, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
+	let tempLastYearTotalRevenue = 0;
+	var yearsArray = ["2019","2020","2021","2022"];
+	for (const [key, value] of obj) {
+		if(key === yearsArray[0]){
+			obj.get(key).oldTotalRevenue = previousAmount;
+		}
+		
+		obj.get(key).totalRevenue = Math.round(obj.get(key).oldTotalRevenue + (obj.get(key).oldTotalRevenue * (obj.get(key).revenueGrowth/100)));
+		obj.get(key).p_COGS = Math.round(obj.get(key).totalRevenue * (obj.get(key).COGS/100));
+		obj.get(key).p_GrossProfit = Math.round(obj.get(key).totalRevenue - obj.get(key).p_COGS);
+		obj.get(key).p_SGAndA = Math.round(obj.get(key).totalRevenue * (obj.get(key).SGAndA/100));
+		obj.get(key).p_EBIT = Math.round(obj.get(key).p_GrossProfit - obj.get(key).p_SGAndA);
+		obj.get(key).p_DAndA = Math.round(obj.get(key).totalRevenue * (obj.get(key).DAndA/100));
+		obj.get(key).p_EBITDA = Math.round(obj.get(key).p_EBIT + obj.get(key).p_DAndA);
+		obj.get(key).p_NIE = obj.get(key).netIterestExpense;
+		obj.get(key).p_OIOrE = Math.round(obj.get(key).totalRevenue * (obj.get(key).otherIncomeOrExpense/100));
+		obj.get(key).p_EBT = Math.round(obj.get(key).p_EBIT - obj.get(key).p_NIE - obj.get(key).p_OIOrE);
+		obj.get(key).p_taxes = Math.round(obj.get(key).p_EBT * (obj.get(key).taxes/100));
+		obj.get(key).p_NetInCome = obj.get(key).p_EBT - obj.get(key).p_taxes;
+		
+	}
+		
+$(function(){	
+    var line,
+    clickX,
+    clickY;
+
+    var start = function (e) {
+
+        $(document).bind({
+            'mousemove.line': step,
+                'mouseup.line': stop
+        });
+        clickY = e.pageY - line.translateY;
+    }
+
+    var step = function (e) {
+        line.translate(e.pageX - clickX, e.pageY - clickY)
+    }
+
+    var stop = function (e) {
+        var chart =  $('#revenuegrowth').highcharts(),
+            newVal = chart.yAxis[0].toValue(e.pageY - clickY + chart.plotLeft) + chart.yAxis[0].plotLinesAndBands[0].options.value;
+        console.log(chart.yAxis[0].plotLinesAndBands);
+        $("#report").text("Value: " + newVal);
+        $(document).unbind('.line');
+    }
 	var chart = new Highcharts.Chart({
 
     chart: {
@@ -367,29 +442,27 @@ $(".edit").click(editHandler);
     },
     
     title: {
-        text: 'REVENUE GROWTH'
+        text: 'Revenue Growth'
     },
 
     xAxis: {
-        categories: ["may2017","may2018","may2019","may2020","may2021"]
+        categories: yearsArray
     },
+		yAxis: {
+			min : -50,
+			max : 50,
+			title: {
+				text : 'In Percentage %'
+			}
+		},
 
     plotOptions: {
         series: {
             point: {
                 events: {
-
-                    drag: function (e) {
-                        // Returning false stops the drag and drops. Example:
-                        /*
-                        if (e.newY > 300) {
-                            this.y = 300;
-                            return false;
-                        }
-                        */
-   
-                    },
-                    drop: function () {  
+                    drag: function (e) {},
+                    drop: function (e) {  
+					updateP_TotalRevenueChart(e.y,e.target.category,e.x);
                     }
                 }
             },
@@ -408,20 +481,37 @@ $(".edit").click(editHandler);
     },
 
     series: [{
-        data: [0, 71.5, 106.4, 129.2, 144.0],
+	    name:'',
+        data: [obj.get(yearsArray[0]).revenueGrowth,obj.get(yearsArray[1]).revenueGrowth,obj.get(yearsArray[2]).revenueGrowth,obj.get(yearsArray[3]).revenueGrowth],
         //draggableX: true,
         draggableY: true,
-        dragMinY: 0,
+        dragMinY: -50,
+        dragMaxY: 50,
         type: 'column',
         minPointLength: 2
-    }
-    ]
+    }]
 
+},
+function (chart) {
+
+        console.log(chart.yAxis[0].plotLinesAndBands[0]);
+
+        line = chart.xAxis[0].plotLinesAndBands[0].Elem.attr({
+            stroke: 'yellow'
+        })
+            .css({
+            'cursor': 'pointer'
+        })
+            .translate(0, 0)
+            .on('mousedown', start);
+
+
+    });
 });
 	</script>
 	<script>
 	
-	var chart = new Highcharts.Chart({
+	COGS = new Highcharts.Chart({
 
     chart: {
         renderTo: 'cogs',
@@ -433,25 +523,26 @@ $(".edit").click(editHandler);
     },
 
     xAxis: {
-        categories: ["may2017","may2018","may2019","may2020","may2021"]
+        categories: yearsArray
     },
+		yAxis: {
+			allowDecimals:false,
+			min : 0,
+			max : 100,
+			
+			title : {
+				text:'Percentage of Revenue'
+			}
+		},
 
     plotOptions: {
         series: {
             point: {
                 events: {
 
-                    drag: function (e) {
-                        // Returning false stops the drag and drops. Example:
-                        /*
-                        if (e.newY > 300) {
-                            this.y = 300;
-                            return false;
-                        }
-                        */
-   
-                    },
-                    drop: function () {  
+                    drag: function (e) {},
+                    drop: function () { 
+						updatedCOGSChart(e.y,e.target.category,e.x);					
                     }
                 }
             },
@@ -470,10 +561,13 @@ $(".edit").click(editHandler);
     },
 
     series: [{
-        data: [0, 71.5, 106.4, 129.2, 144.0],
+	    name: '',
+        data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
+        dragMaxY: 100,
+		
         type: 'column',
         minPointLength: 2
     }
@@ -481,7 +575,79 @@ $(".edit").click(editHandler);
 
 });
 	</script>
+   <script>
    
+   chartChandu = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'cogs',
+        animation: false
+    },
+    
+    title: {
+        text: 'COGS'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+		yAxis: {
+			min : 0,
+			max : 100,
+			title : {
+				text:'Percentage of Revenue'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function (e) {  
+						updatedCOGSChart(e.y,e.target.category,e.x);
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name: '',
+        data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        dragMaxY: 100,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+   
+   </script>
 	<script>
 	
 	var chart = new Highcharts.Chart({
@@ -496,8 +662,15 @@ $(".edit").click(editHandler);
     },
 
     xAxis: {
-        categories: ["may2017","may2018","may2019","may2020","may2021"]
+        categories: yearsArray
     },
+		yAxis:{
+			min : 0,
+			max : 100,
+			title:{
+				text: 'Percentage of Revenue'
+			}
+		},
 
     plotOptions: {
         series: {
@@ -514,7 +687,8 @@ $(".edit").click(editHandler);
                         */
    
                     },
-                    drop: function () {  
+                    drop: function (e) {  
+						updatedSGAndAChart(e.y,e.target.category,e.x);
                     }
                 }
             },
@@ -533,10 +707,12 @@ $(".edit").click(editHandler);
     },
 
     series: [{
-        data: [0, 71.5, 106.4, 129.2, 144.0],
+	    name:'',
+        data: [obj.get(yearsArray[0]).SGAndA,obj.get(yearsArray[1]).SGAndA,obj.get(yearsArray[2]).SGAndA,obj.get(yearsArray[3]).SGAndA],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
+        dragMaxY: 100,
         type: 'column',
         minPointLength: 2
     }
@@ -559,8 +735,15 @@ $(".edit").click(editHandler);
     },
 
     xAxis: {
-        categories: ["may2017","may2018","may2019","may2020","may2021"]
+        categories: yearsArray
     },
+		yAxis:{
+			min: 0,
+			max: 100,
+			title:{
+				text:'Percentage of Revenue'
+			}
+		},
 
     plotOptions: {
         series: {
@@ -577,7 +760,8 @@ $(".edit").click(editHandler);
                         */
    
                     },
-                    drop: function () {  
+                    drop: function (e) {
+		    	updatedDAndAChart(e.y,e.target.category,e.x);					
                     }
                 }
             },
@@ -596,10 +780,12 @@ $(".edit").click(editHandler);
     },
 
     series: [{
-        data: [0, 71.5, 106.4, 129.2, 144.0],
+	    name:'',
+        data: [obj.get(yearsArray[0]).DAndA,obj.get(yearsArray[1]).DAndA,obj.get(yearsArray[2]).DAndA,obj.get(yearsArray[3]).DAndA],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
+        dragMaxY: 100,
         type: 'column',
         minPointLength: 2
     }
@@ -617,12 +803,88 @@ $(".edit").click(editHandler);
     },
     
     title: {
-        text: 'OtherIncome'
+        text: 'Other Income / Expense'
     },
 
     xAxis: {
-        categories: ["may2017","may2018","may2019","may2020","may2021"]
+        categories: yearsArray
     },
+		yAxis:{
+			min:-50,
+			max:50,
+			title:{
+				text:'Percentage of Revenue'
+			}
+		},
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function (e) {  
+						updatedOtherIncomeChart(e.y,e.target.category,e.x);
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name:'',
+        data: [obj.get(yearsArray[0]).otherIncomeOrExpense,obj.get(yearsArray[1]).otherIncomeOrExpense,obj.get(yearsArray[2]).otherIncomeOrExpense,obj.get(yearsArray[3]).otherIncomeOrExpense],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: -50,
+        dragMaxY: 50,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+        <script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'net-ie',
+        animation: false
+    },
+    
+    title: {
+        text: 'Net Interest Expense'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+		yAxis: {
+			title: {
+				text:'USD'
+			}
+		},
 
     plotOptions: {
         series: {
@@ -658,7 +920,8 @@ $(".edit").click(editHandler);
     },
 
     series: [{
-        data: [0, 71.5, 106.4, 129.2, 144.0],
+	    name:'',
+        data: [obj.get(yearsArray[0]).netIterestExpense,obj.get(yearsArray[1]).netIterestExpense,obj.get(yearsArray[2]).netIterestExpense,obj.get(yearsArray[3]).netIterestExpense],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
@@ -668,7 +931,713 @@ $(".edit").click(editHandler);
     ]
 
 });
-	</script>
+
+
+</script>
+
+
+<script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'taxes',
+        animation: false
+    },
+    
+    title: {
+        text: 'Taxes ($)'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+	yAxis : {
+		title : {
+			text : 'In USD $'
+		}
+	},
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	name: '',
+        data: [30, 30.5, 30.4, 30.2],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+<script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'actualstotalrevenue',
+        animation: false
+    },
+    
+    title: {
+       text: ''
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 100,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+        data: [25, 25, 25, 50],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+
+<script>
+
+        var p_totalRevenueChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'projectionOne',
+        animation: false
+    },
+    
+    title: {
+       text: 'Total Revenue'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 100000000,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+		data: [obj.get(yearsArray[0]).totalRevenue,obj.get(yearsArray[1]).totalRevenue,obj.get(yearsArray[2]).totalRevenue,obj.get(yearsArray[3]).totalRevenue],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+
+
+
+<script>
+
+        var p_grossProfitChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'projectionTwo',
+        animation: false
+    },
+    
+    title: {
+       text: 'Gross Profit'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 100000000,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+        data: [obj.get(yearsArray[0]).p_GrossProfit,obj.get(yearsArray[1]).p_GrossProfit,obj.get(yearsArray[2]).p_GrossProfit,obj.get(yearsArray[3]).p_GrossProfit],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+
+	<script>
+
+        var p_EBITChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'projectionThree',
+        animation: false
+    },
+    
+    title: {
+       text: 'EBIT'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 50000000,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',        
+		data: [obj.get(yearsArray[0]).p_EBIT,obj.get(yearsArray[1]).p_EBIT,obj.get(yearsArray[2]).p_EBIT,obj.get(yearsArray[3]).p_EBIT],
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+	<script>
+
+        var p_EBITDAChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'projectionFour',
+        animation: false
+    },
+    
+    title: {
+       text: 'EBITDA'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 50000000,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+		data: [obj.get(yearsArray[0]).p_EBITDA,obj.get(yearsArray[1]).p_EBITDA,obj.get(yearsArray[2]).p_EBITDA,obj.get(yearsArray[3]).p_EBITDA],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+	<script>
+
+        var p_EBTChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'projectionFive',
+        animation: false
+    },
+    
+    title: {
+       text: 'EBT'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 50000000,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+        data: [obj.get(yearsArray[0]).p_EBT,obj.get(yearsArray[1]).p_EBT,obj.get(yearsArray[2]).p_EBT,obj.get(yearsArray[3]).p_EBT],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+	<script>
+
+        var p_NetInComeArrayChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'projectionSix',
+        animation: false
+    },
+    
+    title: {
+       text: 'Net Income'
+    },
+
+    xAxis: {
+        categories: yearsArray
+    },
+        yAxis : {
+		min : 0,
+		max : 50000000,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+         data: [obj.get(yearsArray[0]).p_NetInCome,obj.get(yearsArray[1]).p_NetInCome,obj.get(yearsArray[2]).p_NetInCome,obj.get(yearsArray[3]).p_NetInCome],
+       //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+	<script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'actualsebt',
+        animation: false
+    },
+    
+    title: {
+       text: ''
+    },
+
+    xAxis: {
+        categories: ["may312017","may312018","may312019","may312020"]
+    },
+        yAxis : {
+		min : 0,
+		max : 100,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: '',
+        data: [25, 25, 25, 25],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+
+function updateP_TotalRevenueChart(x,y,index){
+	obj.get(y).revenueGrowth = x;
+	let flag = false;
+	let lastYearTotalRevenue = 0;
+	for (const [key, value] of obj) {
+		if(flag){
+			obj.get(key).oldTotalRevenue = lastYearTotalRevenue;
+			obj.get(key).totalRevenue = obj.get(key).oldTotalRevenue + (obj.get(key).oldTotalRevenue * (obj.get(key).revenueGrowth/100));
+			lastYearTotalRevenue = obj.get(key).totalRevenue;
+		}
+		if(key === y){
+			obj.get(key).totalRevenue = obj.get(key).oldTotalRevenue + (obj.get(key).oldTotalRevenue * (obj.get(key).revenueGrowth/100));
+			lastYearTotalRevenue = obj.get(key).totalRevenue;
+			flag = true;
+		} 
+		
+	}
+	updateProjection();
+}
+
+function updatedCOGSChart(x,y,index){
+
+	obj.get(y).COGS = x;
+	updateProjection();
+}
+function updatedCOGSChart1(x,y,index){
+	obj.get(y).COGS = x;
+	updateProjection();
+}
+function updatedSGAndAChart(x,y,index){
+	obj.get(y).SGAndA = x;
+	updateProjection();
+}
+function updatedDAndAChart(x,y,index){
+	obj.get(y).DAndA = x;
+	updateProjection();
+}
+function updatedOtherIncomeChart(x,y,index){
+	obj.get(y).otherIncomeOrExpense = x;
+	updateProjection();
+}
+
+function updateProjection(){
+	let totalRevenueArray = [];
+	let p_GrossProfitArray = [];
+	let p_EBITArray = [];
+	let p_EBITDAArray = [];
+	let p_EBTArray = [];
+	let p_NetInComeArray =[];
+	for (const [key, value] of obj) {
+			obj.get(key).p_COGS = Math.round(obj.get(key).totalRevenue * (obj.get(key).COGS/100));
+			obj.get(key).p_GrossProfit = Math.round(obj.get(key).totalRevenue - obj.get(key).p_COGS);
+			obj.get(key).p_SGAndA = Math.round(obj.get(key).totalRevenue * (obj.get(key).SGAndA/100));
+			obj.get(key).p_EBIT = Math.round(obj.get(key).p_GrossProfit - obj.get(key).p_SGAndA);
+			obj.get(key).p_DAndA = Math.round(obj.get(key).totalRevenue * (obj.get(key).DAndA/100));
+			obj.get(key).p_EBITDA = Math.round(obj.get(key).p_EBIT + obj.get(key).p_DAndA);
+			obj.get(key).p_NIE = obj.get(key).netIterestExpense;
+			obj.get(key).p_OIOrE = Math.round(obj.get(key).totalRevenue * (obj.get(key).otherIncomeOrExpense/100));
+			obj.get(key).p_EBT = Math.round(obj.get(key).p_EBIT - obj.get(key).p_NIE - obj.get(key).p_OIOrE);
+			obj.get(key).p_taxes = Math.round(obj.get(key).p_EBT * (obj.get(key).taxes/100));
+			obj.get(key).p_NetInCome = obj.get(key).p_EBT - obj.get(key).p_taxes;
+			
+			totalRevenueArray.push(obj.get(key).totalRevenue);
+			p_GrossProfitArray.push(obj.get(key).p_GrossProfit);
+			p_EBITArray.push(obj.get(key).p_EBIT);
+			p_EBITDAArray.push(obj.get(key).p_EBITDA);
+			p_EBTArray.push(obj.get(key).p_EBT);
+			p_NetInComeArray.push(obj.get(key).p_NetInCome);
+	}
+	
+	p_totalRevenueChart.series[0].update({data: totalRevenueArray});
+	p_grossProfitChart.series[0].update({data: p_GrossProfitArray});
+	p_EBITChart.series[0].update({data:p_EBITArray});
+	p_EBITDAChart.series[0].update({data:p_EBITDAArray});
+	p_EBTChart.series[0].update({data:p_EBTArray});
+	p_NetInComeArrayChart.series[0].update({data:p_NetInComeArray});
+}
+</script>
+	
     </body>
 </html>
   

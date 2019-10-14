@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RMI/INSIGHTS |Dashboard</title>
+ 
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/public/dist/js/highcharts.src.js"></script>
+<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
+<script src="https://rawgithub.com/highcharts/draggable-points/master/draggable-points.js"></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+  <link type="text/css" rel="stylesheet" href="/public/dist/css/Graph-adjust.css">
+<div class="wrapper">
+
+  <header class="main-header">
+   
+    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      
+      <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
+     
+      <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
+    </a>
+    
+        
+     
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      
+    <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
+        <span class="sr-only">Toggle navigation</span>
+   </a>-->
+        <div class="pull-right">
+            
+<ul class="nav navbar-nav">
+    <h2><li class="logoo"></li></h2>
+            </ul>
+        
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav" >
+            
+            
+                <li class="dropdown user user-menu">
+            <div>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              <a href="/subscribe" class="btn btn-primary" style="width:250px;height:40px;margin-top:5px">Subscription Type (90 days left)</a>
+                     
+            </a>
+             
+                </div>          
+              
+              
+    
+          </li>
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome report?</p>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 2 notifications</li>
+              <li>
+               
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                 
+                  
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+        
+               <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears" style="color:white"></i></a>
+          </li>
+                      <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" style="color:white"style="color:white">
+              <img src="\Public\dist\img\user.png" class="user-image" alt="User Image">
+             <span> </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+
+                <p>
+                  
+                  <small>CEO</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                 
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+ 
+   <aside class="main-sidebar"> 
+    <section class="sidebar"> 
+     
+      <ul class="sidebar-menu" data-widget="tree">
+       
+           
+          <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
+          <li><a href="/"><i class="fa  fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
+        
+      
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i>
+            <span>Monthly Budget</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/adjust"><i class="fa fa-bar-chart-o" ></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-bar-chart-o" ></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-bar-chart-o"></i> Target v/s Actuals</a></li>
+          </ul>
+        </li>
+          
+          
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i>
+            <span>Financial Model</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/finan"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
+          
+          </ul>
+        </li>
+  
+           <li ><a href="/source"><i class="fa fa-paperclip"></i><span>Valuations</span></a></li>
+             
+                 
+        
+           
+      </ul>
+    </section>
+
+  </aside>        
+     <div class="content-wrapper">
+    
+         <section class="content-header">
+      <h1 style="color:#3c8dbc;text-align:left">
+    
+        Statements
+      </h1>
+      
+    </section>
+         
+         
+         
+     <section class="content" style="height: 2103px;padding-left: 0px;padding-right: 372px;border-right-width: 0px;margin-right: 90px;padding-bottom: 0px;padding-top: 9px;">
+<div class="container">
+    <div class="row">
+    
+		
+	<div>
+		<table class="table" border="1" id="tab2">
+  <thead class="thead-dark">
+    <tr>
+        <th scope="col"  style="text-align:center;padding-right:5px;width:40px;fontWeight: bold">No.</th>
+      <th scope="col"  style="text-align:center;padding-right:10px;width:40px;fontWeight: bold">Company Name</th>
+      <th scope="col"  style="text-align:center;padding-right:10px;width:40px;fontWeight: bold">Period</th>
+      <th scope="col"  style="text-align:center;padding-right:20px;width:40px;fontWeight: bold">Created By</th>
+       <th scope="col"  style="text-align:center;padding-right:20px;width:40px;fontWeight: bold">Submitted On</th>
+	 <th scope="col"  style="text-align:center;padding-right:180px;width:100px;fontWeight: bold">Title</th>
+    </tr>
+  </thead>
+		</table>
+		
+        <!--<li className="flex-row" style="borderBottom: 1px solid #c7c7c7">
+            <p style="width: 40px; textAlign: center; fontWeight: bold">No.</p>
+            <p style="marginLeft: 20px; flex: 1; textAlign: center; fontWeight: bold">Company</p>
+            <p style="marginLeft: 20px; flex: 1; textAlign: center;fontWeight: bold">Period</p>
+            <p style="marginLeft: 20px; flex: 1; textAlign: center; fontWeight: bold">User</p>
+            <p style="marginLeft: 20px; flex: 2; textAlign: center; fontWeight: bold">Submitted On</p>
+            <p style="marginLeft: 20px; flex: 2 textAlign: center; fontWeight: bold">Title</p>
+        </li>-->
+ <!--       <ul className="files-list">
+            {Array.isArray(props.statements) && props.statements.length > 0 ? props.statements.map((el, index) => {
+                var bgColor = 'orange';
+                if (el.status == 'Error') {
+                    bgColor = '#cb3d3d';
+                } else if (el.status != 'Processing') {
+                    bgColor = el.status == 'Extracted' ? '#2370d5' : 'green'
+                }
+                return (
+                    <li className="flex-row" style={{alignItems: 'center'}} onClick={() => props.fetchFileData(el, index)} key={index}>
+                        <div style="position: relative">
+                            {props.statementRowIndex == index ? <ClipLoader
+                                css={{position: 'absolute', left: '36px', top: '-5px'}}
+                                sizeUnit={"px"}
+                                size={20}
+                                color={'blue'}
+                                loading={true}
+                                />:null}
+                        </div>
+                        <p style="margin: 4px; width: 40px, textAlign: center, color: #4a4545">{index+1}</p>
+                        <p style="margin: 4px; marginLeft: 20px; flex: 1; textAlign: center; color: #4a4545">{el.company}</p>
+                        <p style="margin: 4px; marginLeft: 20px; flex: 1; textAlign: center; color: #4a4545">{el.period}</p>
+                        <p style="margin: 4px; marginLeft: 20px; flex: 1; textAlign: center; color: #4a4545">{el.username}</p>
+                        <p style="margin: 4px; marginLeft: 20px; flex: 2; textAlign: center; color: #4a4545">{el.created_at}</p>
+                        <div style="display: flex; flexDirection: 'row'; alignItems: center; marginLeft: 20px; flex: 1">
+                            <p style="margin: 0; background: bgColor; color: 'white'; padding: 2px 4px; borderRadius: 4px">{el.status}</p>
+                            {el.status == 'Processing' ? <ClipLoader
+                                // css={{position: 'absolute', left: '36px', top: '14px'}}
+                                sizeUnit={"px"}
+                                size={16}
+                                color={'blue'}
+                                loading={true}
+                                />:null}
+                        </div>
+                        <p style="margin: 4px; marginLeft: 20px; flex: 2; textAlign: center; color: #4a4545">{el.filename}</p>
+                    </li>
+                )}) : <p style="textAlign: center">NO DATA</p>}
+        </ul>-->
+    </div>
+
+
+        
+                
+                    </div>
+        </div>
+         
+    
+    </section>
+    <hr>
+    </div>
+    
+    </div>
+ <!--   
+    <script>
+        
+        
+        
+        var button='<button class="close" type="button" title="Remove this page">×</button>';
+var tabID = 0;
+function resetTab(){
+	var tabs=$("#tab-list li:not(:first)");
+	var len=1
+	$(tabs).each(function(k,v){
+		len++;
+		$(this).find('a').html('Tab ' + len + button);
+	})
+	tabID--;
+}
+
+$(document).ready(function() {
+    $('#btn-add-tab').click(function() {
+        tabID++;
+        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">×</button></a></li>'));
+        $('#tab-content').append($('<div class="tab-pane fade" id="chart-container' + tabID + '">Custom Senario ' + tabID + ' content</div>'));
+        $(".edit").click(editHandler);
+    });
+    
+    $('#tab-list').on('click', '.close', function() {
+        var tabID = $(this).parents('a').attr('href');
+        $(this).parents('li').remove();
+        $(tabID).remove();
+
+        //display first tab
+        var tabFirst = $('#tab-list a:first');
+        resetTab();
+        tabFirst.tab('show');
+    });
+
+    var list = document.getElementById("tab-list");
+});
+
+var editHandler = function() {
+  var t = $(this);
+  t.css("visibility", "hidden");
+  $(this).prev().attr("contenteditable", "true").focusout(function() {
+    $(this).removeAttr("contenteditable").off("focusout");
+    t.css("visibility", "visible");
+  });
+};
+
+$(".edit").click(editHandler);
+
+</script>
+            -->
+         <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/dist/js/rmi.min.js"></script>
+<script src="/public/dist/js/demo.js"></script>
+    
+    
+    <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+	
+	<script>
+		$.ajax({
+    url: 'http://34.67.197.111/statements',
+    type: "GET",
+    dataType: "json",
+    success: function(data, textStatus, jqXHR) {
+        // since we are using jQuery, you don't need to parse response
+        drawTable(data);
+    }
+});
+
+function drawTable(data) {
+	console.log(data);
+    for (var i = 0; i < data.length; i++) {
+        drawRow(data[i]);
+    }
+}
+
+function drawRow(rowData) {
+    var row = $("<tr />")
+    $("#personDataTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    row.append($("<td>" + rowData.id + "</td>"));
+    row.append($("<td>" + rowData.company + "</td>"));
+    row.append($("<td>" + rowData.period + "</td>"));
+	row.append($("<td>" + rowData.username + "</td>"));
+	row.append($("<td>" + rowData.created_at + "</td>"));
+	row.append($("<td>" + rowData.filename + "</td>"));
+	
+	
+}
+
+
+		
+		
+		
+	   /* $.ajax({
+    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/statement.json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (data) {
+		  drawTable(data);
+	}
+		});
+		function drawTable(data) {
+    for (var i = 0; i < data.length; i++) {
+        drawRow(data[i]);
+    }
+}
+		function drawRow(rowData) {
+    var row = $("<tr />")
+    $("#tab2").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    row.append($("<td>" + rowData.id + "</td>"));
+    row.append($("<td>" + rowData.company+ "</td>"));
+    row.append($("<td>" + rowData.lastName + "</td>"));
+}
+      */
+	</script>
+		
+    </body>
+</html>
+  

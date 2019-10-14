@@ -3,14 +3,48 @@
      
      
      
+	 
+	 
+	.scrollbar{
+    padding:20px;
+    border:dotted 0px;
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+.box {
+    width:50%;
+    height:325px;
+    background-color: red;
+    margin:10px;
+    display:inline-block
+}
+	 
      
      
      
      
+     table {
+    counter-reset: tableCount;     
+}
+.counterCell:before {              
+    content: counter(tableCount); 
+    counter-increment: tableCount; 
+}
      
      
      
-     
+
+	 
+	 
+div.scroll
+{
+background-color:#00FFFF;
+height:40px;
+overflow-x:scroll;
+white-space: nowrap;
+}
+	 
      
      
      

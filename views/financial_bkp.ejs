@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RMI/INSIGHTS |Dashboard</title>
+ 
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="/public/dist/css/Rmi.min.css">
+  <link rel="stylesheet" href="/public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/public/dist/js/highcharts.src.js"></script>
+<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
+<script src="https://rawgithub.com/highcharts/draggable-points/master/draggable-points.js"></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+  <link type="text/css" rel="stylesheet" href="/public/dist/css/Graph-adjust.css">
+<div class="wrapper">
+
+  <header class="main-header">
+   
+    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      
+      <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
+     
+      <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
+    </a>
+    
+        
+     
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      
+    <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
+        <span class="sr-only">Toggle navigation</span>
+   </a>-->
+        <div class="pull-right">
+            
+<ul class="nav navbar-nav">
+    <h2><li class="logoo"></li></h2>
+            </ul>
+        
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav" >
+            
+            
+                <li class="dropdown user user-menu">
+            <div>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+              <a href="/subscribe" class="btn btn-primary" style="width:250px;height:40px;margin-top:5px">Subscription Type (90 days left)</a>
+                     
+            </a>
+             
+                </div>          
+              
+              
+    
+          </li>
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome report?</p>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">2</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 2 notifications</li>
+              <li>
+               
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                 
+                  
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+        
+               <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears" style="color:white"></i></a>
+          </li>
+                      <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" style="color:white"style="color:white">
+              <img src="\Public\dist\img\user.png" class="user-image" alt="User Image">
+             <span> </span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="\Public\dist\img\user.png" class="img-circle" alt="User Image">
+
+                <p>
+                  
+                  <small>CEO</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                 
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+ 
+   <aside class="main-sidebar"> 
+    <section class="sidebar"> 
+     
+      <ul class="sidebar-menu" data-widget="tree">
+       
+           
+          <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
+          <li><a href="/"><i class="fa fa-circle-o" ></i> <span>KPI Dashboard</span></a></li>
+        
+      
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i>
+            <span>Monthly Budget</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/adjust"><i class="fa fa-circle-o" ></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o" ></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
+          </ul>
+        </li>
+          
+          
+          <li class="treeview">
+          <a href="#">
+            <i class="fa fa-desktop"></i>
+            <span>Financial Model</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/finan"> Adjust Financial Model Drivers</a></li>
+          
+          </ul>
+        </li>
+  
+           <li ><a href="/source"><i class="fa fa-paperclip"></i><span>Valuations</span></a></li>
+             
+                 
+        
+           
+      </ul>
+    </section>
+
+  </aside>        
+     <div class="content-wrapper">
+    
+         <section class="content-header">
+      <h1 style="color:#3c8dbc;text-align:left">
+     Adjust Financial Model Drivers
+        
+      </h1>
+      <div class="btn-group">
+        <a href="#chart-container"><button type="button" style="color:black;width:50px">Visual</button></a>
+          <a href="#"><button type="button" style="color:black;width:50px">Excel</button></a>
+          <a href="#"><button type="button" style="color:black;width:50px">Save</button></a>
+          <a href="#"><button type="button" style="color:black;width:50px">PDF</button></a>
+       
+      </div>
+    </section>
+         
+         
+         
+     <section class="content" style="height: 2103px;padding-left: 0px;padding-right: 372px;border-right-width: 0px;margin-right: 90px;padding-bottom: 0px;padding-top: 9px;">
+<div class="container" style="margin-top:175px">
+    <div class="row">
+      <!--  <div class="col-md-12" style="margin-top: -220px;margin-right: -40px">
+            <p>
+                <button id="btn-add-tab" type="button" class="btn btn-primary pull-right" style="margin-right:-120px">Add Senario</button>
+            </p>
+             Nav tabs 
+            <ul id="tab-list" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#chart-container1" role="tab" data-toggle="tab" style="margin-left: 70px"><span>Basic Historic Ratio </span><span class="glyphicon glyphicon-pencil text-muted edit"></span></a></li>
+                                
+            </ul>
+			
+        </div>-->
+		
+		<div id="cona">
+			<div id="cona2">
+		<div class="box one" id="revenuegrowth" style="height: 400px;width:450px"></div>
+		<div class="box two"id="cogs" style="height: 400px;width: 450px;overflow: hidden;right: 0px;left: 468px;bottom: 422px;"></div>
+		<div class="box three"id="SG&A" style="height: 400px;width: 450px;overflow: hidden;bottom: 841px;left: 932px;"></div>
+		<div class="box four"id="D&A" style="height: 400px;width: 450px;overflow: hidden;bottom: 844px;"></div>
+		<div class="box five"id="otheincome" style="height: 400px;width: 450px;overflow: hidden;bottom: 1265px;right: 0px;left: 469px;"></div>
+		<div class="box six"id="net-ie" style="height: 400px;width: 450px;overflow: hidden;bottom: 1685px;right: 0px;left: 935px;"></div>
+		<div class="box seven"id="taxes" style="height: 400px;width: 450px;overflow: hidden;bottom: 1687px;"></div>
+		<div class="box eight"id="actuals" style="height: 400px;width: 450px;overflow: hidden;bottom: 1687px;"></div>
+			</div>
+		</div>
+
+        
+                
+                    </div>
+        </div>
+         
+    
+    </section>
+    <hr>
+    </div>
+    
+    </div>
+ <!--   
+    <script>
+        
+        
+        
+        var button='<button class="close" type="button" title="Remove this page">×</button>';
+var tabID = 0;
+function resetTab(){
+	var tabs=$("#tab-list li:not(:first)");
+	var len=1
+	$(tabs).each(function(k,v){
+		len++;
+		$(this).find('a').html('Tab ' + len + button);
+	})
+	tabID--;
+}
+
+$(document).ready(function() {
+    $('#btn-add-tab').click(function() {
+        tabID++;
+        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">×</button></a></li>'));
+        $('#tab-content').append($('<div class="tab-pane fade" id="chart-container' + tabID + '">Custom Senario ' + tabID + ' content</div>'));
+        $(".edit").click(editHandler);
+    });
+    
+    $('#tab-list').on('click', '.close', function() {
+        var tabID = $(this).parents('a').attr('href');
+        $(this).parents('li').remove();
+        $(tabID).remove();
+
+        //display first tab
+        var tabFirst = $('#tab-list a:first');
+        resetTab();
+        tabFirst.tab('show');
+    });
+
+    var list = document.getElementById("tab-list");
+});
+
+var editHandler = function() {
+  var t = $(this);
+  t.css("visibility", "hidden");
+  $(this).prev().attr("contenteditable", "true").focusout(function() {
+    $(this).removeAttr("contenteditable").off("focusout");
+    t.css("visibility", "visible");
+  });
+};
+
+$(".edit").click(editHandler);
+
+</script>
+            -->
+         <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/dist/js/rmi.min.js"></script>
+<script src="/public/dist/js/demo.js"></script>
+    
+    
+    <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'revenuegrowth',
+        animation: false
+    },
+    
+    title: {
+        text: 'Revenue Growth'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+		yAxis: {
+			min : 0,
+			max : 100,
+			title: {
+				text : 'In Percentage %'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name:'',
+        data: [25.0, 25.0, 25.0, 25.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        dragMaxY: 100,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'cogs',
+        animation: false
+    },
+    
+    title: {
+        text: 'COGs'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+		yAxis: {
+			min : 0,
+			max : 100,
+			title : {
+				text:'Percentage of Revenue'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name: '',
+        data: [50.0, 50.0, 50.0, 50.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        dragMaxY: 100,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+   
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'SG&A',
+        animation: false
+    },
+    
+    title: {
+        text: 'SG&A'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+		yAxis:{
+			min : 0,
+			max : 100,
+			title:{
+				text: 'In Percentage %'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name:'',
+        data: [50.0, 50.0, 50.0, 50.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        dragMaxY: 100,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+   
+    <script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'D&A',
+        animation: false
+    },
+    
+    title: {
+        text: 'D&A'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+		yAxis:{
+			min: 0,
+			max: 100,
+			title:{
+				text:'In Percentage %'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name:'',
+        data: [50.0, 50.0, 50.0, 50.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        dragMaxY: 100,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+	<script>
+	
+	var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'otheincome',
+        animation: false
+    },
+    
+    title: {
+        text: 'Other Income (Revenue)'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+		yAxis:{
+			min:0,
+			max:100,
+			title:{
+				text:'In Percentage %'
+			}
+		},
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: ''
+        }
+    },
+
+    tooltip: {
+        yDecimals: 1
+    },
+
+    series: [{
+	    name:'',
+        data: [50.0, 50.0, 50.0, 50.0],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        dragMaxY: 100,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+	</script>
+        <script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'net-ie',
+        animation: false
+    },
+    
+    title: {
+        text: 'Net Interest Expense'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+		yAxis: {
+			title: {
+				text:'In USD $'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	    name:'',
+        data: [30, 30.5, 30.4, 30.2],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2
+    }
+    ]
+
+});
+</script>
+<script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'taxes',
+        animation: false
+    },
+    
+    title: {
+        text: 'Taxes ($)'
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+	yAxis : {
+		title : {
+			text : 'In USD $'
+		}
+	},
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+	name: '',
+        data: [30, 30.5, 30.4, 30.2],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+<script>
+
+        var chart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'actuals',
+        animation: false
+    },
+    
+    title: {
+       text: ''
+    },
+
+    xAxis: {
+        categories: ["may2017","may2018","may2019","may2020"]
+    },
+        yAxis : {
+		min : 0,
+		max : 100,
+                title : {
+                        text : 'In USD $'
+                }
+        },
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                        // Returning false stops the drag and drops. Example:
+                        /*
+                        if (e.newY > 300) {
+                            this.y = 300;
+                            return false;
+                        }
+                        */
+   
+                    },
+                    drop: function () {  
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2
+    },
+
+    series: [{
+        name: 'Actuals',
+        data: [25, 25, 25, 25],
+        //draggableX: true,
+        draggableY: false,
+        dragMinY: 0,
+        type: 'column',
+        minPointLength: 2,
+    }
+    ]
+
+});
+</script>
+    </body>
+</html>
+  
