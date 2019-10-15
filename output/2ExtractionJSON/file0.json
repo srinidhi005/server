@@ -1,4 +1,8 @@
 {
+    "company": "nike inc",
+    "units": "millions",
+    "title": "consolidated statements of income",
+    "currency": "USD",
     "period": [
         {
             "asof": "may312018",
@@ -70,9 +74,6 @@
                     "value": 1933000.0
                 },
                 {
-                    "code": "",
-                    "heading": "Earnings per common share:",
-                    "transformed": "Earnings per common share",
                     "items": [
                         {
                             "desc": "Basic",
@@ -92,7 +93,10 @@
                             "transformed": "Dividends declared per common share",
                             "value": 0.78
                         }
-                    ]
+                    ],
+                    "code": "",
+                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:"
                 }
             ]
         },
@@ -166,9 +170,6 @@
                     "value": 4240000.0
                 },
                 {
-                    "code": "",
-                    "heading": "Earnings per common share:",
-                    "transformed": "Earnings per common share",
                     "items": [
                         {
                             "desc": "Basic",
@@ -188,7 +189,10 @@
                             "transformed": "Dividends declared per common share",
                             "value": 0.7
                         }
-                    ]
+                    ],
+                    "code": "",
+                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:"
                 }
             ]
         },
@@ -262,9 +266,6 @@
                     "value": 3760000.0
                 },
                 {
-                    "code": "",
-                    "heading": "Earnings per common share:",
-                    "transformed": "Earnings per common share",
                     "items": [
                         {
                             "desc": "Basic",
@@ -284,14 +285,13 @@
                             "transformed": "Dividends declared per common share",
                             "value": 0.62
                         }
-                    ]
+                    ],
+                    "code": "",
+                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:"
                 }
             ]
         }
     ],
-    "units": "millions",
-    "currency": "USD",
-    "title": "consolidated statements of income",
-    "type": "statement_of_income",
-    "company": "nike inc"
+    "type": "statement_of_income"
 }

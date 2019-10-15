@@ -635,7 +635,6 @@ def write_to_excel(data):
     wb.save(sys.argv[3] + "/" + company + ".xlsx")
 
 
-company_data = {}  # collecting required data to fill the excel template
 # if ebitda and ebit and ebt:
 for th in os.listdir(os.path.join(cwd_path, folder)):
     file_path = os.path.join(cwd_path, folder, th)
@@ -665,10 +664,10 @@ for th in os.listdir(os.path.join(cwd_path, folder)):
         json_data.truncate()
 
 
-#########################################################
+##########################################################
 
 
-def inject_db(json_data, latest_enum):
+def inject_db(json_data,latest_enum):
     con = db_connect()  # connect to database
     if con is not None:
         cursor = con.cursor()
@@ -676,9 +675,9 @@ def inject_db(json_data, latest_enum):
         cursor.execute(query)
         con.commit()
         for data in json_data["period"]:
-            if data["asof"] == latest_enum[0]:
+            if data["asof"] ==  latest_enum[0] :
                 continue
-            for key, val in latest_enum.items():
+            for key,val in latest_enum.items():
                 # print(key, val)
                 if val.lower() == (data["asof"]).lower():
                     latest = key
@@ -715,18 +714,14 @@ def inject_db(json_data, latest_enum):
             query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
                     "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
                     "'" + json_data["company"] + "','" + str(datetime.strptime(data["asof"], "%b%d%Y")) + "'," + str(
-                latest) + "," + str(AM_IS_I) + "," + str(AM_IS_I) + "" \
-                                                                    "," + str(AM_IS_EXP) + "," + str(
-                AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(
-                gross_profit) + "," + str(ebit) + "" \
-                                                  "," + str(ebitda) + "," + str(ebt) + "," + str(netincome) + "," + str(
-                grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "" \
-                                                                                       "," + str(
-                ebitmargin) + "," + str(netincomemargin) + ")"
+                latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
+                AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(gross_profit) + "," + str(ebit) + "" \
+              "," + str(ebitda) + "," + str(netincome) + "," + str(grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "" \
+              "," + str(ebitmargin) + "," + str(netincomemargin) + ")"
             cursor.execute(query)
             con.commit()
         for data in json_data["period"]:
-            if data["asof"] == latest_enum[0]:
+            if data["asof"] ==  latest_enum[0] :
                 for key, val in latest_enum.items():
                     # print(key,val)
                     if val.lower() == (data["asof"]).lower():
@@ -765,13 +760,10 @@ def inject_db(json_data, latest_enum):
                         "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
                         "'" + json_data["company"] + "','" + str(
                     datetime.strptime(data["asof"], "%b%d%Y")) + "'," + str(
-                    latest) + "," + str(AM_IS_I) + "," + str(AM_IS_I) + "" \
-                                                                        "," + str(AM_IS_EXP) + "," + str(
+                    latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                     AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(
-                    gross_profit) + "," + str(ebit) + "" \
-                                                      "," + str(ebitda) + "," + str(ebt) + "," + str(
-                    netincome) + "," + str(grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "" \
-                                                                                                                  "," + str(
+                    gross_profit) + "," + str(ebit) + "," + str(ebitda) + "," + str(netincome) + "," + str(
+                    grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "," + str(
                     ebitmargin) + "," + str(netincomemargin) + ")"
                 cursor.execute(query)
                 con.commit()
@@ -779,26 +771,22 @@ def inject_db(json_data, latest_enum):
 
 
 def map_to_date_obj(date):
-    return datetime.strptime(date, "%b%d%Y")
-
-
+    return datetime.strptime(date,"%b%d%Y")
 def sort_dict(json_data):
     dates = [date["asof"] for date in json_data["period"]]
-    dates = list(map(map_to_date_obj, dates))
+    dates = list(map(map_to_date_obj,dates))
     dates.sort()
     return dates
 
-
 def map_to_string(date):
-    return datetime.strftime(date, "%b%d%Y")
-
+    return datetime.strftime(date,"%b%d%Y")
 
 dates = sort_dict(json_copy)
-dates = list(map(map_to_string, dates))
+dates = list(map(map_to_string,dates))
 
 latest_enum = {}
 for i, j in enumerate(dates, -(len(dates) - 1)):
     latest_enum[i] = j
 # print(latest_enum,"Latest Enum")
-inject_db(json_copy, latest_enum)
+inject_db(json_copy,latest_enum)
 
