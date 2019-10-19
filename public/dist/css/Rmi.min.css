@@ -6,14 +6,13 @@
 	 
 	 
 	.scrollbar{
-    padding:20px;
+    padding-right:200px;
     border:dotted 0px;
     white-space:nowrap;
     overflow-x:auto;
 }
 
 .box {
-    width:50%;
     height:325px;
     background-color: red;
     margin:10px;
@@ -23,6 +22,14 @@
      
      
      
+	 
+	 
+	  
+	
+
+	 
+	 
+	 
      
      table {
     counter-reset: tableCount;     

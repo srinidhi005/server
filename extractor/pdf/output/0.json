@@ -1,6 +1,58 @@
 {
+    "type": "statement_of_income",
+    "title": "consolidated statements of income",
+    "units": "millions",
+    "currency": "USD",
     "period": [
         {
+            "Additional": [
+                {
+                    "desc": "(-) Selling, General, & Administrative ('SG&A')",
+                    "code": "AM_IS_EXP",
+                    "value": 10803000.0
+                },
+                {
+                    "desc": "EBITDA",
+                    "code": "EB1",
+                    "value": 5153000.0
+                },
+                {
+                    "desc": "EBIT",
+                    "code": "EB2",
+                    "value": 4379000.0
+                },
+                {
+                    "desc": "(+) Depreciation & Amortization ('D&A')",
+                    "code": "AM_IS_DEP_AMO",
+                    "value": 774000.0
+                },
+                {
+                    "desc": "EBT",
+                    "code": "EB3",
+                    "value": 4325000.0
+                },
+                {
+                    "desc": "(-) Net Interest Expense",
+                    "code": "AM_IS_NIEXP",
+                    "value": 54000.0
+                },
+                {
+                    "desc": "Net Income",
+                    "code": "AM_IS_NI",
+                    "value": 1933000.0
+                },
+                {
+                    "desc": "(+ / -) Other Income / (Expense)",
+                    "code": "AM_IS_OE",
+                    "value": 66000.0
+                },
+                {
+                    "desc": "(-) Taxes",
+                    "code": "AM_IS_TX",
+                    "value": 2392000.0
+                }
+            ],
+            "asof": "may312018",
             "statement": [
                 {
                     "desc": "Revenues",
@@ -69,9 +121,8 @@
                     "value": 1933000.0
                 },
                 {
-                    "heading": "Earnings per common share:",
                     "code": "",
-                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:",
                     "items": [
                         {
                             "desc": "Basic",
@@ -91,12 +142,60 @@
                             "transformed": "Dividends declared per common share",
                             "value": 0.78
                         }
-                    ]
+                    ],
+                    "transformed": "Earnings per common share"
                 }
-            ],
-            "asof": "may312018"
+            ]
         },
         {
+            "Additional": [
+                {
+                    "desc": "(-) Selling, General, & Administrative ('SG&A')",
+                    "code": "AM_IS_EXP",
+                    "value": 9651000.0
+                },
+                {
+                    "desc": "EBITDA",
+                    "code": "EB1",
+                    "value": 5661000.0
+                },
+                {
+                    "desc": "EBIT",
+                    "code": "EB2",
+                    "value": 4945000.0
+                },
+                {
+                    "desc": "(+) Depreciation & Amortization ('D&A')",
+                    "code": "AM_IS_DEP_AMO",
+                    "value": 716000.0
+                },
+                {
+                    "desc": "EBT",
+                    "code": "EB3",
+                    "value": 4886000.0
+                },
+                {
+                    "desc": "(-) Net Interest Expense",
+                    "code": "AM_IS_NIEXP",
+                    "value": 59000.0
+                },
+                {
+                    "desc": "Net Income",
+                    "code": "AM_IS_NI",
+                    "value": 4240000.0
+                },
+                {
+                    "desc": "(+ / -) Other Income / (Expense)",
+                    "code": "AM_IS_OE",
+                    "value": -196000.0
+                },
+                {
+                    "desc": "(-) Taxes",
+                    "code": "AM_IS_TX",
+                    "value": 646000.0
+                }
+            ],
+            "asof": "may312017",
             "statement": [
                 {
                     "desc": "Revenues",
@@ -165,9 +264,8 @@
                     "value": 4240000.0
                 },
                 {
-                    "heading": "Earnings per common share:",
                     "code": "",
-                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:",
                     "items": [
                         {
                             "desc": "Basic",
@@ -187,12 +285,60 @@
                             "transformed": "Dividends declared per common share",
                             "value": 0.7
                         }
-                    ]
+                    ],
+                    "transformed": "Earnings per common share"
                 }
-            ],
-            "asof": "may312017"
+            ]
         },
         {
+            "Additional": [
+                {
+                    "desc": "(-) Selling, General, & Administrative ('SG&A')",
+                    "code": "AM_IS_EXP",
+                    "value": 9667000.0
+                },
+                {
+                    "desc": "EBITDA",
+                    "code": "EB1",
+                    "value": 5304000.0
+                },
+                {
+                    "desc": "EBIT",
+                    "code": "EB2",
+                    "value": 4642000.0
+                },
+                {
+                    "desc": "(+) Depreciation & Amortization ('D&A')",
+                    "code": "AM_IS_DEP_AMO",
+                    "value": 662000.0
+                },
+                {
+                    "desc": "EBT",
+                    "code": "EB3",
+                    "value": 4623000.0
+                },
+                {
+                    "desc": "(-) Net Interest Expense",
+                    "code": "AM_IS_NIEXP",
+                    "value": 19000.0
+                },
+                {
+                    "desc": "Net Income",
+                    "code": "AM_IS_NI",
+                    "value": 3760000.0
+                },
+                {
+                    "desc": "(+ / -) Other Income / (Expense)",
+                    "code": "AM_IS_OE",
+                    "value": -140000.0
+                },
+                {
+                    "desc": "(-) Taxes",
+                    "code": "AM_IS_TX",
+                    "value": 863000.0
+                }
+            ],
+            "asof": "may312016",
             "statement": [
                 {
                     "desc": "Revenues",
@@ -261,9 +407,8 @@
                     "value": 3760000.0
                 },
                 {
-                    "heading": "Earnings per common share:",
                     "code": "",
-                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:",
                     "items": [
                         {
                             "desc": "Basic",
@@ -283,15 +428,11 @@
                             "transformed": "Dividends declared per common share",
                             "value": 0.62
                         }
-                    ]
+                    ],
+                    "transformed": "Earnings per common share"
                 }
-            ],
-            "asof": "may312016"
+            ]
         }
     ],
-    "type": "statement_of_income",
-    "currency": "USD",
-    "units": "millions",
-    "title": "consolidated statements of income",
     "company": "nike inc"
 }

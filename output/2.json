@@ -1,834 +1,834 @@
 {
+    "title": "consolidated statements of cash flows",
+    "company": "nike inc",
+    "currency": "USD",
     "period": [
         {
+            "asof": "may312018",
             "statement": [
                 {
-                    "heading": "Cash provided by operations:",
                     "code": "",
                     "transformed": "Cash provided by operations",
+                    "heading": "Cash provided by operations:",
                     "items": []
                 },
                 {
                     "desc": "Net income",
                     "code": "AM_BS_NI",
-                    "transformed": "Net income/loss",
-                    "value": 1933000.0
+                    "value": 1933000.0,
+                    "transformed": "Net income/loss"
                 },
                 {
-                    "heading": "Adjustments to reconcile net income to net cash provided by operations:",
                     "code": "",
                     "transformed": "Adjustments to reconcile net income to net cash provided by operations",
+                    "heading": "Adjustments to reconcile net income to net cash provided by operations:",
                     "items": [
                         {
                             "desc": "Depreciation",
                             "code": "",
-                            "transformed": "Depreciation",
-                            "value": 747000.0
+                            "value": 747000.0,
+                            "transformed": "Depreciation"
                         },
                         {
                             "desc": "Deferred income taxes",
                             "code": "",
-                            "transformed": "Deferred income taxes",
-                            "value": 647000.0
+                            "value": 647000.0,
+                            "transformed": "Deferred income taxes"
                         },
                         {
                             "desc": "Stock-based compensation",
                             "code": "",
-                            "transformed": "Stock based compensation",
-                            "value": 218000.0
+                            "value": 218000.0,
+                            "transformed": "Stock based compensation"
                         },
                         {
                             "desc": "Amortization and other",
                             "code": "",
-                            "transformed": "Amortization and other",
-                            "value": 27000.0
+                            "value": 27000.0,
+                            "transformed": "Amortization and other"
                         },
                         {
                             "desc": "Net foreign currency adjustments",
                             "code": "",
-                            "transformed": "Net foreign currency adjustments",
-                            "value": -99000.0
+                            "value": -99000.0,
+                            "transformed": "Net foreign currency adjustments"
                         }
                     ]
                 },
                 {
-                    "heading": "Changes in certain working capital components and other assets and liabilities:",
                     "code": "",
                     "transformed": "Changes in certain working capital components and other assets and liabilities",
+                    "heading": "Changes in certain working capital components and other assets and liabilities:",
                     "items": [
                         {
                             "desc": "Decrease -increase in accounts receivable",
                             "code": "AM_BS_AR",
-                            "transformed": "Accounts receivable",
-                            "value": 187000.0
+                            "value": 187000.0,
+                            "transformed": "Accounts receivable"
                         },
                         {
                             "desc": "-Increase in inventories",
                             "code": "",
-                            "transformed": "Increase in inventories",
-                            "value": -255000.0
+                            "value": -255000.0,
+                            "transformed": "Increase in inventories"
                         },
                         {
                             "desc": "Decrease -increase in prepaid expenses and other current and non-current assets",
                             "code": "",
-                            "transformed": "Decrease increase in prepaid expenses and other current and non current assets",
-                            "value": 35000.0
+                            "value": 35000.0,
+                            "transformed": "Decrease increase in prepaid expenses and other current and non current assets"
                         }
                     ]
                 },
                 {
-                    "heading": "Increase -decrease in accounts payable accrued liabilities and other current and",
                     "code": "",
                     "transformed": "Increase decrease in accounts payable accrued liabilities and other current and",
+                    "heading": "Increase -decrease in accounts payable accrued liabilities and other current and",
                     "items": [
                         {
                             "desc": "non-current liabilities",
                             "code": "",
-                            "transformed": "Non current liabilities",
-                            "value": 1515000.0
+                            "value": 1515000.0,
+                            "transformed": "Non current liabilities"
                         }
                     ]
                 },
                 {
                     "desc": "Cash provided by operations",
                     "code": "",
-                    "transformed": "Cash provided by operations",
-                    "value": 4955000.0
+                    "value": 4955000.0,
+                    "transformed": "Cash provided by operations"
                 },
                 {
-                    "heading": "Cash provided -used by investing activities:",
                     "code": "",
                     "transformed": "Cash provided used by investing activities",
+                    "heading": "Cash provided -used by investing activities:",
                     "items": [
                         {
                             "desc": "Purchases of short-term investments",
                             "code": "",
-                            "transformed": "Purchases of short term investments",
-                            "value": -4783000.0
+                            "value": -4783000.0,
+                            "transformed": "Purchases of short term investments"
                         },
                         {
                             "desc": "Maturities of short-term investments",
                             "code": "",
-                            "transformed": "Maturities of short term investments",
-                            "value": 3613000.0
+                            "value": 3613000.0,
+                            "transformed": "Maturities of short term investments"
                         },
                         {
                             "desc": "Sales of short-term investments",
                             "code": "",
-                            "transformed": "Sales of short term investments",
-                            "value": 2496000.0
+                            "value": 2496000.0,
+                            "transformed": "Sales of short term investments"
                         },
                         {
                             "desc": "Investments in reverse repurchase agreements",
                             "code": "",
-                            "transformed": "Investments in reverse repurchase agreements",
-                            "value": ""
+                            "value": "",
+                            "transformed": "Investments in reverse repurchase agreements"
                         },
                         {
                             "desc": "Additions to property plant and equipment",
                             "code": "",
-                            "transformed": "Additions to property plant and equipment",
-                            "value": -1028000.0
+                            "value": -1028000.0,
+                            "transformed": "Additions to property plant and equipment"
                         },
                         {
                             "desc": "Disposals of property plant and equipment",
                             "code": "",
-                            "transformed": "Disposals of property plant and equipment",
-                            "value": 3000.0
+                            "value": 3000.0,
+                            "transformed": "Disposals of property plant and equipment"
                         },
                         {
                             "desc": "Other investing activities",
                             "code": "",
-                            "transformed": "Other investing activities",
-                            "value": -25000.0
+                            "value": -25000.0,
+                            "transformed": "Other investing activities"
                         }
                     ]
                 },
                 {
                     "desc": "Cash provided -used by investing activities",
                     "code": "",
-                    "transformed": "Cash provided used by investing activities",
-                    "value": 276000.0
+                    "value": 276000.0,
+                    "transformed": "Cash provided used by investing activities"
                 },
                 {
-                    "heading": "Cash used by financing activities:",
                     "code": "",
                     "transformed": "Cash used by financing activities",
+                    "heading": "Cash used by financing activities:",
                     "items": [
                         {
                             "desc": "Net proceeds from long-term debt issuance",
                             "code": "",
-                            "transformed": "Net proceeds from long term debt issuance",
-                            "value": ""
+                            "value": "",
+                            "transformed": "Net proceeds from long term debt issuance"
                         },
                         {
                             "desc": "Long-term debt payments including current portion",
                             "code": "",
-                            "transformed": "Long term debt payments including current portion",
-                            "value": -6000.0
+                            "value": -6000.0,
+                            "transformed": "Long term debt payments including current portion"
                         },
                         {
                             "desc": "Increase -decrease in notes payable",
                             "code": "",
-                            "transformed": "Increase decrease in notes payable",
-                            "value": 13000.0
+                            "value": 13000.0,
+                            "transformed": "Increase decrease in notes payable"
                         },
                         {
                             "desc": "Payments on capital lease and other financing obligations",
                             "code": "",
-                            "transformed": "Payments on capital lease and other financing obligations",
-                            "value": -23000.0
+                            "value": -23000.0,
+                            "transformed": "Payments on capital lease and other financing obligations"
                         },
                         {
                             "desc": "Proceeds from exercise of stock options and other stock issuances",
                             "code": "",
-                            "transformed": "Proceeds from exercise of stock options and other stock issuances",
-                            "value": 733000.0
+                            "value": 733000.0,
+                            "transformed": "Proceeds from exercise of stock options and other stock issuances"
                         },
                         {
                             "desc": "Repurchase of common stock",
                             "code": "",
-                            "transformed": "Repurchase of common stock",
-                            "value": -4254000.0
+                            "value": -4254000.0,
+                            "transformed": "Repurchase of common stock"
                         },
                         {
                             "desc": "Dividends \u2014 common and preferred",
                             "code": "",
-                            "transformed": "Dividends common and preferred",
-                            "value": -1243000.0
+                            "value": -1243000.0,
+                            "transformed": "Dividends common and preferred"
                         },
                         {
                             "desc": "Tax payments for net share settlement of equity awards",
                             "code": "",
-                            "transformed": "Tax payments for net share settlement of equity awards",
-                            "value": -55000.0
+                            "value": -55000.0,
+                            "transformed": "Tax payments for net share settlement of equity awards"
                         }
                     ]
                 },
                 {
                     "desc": "Cash used by financing activities",
                     "code": "",
-                    "transformed": "Cash used by financing activities",
-                    "value": -4835000.0
+                    "value": -4835000.0,
+                    "transformed": "Cash used by financing activities"
                 },
                 {
                     "desc": "Effect of exchange rate changes on cash and equivalents",
                     "code": "",
-                    "transformed": "Effect of exchange rate changes on cash and equivalents",
-                    "value": 45000.0
+                    "value": 45000.0,
+                    "transformed": "Effect of exchange rate changes on cash and equivalents"
                 },
                 {
                     "desc": "Net increase -decrease in cash and equivalents",
                     "code": "AM_CF_CI",
-                    "transformed": "Net change in cash",
-                    "value": 441000.0
+                    "value": 441000.0,
+                    "transformed": "Net change in cash"
                 },
                 {
                     "desc": "Cash and equivalents beginning of year",
                     "code": "AM_CF_BC",
-                    "transformed": "Cash beginning",
-                    "value": 3808000.0
+                    "value": 3808000.0,
+                    "transformed": "Cash beginning"
                 },
                 {
                     "desc": "CASH AND EQUIVALENTS END OF YEAR",
                     "code": "AM_CF_EC",
-                    "transformed": "Cash ending",
-                    "value": 4249000.0
+                    "value": 4249000.0,
+                    "transformed": "Cash ending"
                 },
                 {
-                    "heading": "Supplemental disclosure of cash flow information:",
                     "code": "",
                     "transformed": "Supplemental disclosure of cash flow information",
+                    "heading": "Supplemental disclosure of cash flow information:",
                     "items": []
                 },
                 {
-                    "heading": "Cash paid during the year for:",
                     "code": "",
                     "transformed": "Cash paid during the year for",
+                    "heading": "Cash paid during the year for:",
                     "items": [
                         {
                             "desc": "Interest net of capitalized interest",
                             "code": "",
-                            "transformed": "Interest net of capitalized interest",
-                            "value": 125000.0
+                            "value": 125000.0,
+                            "transformed": "Interest net of capitalized interest"
                         },
                         {
                             "desc": "Income taxes",
                             "code": "",
-                            "transformed": "Income taxes",
-                            "value": 529000.0
+                            "value": 529000.0,
+                            "transformed": "Income taxes"
                         }
                     ]
                 },
                 {
                     "desc": "Non-cash additions to property plant and equipment",
                     "code": "",
-                    "transformed": "Non cash additions to property plant and equipment",
-                    "value": 294000.0
+                    "value": 294000.0,
+                    "transformed": "Non cash additions to property plant and equipment"
                 },
                 {
                     "desc": "Dividends declared and not paid",
                     "code": "",
-                    "transformed": "Dividends declared and not paid",
-                    "value": 320000.0
+                    "value": 320000.0,
+                    "transformed": "Dividends declared and not paid"
                 }
-            ],
-            "asof": "may312018"
+            ]
         },
         {
+            "asof": "may312017",
             "statement": [
                 {
-                    "heading": "Cash provided by operations:",
                     "code": "",
                     "transformed": "Cash provided by operations",
+                    "heading": "Cash provided by operations:",
                     "items": []
                 },
                 {
                     "desc": "Net income",
                     "code": "AM_BS_NI",
-                    "transformed": "Net income/loss",
-                    "value": 4240000.0
+                    "value": 4240000.0,
+                    "transformed": "Net income/loss"
                 },
                 {
-                    "heading": "Adjustments to reconcile net income to net cash provided by operations:",
                     "code": "",
                     "transformed": "Adjustments to reconcile net income to net cash provided by operations",
+                    "heading": "Adjustments to reconcile net income to net cash provided by operations:",
                     "items": [
                         {
                             "desc": "Depreciation",
                             "code": "",
-                            "transformed": "Depreciation",
-                            "value": 706000.0
+                            "value": 706000.0,
+                            "transformed": "Depreciation"
                         },
                         {
                             "desc": "Deferred income taxes",
                             "code": "",
-                            "transformed": "Deferred income taxes",
-                            "value": -273000.0
+                            "value": -273000.0,
+                            "transformed": "Deferred income taxes"
                         },
                         {
                             "desc": "Stock-based compensation",
                             "code": "",
-                            "transformed": "Stock based compensation",
-                            "value": 215000.0
+                            "value": 215000.0,
+                            "transformed": "Stock based compensation"
                         },
                         {
                             "desc": "Amortization and other",
                             "code": "",
-                            "transformed": "Amortization and other",
-                            "value": 10000.0
+                            "value": 10000.0,
+                            "transformed": "Amortization and other"
                         },
                         {
                             "desc": "Net foreign currency adjustments",
                             "code": "",
-                            "transformed": "Net foreign currency adjustments",
-                            "value": -117000.0
+                            "value": -117000.0,
+                            "transformed": "Net foreign currency adjustments"
                         }
                     ]
                 },
                 {
-                    "heading": "Changes in certain working capital components and other assets and liabilities:",
                     "code": "",
                     "transformed": "Changes in certain working capital components and other assets and liabilities",
+                    "heading": "Changes in certain working capital components and other assets and liabilities:",
                     "items": [
                         {
                             "desc": "Decrease -increase in accounts receivable",
                             "code": "AM_BS_AR",
-                            "transformed": "Accounts receivable",
-                            "value": -426000.0
+                            "value": -426000.0,
+                            "transformed": "Accounts receivable"
                         },
                         {
                             "desc": "-Increase in inventories",
                             "code": "",
-                            "transformed": "Increase in inventories",
-                            "value": -231000.0
+                            "value": -231000.0,
+                            "transformed": "Increase in inventories"
                         },
                         {
                             "desc": "Decrease -increase in prepaid expenses and other current and non-current assets",
                             "code": "",
-                            "transformed": "Decrease increase in prepaid expenses and other current and non current assets",
-                            "value": -120000.0
+                            "value": -120000.0,
+                            "transformed": "Decrease increase in prepaid expenses and other current and non current assets"
                         }
                     ]
                 },
                 {
-                    "heading": "Increase -decrease in accounts payable accrued liabilities and other current and",
                     "code": "",
                     "transformed": "Increase decrease in accounts payable accrued liabilities and other current and",
+                    "heading": "Increase -decrease in accounts payable accrued liabilities and other current and",
                     "items": [
                         {
                             "desc": "non-current liabilities",
                             "code": "",
-                            "transformed": "Non current liabilities",
-                            "value": -158000.0
+                            "value": -158000.0,
+                            "transformed": "Non current liabilities"
                         }
                     ]
                 },
                 {
                     "desc": "Cash provided by operations",
                     "code": "",
-                    "transformed": "Cash provided by operations",
-                    "value": 3846000.0
+                    "value": 3846000.0,
+                    "transformed": "Cash provided by operations"
                 },
                 {
-                    "heading": "Cash provided -used by investing activities:",
                     "code": "",
                     "transformed": "Cash provided used by investing activities",
+                    "heading": "Cash provided -used by investing activities:",
                     "items": [
                         {
                             "desc": "Purchases of short-term investments",
                             "code": "",
-                            "transformed": "Purchases of short term investments",
-                            "value": -5928000.0
+                            "value": -5928000.0,
+                            "transformed": "Purchases of short term investments"
                         },
                         {
                             "desc": "Maturities of short-term investments",
                             "code": "",
-                            "transformed": "Maturities of short term investments",
-                            "value": 3623000.0
+                            "value": 3623000.0,
+                            "transformed": "Maturities of short term investments"
                         },
                         {
                             "desc": "Sales of short-term investments",
                             "code": "",
-                            "transformed": "Sales of short term investments",
-                            "value": 2423000.0
+                            "value": 2423000.0,
+                            "transformed": "Sales of short term investments"
                         },
                         {
                             "desc": "Investments in reverse repurchase agreements",
                             "code": "",
-                            "transformed": "Investments in reverse repurchase agreements",
-                            "value": ""
+                            "value": "",
+                            "transformed": "Investments in reverse repurchase agreements"
                         },
                         {
                             "desc": "Additions to property plant and equipment",
                             "code": "",
-                            "transformed": "Additions to property plant and equipment",
-                            "value": -1105000.0
+                            "value": -1105000.0,
+                            "transformed": "Additions to property plant and equipment"
                         },
                         {
                             "desc": "Disposals of property plant and equipment",
                             "code": "",
-                            "transformed": "Disposals of property plant and equipment",
-                            "value": 13000.0
+                            "value": 13000.0,
+                            "transformed": "Disposals of property plant and equipment"
                         },
                         {
                             "desc": "Other investing activities",
                             "code": "",
-                            "transformed": "Other investing activities",
-                            "value": -34000.0
+                            "value": -34000.0,
+                            "transformed": "Other investing activities"
                         }
                     ]
                 },
                 {
                     "desc": "Cash provided -used by investing activities",
                     "code": "",
-                    "transformed": "Cash provided used by investing activities",
-                    "value": -1008000.0
+                    "value": -1008000.0,
+                    "transformed": "Cash provided used by investing activities"
                 },
                 {
-                    "heading": "Cash used by financing activities:",
                     "code": "",
                     "transformed": "Cash used by financing activities",
+                    "heading": "Cash used by financing activities:",
                     "items": [
                         {
                             "desc": "Net proceeds from long-term debt issuance",
                             "code": "",
-                            "transformed": "Net proceeds from long term debt issuance",
-                            "value": 1482000.0
+                            "value": 1482000.0,
+                            "transformed": "Net proceeds from long term debt issuance"
                         },
                         {
                             "desc": "Long-term debt payments including current portion",
                             "code": "",
-                            "transformed": "Long term debt payments including current portion",
-                            "value": -44000.0
+                            "value": -44000.0,
+                            "transformed": "Long term debt payments including current portion"
                         },
                         {
                             "desc": "Increase -decrease in notes payable",
                             "code": "",
-                            "transformed": "Increase decrease in notes payable",
-                            "value": 327000.0
+                            "value": 327000.0,
+                            "transformed": "Increase decrease in notes payable"
                         },
                         {
                             "desc": "Payments on capital lease and other financing obligations",
                             "code": "",
-                            "transformed": "Payments on capital lease and other financing obligations",
-                            "value": -17000.0
+                            "value": -17000.0,
+                            "transformed": "Payments on capital lease and other financing obligations"
                         },
                         {
                             "desc": "Proceeds from exercise of stock options and other stock issuances",
                             "code": "",
-                            "transformed": "Proceeds from exercise of stock options and other stock issuances",
-                            "value": 489000.0
+                            "value": 489000.0,
+                            "transformed": "Proceeds from exercise of stock options and other stock issuances"
                         },
                         {
                             "desc": "Repurchase of common stock",
                             "code": "",
-                            "transformed": "Repurchase of common stock",
-                            "value": -3223000.0
+                            "value": -3223000.0,
+                            "transformed": "Repurchase of common stock"
                         },
                         {
                             "desc": "Dividends \u2014 common and preferred",
                             "code": "",
-                            "transformed": "Dividends common and preferred",
-                            "value": -1133000.0
+                            "value": -1133000.0,
+                            "transformed": "Dividends common and preferred"
                         },
                         {
                             "desc": "Tax payments for net share settlement of equity awards",
                             "code": "",
-                            "transformed": "Tax payments for net share settlement of equity awards",
-                            "value": -29000.0
+                            "value": -29000.0,
+                            "transformed": "Tax payments for net share settlement of equity awards"
                         }
                     ]
                 },
                 {
                     "desc": "Cash used by financing activities",
                     "code": "",
-                    "transformed": "Cash used by financing activities",
-                    "value": -2148000.0
+                    "value": -2148000.0,
+                    "transformed": "Cash used by financing activities"
                 },
                 {
                     "desc": "Effect of exchange rate changes on cash and equivalents",
                     "code": "",
-                    "transformed": "Effect of exchange rate changes on cash and equivalents",
-                    "value": -20000.0
+                    "value": -20000.0,
+                    "transformed": "Effect of exchange rate changes on cash and equivalents"
                 },
                 {
                     "desc": "Net increase -decrease in cash and equivalents",
                     "code": "AM_CF_CI",
-                    "transformed": "Net change in cash",
-                    "value": 670000.0
+                    "value": 670000.0,
+                    "transformed": "Net change in cash"
                 },
                 {
                     "desc": "Cash and equivalents beginning of year",
                     "code": "AM_CF_BC",
-                    "transformed": "Cash beginning",
-                    "value": 3138000.0
+                    "value": 3138000.0,
+                    "transformed": "Cash beginning"
                 },
                 {
                     "desc": "CASH AND EQUIVALENTS END OF YEAR",
                     "code": "AM_CF_EC",
-                    "transformed": "Cash ending",
-                    "value": 3808000.0
+                    "value": 3808000.0,
+                    "transformed": "Cash ending"
                 },
                 {
-                    "heading": "Supplemental disclosure of cash flow information:",
                     "code": "",
                     "transformed": "Supplemental disclosure of cash flow information",
+                    "heading": "Supplemental disclosure of cash flow information:",
                     "items": []
                 },
                 {
-                    "heading": "Cash paid during the year for:",
                     "code": "",
                     "transformed": "Cash paid during the year for",
+                    "heading": "Cash paid during the year for:",
                     "items": [
                         {
                             "desc": "Interest net of capitalized interest",
                             "code": "",
-                            "transformed": "Interest net of capitalized interest",
-                            "value": 98000.0
+                            "value": 98000.0,
+                            "transformed": "Interest net of capitalized interest"
                         },
                         {
                             "desc": "Income taxes",
                             "code": "",
-                            "transformed": "Income taxes",
-                            "value": 703000.0
+                            "value": 703000.0,
+                            "transformed": "Income taxes"
                         }
                     ]
                 },
                 {
                     "desc": "Non-cash additions to property plant and equipment",
                     "code": "",
-                    "transformed": "Non cash additions to property plant and equipment",
-                    "value": 266000.0
+                    "value": 266000.0,
+                    "transformed": "Non cash additions to property plant and equipment"
                 },
                 {
                     "desc": "Dividends declared and not paid",
                     "code": "",
-                    "transformed": "Dividends declared and not paid",
-                    "value": 300000.0
+                    "value": 300000.0,
+                    "transformed": "Dividends declared and not paid"
                 }
-            ],
-            "asof": "may312017"
+            ]
         },
         {
+            "asof": "may312016",
             "statement": [
                 {
-                    "heading": "Cash provided by operations:",
                     "code": "",
                     "transformed": "Cash provided by operations",
+                    "heading": "Cash provided by operations:",
                     "items": []
                 },
                 {
                     "desc": "Net income",
                     "code": "AM_BS_NI",
-                    "transformed": "Net income/loss",
-                    "value": 3760000.0
+                    "value": 3760000.0,
+                    "transformed": "Net income/loss"
                 },
                 {
-                    "heading": "Adjustments to reconcile net income to net cash provided by operations:",
                     "code": "",
                     "transformed": "Adjustments to reconcile net income to net cash provided by operations",
+                    "heading": "Adjustments to reconcile net income to net cash provided by operations:",
                     "items": [
                         {
                             "desc": "Depreciation",
                             "code": "",
-                            "transformed": "Depreciation",
-                            "value": 649000.0
+                            "value": 649000.0,
+                            "transformed": "Depreciation"
                         },
                         {
                             "desc": "Deferred income taxes",
                             "code": "",
-                            "transformed": "Deferred income taxes",
-                            "value": -80000.0
+                            "value": -80000.0,
+                            "transformed": "Deferred income taxes"
                         },
                         {
                             "desc": "Stock-based compensation",
                             "code": "",
-                            "transformed": "Stock based compensation",
-                            "value": 236000.0
+                            "value": 236000.0,
+                            "transformed": "Stock based compensation"
                         },
                         {
                             "desc": "Amortization and other",
                             "code": "",
-                            "transformed": "Amortization and other",
-                            "value": 13000.0
+                            "value": 13000.0,
+                            "transformed": "Amortization and other"
                         },
                         {
                             "desc": "Net foreign currency adjustments",
                             "code": "",
-                            "transformed": "Net foreign currency adjustments",
-                            "value": 98000.0
+                            "value": 98000.0,
+                            "transformed": "Net foreign currency adjustments"
                         }
                     ]
                 },
                 {
-                    "heading": "Changes in certain working capital components and other assets and liabilities:",
                     "code": "",
                     "transformed": "Changes in certain working capital components and other assets and liabilities",
+                    "heading": "Changes in certain working capital components and other assets and liabilities:",
                     "items": [
                         {
                             "desc": "Decrease -increase in accounts receivable",
                             "code": "AM_BS_AR",
-                            "transformed": "Accounts receivable",
-                            "value": 60000.0
+                            "value": 60000.0,
+                            "transformed": "Accounts receivable"
                         },
                         {
                             "desc": "-Increase in inventories",
                             "code": "",
-                            "transformed": "Increase in inventories",
-                            "value": -590000.0
+                            "value": -590000.0,
+                            "transformed": "Increase in inventories"
                         },
                         {
                             "desc": "Decrease -increase in prepaid expenses and other current and non-current assets",
                             "code": "",
-                            "transformed": "Decrease increase in prepaid expenses and other current and non current assets",
-                            "value": -161000.0
+                            "value": -161000.0,
+                            "transformed": "Decrease increase in prepaid expenses and other current and non current assets"
                         }
                     ]
                 },
                 {
-                    "heading": "Increase -decrease in accounts payable accrued liabilities and other current and",
                     "code": "",
                     "transformed": "Increase decrease in accounts payable accrued liabilities and other current and",
+                    "heading": "Increase -decrease in accounts payable accrued liabilities and other current and",
                     "items": [
                         {
                             "desc": "non-current liabilities",
                             "code": "",
-                            "transformed": "Non current liabilities",
-                            "value": -586000.0
+                            "value": -586000.0,
+                            "transformed": "Non current liabilities"
                         }
                     ]
                 },
                 {
                     "desc": "Cash provided by operations",
                     "code": "",
-                    "transformed": "Cash provided by operations",
-                    "value": 3399000.0
+                    "value": 3399000.0,
+                    "transformed": "Cash provided by operations"
                 },
                 {
-                    "heading": "Cash provided -used by investing activities:",
                     "code": "",
                     "transformed": "Cash provided used by investing activities",
+                    "heading": "Cash provided -used by investing activities:",
                     "items": [
                         {
                             "desc": "Purchases of short-term investments",
                             "code": "",
-                            "transformed": "Purchases of short term investments",
-                            "value": -5367000.0
+                            "value": -5367000.0,
+                            "transformed": "Purchases of short term investments"
                         },
                         {
                             "desc": "Maturities of short-term investments",
                             "code": "",
-                            "transformed": "Maturities of short term investments",
-                            "value": 2924000.0
+                            "value": 2924000.0,
+                            "transformed": "Maturities of short term investments"
                         },
                         {
                             "desc": "Sales of short-term investments",
                             "code": "",
-                            "transformed": "Sales of short term investments",
-                            "value": 2386000.0
+                            "value": 2386000.0,
+                            "transformed": "Sales of short term investments"
                         },
                         {
                             "desc": "Investments in reverse repurchase agreements",
                             "code": "",
-                            "transformed": "Investments in reverse repurchase agreements",
-                            "value": 150000.0
+                            "value": 150000.0,
+                            "transformed": "Investments in reverse repurchase agreements"
                         },
                         {
                             "desc": "Additions to property plant and equipment",
                             "code": "",
-                            "transformed": "Additions to property plant and equipment",
-                            "value": -1143000.0
+                            "value": -1143000.0,
+                            "transformed": "Additions to property plant and equipment"
                         },
                         {
                             "desc": "Disposals of property plant and equipment",
                             "code": "",
-                            "transformed": "Disposals of property plant and equipment",
-                            "value": 10000.0
+                            "value": 10000.0,
+                            "transformed": "Disposals of property plant and equipment"
                         },
                         {
                             "desc": "Other investing activities",
                             "code": "",
-                            "transformed": "Other investing activities",
-                            "value": 6000.0
+                            "value": 6000.0,
+                            "transformed": "Other investing activities"
                         }
                     ]
                 },
                 {
                     "desc": "Cash provided -used by investing activities",
                     "code": "",
-                    "transformed": "Cash provided used by investing activities",
-                    "value": -1034000.0
+                    "value": -1034000.0,
+                    "transformed": "Cash provided used by investing activities"
                 },
                 {
-                    "heading": "Cash used by financing activities:",
                     "code": "",
                     "transformed": "Cash used by financing activities",
+                    "heading": "Cash used by financing activities:",
                     "items": [
                         {
                             "desc": "Net proceeds from long-term debt issuance",
                             "code": "",
-                            "transformed": "Net proceeds from long term debt issuance",
-                            "value": 981000.0
+                            "value": 981000.0,
+                            "transformed": "Net proceeds from long term debt issuance"
                         },
                         {
                             "desc": "Long-term debt payments including current portion",
                             "code": "",
-                            "transformed": "Long term debt payments including current portion",
-                            "value": -106000.0
+                            "value": -106000.0,
+                            "transformed": "Long term debt payments including current portion"
                         },
                         {
                             "desc": "Increase -decrease in notes payable",
                             "code": "",
-                            "transformed": "Increase decrease in notes payable",
-                            "value": -67000.0
+                            "value": -67000.0,
+                            "transformed": "Increase decrease in notes payable"
                         },
                         {
                             "desc": "Payments on capital lease and other financing obligations",
                             "code": "",
-                            "transformed": "Payments on capital lease and other financing obligations",
-                            "value": -7000.0
+                            "value": -7000.0,
+                            "transformed": "Payments on capital lease and other financing obligations"
                         },
                         {
                             "desc": "Proceeds from exercise of stock options and other stock issuances",
                             "code": "",
-                            "transformed": "Proceeds from exercise of stock options and other stock issuances",
-                            "value": 507000.0
+                            "value": 507000.0,
+                            "transformed": "Proceeds from exercise of stock options and other stock issuances"
                         },
                         {
                             "desc": "Repurchase of common stock",
                             "code": "",
-                            "transformed": "Repurchase of common stock",
-                            "value": -3238000.0
+                            "value": -3238000.0,
+                            "transformed": "Repurchase of common stock"
                         },
                         {
                             "desc": "Dividends \u2014 common and preferred",
                             "code": "",
-                            "transformed": "Dividends common and preferred",
-                            "value": -1022000.0
+                            "value": -1022000.0,
+                            "transformed": "Dividends common and preferred"
                         },
                         {
                             "desc": "Tax payments for net share settlement of equity awards",
                             "code": "",
-                            "transformed": "Tax payments for net share settlement of equity awards",
-                            "value": -22000.0
+                            "value": -22000.0,
+                            "transformed": "Tax payments for net share settlement of equity awards"
                         }
                     ]
                 },
                 {
                     "desc": "Cash used by financing activities",
                     "code": "",
-                    "transformed": "Cash used by financing activities",
-                    "value": -2974000.0
+                    "value": -2974000.0,
+                    "transformed": "Cash used by financing activities"
                 },
                 {
                     "desc": "Effect of exchange rate changes on cash and equivalents",
                     "code": "",
-                    "transformed": "Effect of exchange rate changes on cash and equivalents",
-                    "value": -105000.0
+                    "value": -105000.0,
+                    "transformed": "Effect of exchange rate changes on cash and equivalents"
                 },
                 {
                     "desc": "Net increase -decrease in cash and equivalents",
                     "code": "AM_CF_CI",
-                    "transformed": "Net change in cash",
-                    "value": -714000.0
+                    "value": -714000.0,
+                    "transformed": "Net change in cash"
                 },
                 {
                     "desc": "Cash and equivalents beginning of year",
                     "code": "AM_CF_BC",
-                    "transformed": "Cash beginning",
-                    "value": 3852000.0
+                    "value": 3852000.0,
+                    "transformed": "Cash beginning"
                 },
                 {
                     "desc": "CASH AND EQUIVALENTS END OF YEAR",
                     "code": "AM_CF_EC",
-                    "transformed": "Cash ending",
-                    "value": 3138000.0
+                    "value": 3138000.0,
+                    "transformed": "Cash ending"
                 },
                 {
-                    "heading": "Supplemental disclosure of cash flow information:",
                     "code": "",
                     "transformed": "Supplemental disclosure of cash flow information",
+                    "heading": "Supplemental disclosure of cash flow information:",
                     "items": []
                 },
                 {
-                    "heading": "Cash paid during the year for:",
                     "code": "",
                     "transformed": "Cash paid during the year for",
+                    "heading": "Cash paid during the year for:",
                     "items": [
                         {
                             "desc": "Interest net of capitalized interest",
                             "code": "",
-                            "transformed": "Interest net of capitalized interest",
-                            "value": 70000.0
+                            "value": 70000.0,
+                            "transformed": "Interest net of capitalized interest"
                         },
                         {
                             "desc": "Income taxes",
                             "code": "",
-                            "transformed": "Income taxes",
-                            "value": 748000.0
+                            "value": 748000.0,
+                            "transformed": "Income taxes"
                         }
                     ]
                 },
                 {
                     "desc": "Non-cash additions to property plant and equipment",
                     "code": "",
-                    "transformed": "Non cash additions to property plant and equipment",
-                    "value": 252000.0
+                    "value": 252000.0,
+                    "transformed": "Non cash additions to property plant and equipment"
                 },
                 {
                     "desc": "Dividends declared and not paid",
                     "code": "",
-                    "transformed": "Dividends declared and not paid",
-                    "value": 271000.0
+                    "value": 271000.0,
+                    "transformed": "Dividends declared and not paid"
                 }
-            ],
-            "asof": "may312016"
+            ]
         }
     ],
-    "type": "cash_flow_statement",
-    "currency": "USD",
     "units": "millions",
-    "title": "consolidated statements of cash flows",
-    "company": "nike inc"
+    "type": "cash_flow_statement"
 }

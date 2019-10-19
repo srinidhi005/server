@@ -237,6 +237,7 @@ def sub_items(filepath):
 
 type_len = len(typee)
 main_json = {}
+json_collection = []
 out_m = 0
 
 start_line = 0
@@ -544,9 +545,9 @@ for i in range(pages):
             k1 = k
 
         del nt[:n]
-        with open(sys.argv[2] + "{}.json".format(out_m), "w") as outfile:
-            json.dump(main_json, outfile, indent=4)
-
+        #with open(sys.argv[2] + "{}.json".format(out_m), "w") as outfile:
+        #    json.dump(main_json, outfile, indent=4)
+        json_collection.append(main_json)
         out_m += 1
         main_json = {}
 
@@ -635,33 +636,14 @@ def write_to_excel(data):
     wb.save(sys.argv[3] + "/" + company + ".xlsx")
 
 
-# if ebitda and ebit and ebt:
-for th in os.listdir(os.path.join(cwd_path, folder)):
-    file_path = os.path.join(cwd_path, folder, th)
-    with open(file_path, "r+") as json_data:
-        d = json.load(json_data)
-        if d['type'] == "statement_of_income":
-            statement_data = {}
-            for i, j, k, a, b, c, d1, m, t, o in zip(ebitda, ebit, ebt, net_inc_loss, dp, inc_expense, inc_tax,
-                                                     d['period'], total_expense, other_expense):
-                m['Additional'] = [
-                    {"desc": "(-) Selling, General, & Administrative ('SG&A')", "code": "AM_IS_EXP", "value": t},
-                    {"desc": "EBITDA", "code": "EB1", "value": i}, {"desc": "EBIT", "code": "EB2", "value": j},
-                    {"desc": "(+) Depreciation & Amortization ('D&A')", "code": "AM_IS_DEP_AMO", "value": b},
-                    {"desc": "EBT", "code": "EB3", "value": k},
-                    {"desc": "(-) Net Interest Expense", "code": "AM_IS_NIEXP", "value": c},
-                    {"desc": "Net Income", "code": "AM_IS_NI", "value": float(a)},
-                    {"desc": "(+ / -) Other Income / (Expense)", "code": "AM_IS_OE", "value": o},
-                    {"desc": "(-) Taxes", "code": "AM_IS_TX", "value": float(d1)}]
-            json_copy = d
-            print("*" * 30)
-            print(d)
-            print("*" * 30)
-        json_data.seek(0)  # rewind
-
-        json.dump(d, json_data, indent=4, ensure_ascii=False)
-
-        json_data.truncate()
+for d in json_collection:
+    if d['type'] == "statement_of_income":
+        for i,j,k,a,b,c,d1,m,t,o in zip(ebitda,ebit,ebt,net_inc_loss,dp,inc_expense,inc_tax,d['period'],total_expense,other_expense):
+            m['Additional']=[{"desc":"(-) Selling, General, & Administrative ('SG&A')","code":"AM_IS_EXP","value":t},{"desc":"EBITDA","code":"EB1","value":i},{"desc":"EBIT","code":"EB2","value":j},{"desc":"(+) Depreciation & Amortization ('D&A')","code":"AM_IS_DEP_AMO","value":b},{"desc":"EBT","code":"EB3","value":k},{"desc":"(-) Net Interest Expense","code":"AM_IS_NIEXP","value":c},{"desc":"Net Income","code":"AM_IS_NI","value":float(a)},{"desc":"(+ / -) Other Income / (Expense)","code":"AM_IS_OE","value":o},{"desc":"(-) Taxes","code":"AM_IS_TX","value":float(d1)}]
+        json_copy = d
+        print("*" * 30)
+        print(d)
+        print("*" * 30)
 
 
 ##########################################################
@@ -671,7 +653,7 @@ def inject_db(json_data,latest_enum):
     con = db_connect()  # connect to database
     if con is not None:
         cursor = con.cursor()
-        query = "delete from company_actuals"
+        query = "delete from company_actuals where companyname='"+sys.argv[4]+"'"
         cursor.execute(query)
         con.commit()
         for data in json_data["period"]:
@@ -713,7 +695,7 @@ def inject_db(json_data,latest_enum):
 
             query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
                     "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
-                    "'" + json_data["company"] + "','" + str(datetime.strptime(data["asof"], "%b%d%Y")) + "'," + str(
+                    "'" + sys.argv[4] + "'," +str(int(str(datetime.strptime(data["asof"], "%b%d%Y"))[:4])) + "," + str(
                 latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                 AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(gross_profit) + "," + str(ebit) + "" \
               "," + str(ebitda) + "," + str(netincome) + "," + str(grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "" \
@@ -758,8 +740,8 @@ def inject_db(json_data,latest_enum):
 
                 query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
                         "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
-                        "'" + json_data["company"] + "','" + str(
-                    datetime.strptime(data["asof"], "%b%d%Y")) + "'," + str(
+                        "'" + sys.argv[4] + "'," + str(int(str(
+                    datetime.strptime(data["asof"], "%b%d%Y"))[:4])) + "," + str(
                     latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                     AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(
                     gross_profit) + "," + str(ebit) + "," + str(ebitda) + "," + str(netincome) + "," + str(

@@ -18,11 +18,11 @@ queue.process('pdf', function(job, done){
     client.set('q:job:'+job.id, JSON.stringify(job.data));
     console.log(job.data)
     var cmd;
-    var companyName = '2ExtractionJSON'//'job.data.company.replace(/ /g, '_')
-    var folderName = companyName //+ '-' + (job.data.period || 'N');
+    var companyName = job.data.company.replace(/ /g, '_')
+    var folderName = companyName + '-' + (job.data.period || 'N');
     if (job.data.filename.indexOf('.pdf') != -1) {
         cmd = 'python3 extractor/pdf/mapping.py ';
-        cmd += job.data.path + ' ' + './output/' + folderName + '/file' + ' ' + 'extractor/pdf';
+        cmd += job.data.path + ' ' + './output/' + ' ' + 'extractor/pdf' +' '+companyName;
     } else if (job.data.filename.indexOf('.csv') != -1) {
         cmd = 'python3 extractor/csv-excel/mapping.py ';
         cmd += job.data.path + ' ' + './output/' + folderName + '/file' + ' ' + 'extractor/csv-excel';
@@ -78,27 +78,6 @@ queue.process('pdf', function(job, done){
             }
         }
     })
-
-    var cmd = "python3 extractor/pdf/json_read.py extractor/pdf"
-	 var excel_file = "/home/srinidhi/rmi/extractor/pdf/Nike.xlsx"
-	 exec(cmd, async (err, stdOut, stdErr) => {
-        if (err) {
-            console.log('------------------err')
-            console.log(err)
-
-        }
-		else {
-            var promises = [];
-
-            if (fs.existsSync(excel_file))
-			{
-				promises.push(storage.bucket('extraction-engine').upload(excel_file, {
-					destination: "1ExtractionGSheet" + '/File01.xlsx',
-				}));
-            }
-
-		}
-	 })
 })
 
 console.log('job started')

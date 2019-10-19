@@ -1,12 +1,17 @@
 {
+    "type": "Balance_sheet",
+    "title": "consolidated balance sheets",
+    "units": "millions",
+    "currency": "USD",
     "period": [
         {
+            "asof": "may312018",
             "statement": [
                 {
-                    "heading": "ASSETS",
                     "code": "",
-                    "transformed": "Assets",
-                    "items": []
+                    "heading": "ASSETS",
+                    "items": [],
+                    "transformed": "Assets"
                 },
                 {
                     "total": {
@@ -73,21 +78,22 @@
                     ],
                     "heading": "Current assets:",
                     "code": "",
-                    "transformed": "Current assets",
                     "total1": {
                         "desc": "TOTAL ASSETS",
                         "code": "",
                         "transformed": "Total assets",
                         "value": 22536000.0
-                    }
+                    },
+                    "transformed": "Current assets"
                 },
                 {
-                    "heading": "LIABILITIES AND SHAREHOLDERS\u2019 EQUITY",
                     "code": "",
-                    "transformed": "Liabilities and shareholders equity",
-                    "items": []
+                    "heading": "LIABILITIES AND SHAREHOLDERS’ EQUITY",
+                    "items": [],
+                    "transformed": "Liabilities and shareholders equity"
                 },
                 {
+                    "code": "",
                     "total": {
                         "desc": "Total current liabilities",
                         "code": "",
@@ -95,8 +101,6 @@
                         "value": 6040000.0
                     },
                     "heading": "Current liabilities:",
-                    "code": "",
-                    "transformed": "Current liabilities",
                     "items": [
                         {
                             "desc": "Current portion of long-term debt",
@@ -140,30 +144,31 @@
                             "transformed": "Redeemable preferred stock",
                             "value": ""
                         }
-                    ]
+                    ],
+                    "transformed": "Current liabilities"
                 },
                 {
-                    "heading": "Shareholders\u2019 equity:",
                     "code": "AM_BS_E",
-                    "transformed": "Shareholders equity",
-                    "items": []
+                    "heading": "Shareholders’ equity:",
+                    "items": [],
+                    "transformed": "Shareholders equity"
                 },
                 {
                     "total": {
-                        "desc": "Total shareholders\u2019 equity",
+                        "desc": "Total shareholders’ equity",
                         "code": "",
                         "transformed": "Total shareholders equity",
                         "value": 9812000.0
                     },
                     "items": [
                         {
-                            "desc": "Class A convertible \u2014 329 and 329 shares outstanding",
+                            "desc": "Class A convertible — 329 and 329 shares outstanding",
                             "code": "",
                             "transformed": "Class a convertible and shares outstanding",
                             "value": ""
                         },
                         {
-                            "desc": "Class B \u2014 1272 and 1314 shares outstanding",
+                            "desc": "Class B — 1272 and 1314 shares outstanding",
                             "code": "",
                             "transformed": "Class b and shares outstanding",
                             "value": 3000.0
@@ -189,24 +194,24 @@
                     ],
                     "heading": "Common stock at stated value:",
                     "code": "",
-                    "transformed": "Common stock at stated value",
                     "total1": {
-                        "desc": "TOTAL LIABILITIES AND SHAREHOLDERS\u2019 EQUITY",
+                        "desc": "TOTAL LIABILITIES AND SHAREHOLDERS’ EQUITY",
                         "code": "",
                         "transformed": "Total liabilities and shareholders equity",
                         "value": 22536000.0
-                    }
+                    },
+                    "transformed": "Common stock at stated value"
                 }
-            ],
-            "asof": "may312018"
+            ]
         },
         {
+            "asof": "may312017",
             "statement": [
                 {
-                    "heading": "ASSETS",
                     "code": "",
-                    "transformed": "Assets",
-                    "items": []
+                    "heading": "ASSETS",
+                    "items": [],
+                    "transformed": "Assets"
                 },
                 {
                     "total": {
@@ -273,21 +278,22 @@
                     ],
                     "heading": "Current assets:",
                     "code": "",
-                    "transformed": "Current assets",
                     "total1": {
                         "desc": "TOTAL ASSETS",
                         "code": "",
                         "transformed": "Total assets",
                         "value": 23259000.0
-                    }
+                    },
+                    "transformed": "Current assets"
                 },
                 {
-                    "heading": "LIABILITIES AND SHAREHOLDERS\u2019 EQUITY",
                     "code": "",
-                    "transformed": "Liabilities and shareholders equity",
-                    "items": []
+                    "heading": "LIABILITIES AND SHAREHOLDERS’ EQUITY",
+                    "items": [],
+                    "transformed": "Liabilities and shareholders equity"
                 },
                 {
+                    "code": "",
                     "total": {
                         "desc": "Total current liabilities",
                         "code": "",
@@ -295,8 +301,6 @@
                         "value": 5474000.0
                     },
                     "heading": "Current liabilities:",
-                    "code": "",
-                    "transformed": "Current liabilities",
                     "items": [
                         {
                             "desc": "Current portion of long-term debt",
@@ -340,30 +344,31 @@
                             "transformed": "Redeemable preferred stock",
                             "value": ""
                         }
-                    ]
+                    ],
+                    "transformed": "Current liabilities"
                 },
                 {
-                    "heading": "Shareholders\u2019 equity:",
                     "code": "AM_BS_E",
-                    "transformed": "Shareholders equity",
-                    "items": []
+                    "heading": "Shareholders’ equity:",
+                    "items": [],
+                    "transformed": "Shareholders equity"
                 },
                 {
                     "total": {
-                        "desc": "Total shareholders\u2019 equity",
+                        "desc": "Total shareholders’ equity",
                         "code": "",
                         "transformed": "Total shareholders equity",
                         "value": 12407000.0
                     },
                     "items": [
                         {
-                            "desc": "Class A convertible \u2014 329 and 329 shares outstanding",
+                            "desc": "Class A convertible — 329 and 329 shares outstanding",
                             "code": "",
                             "transformed": "Class a convertible and shares outstanding",
                             "value": ""
                         },
                         {
-                            "desc": "Class B \u2014 1272 and 1314 shares outstanding",
+                            "desc": "Class B — 1272 and 1314 shares outstanding",
                             "code": "",
                             "transformed": "Class b and shares outstanding",
                             "value": 3000.0
@@ -389,21 +394,16 @@
                     ],
                     "heading": "Common stock at stated value:",
                     "code": "",
-                    "transformed": "Common stock at stated value",
                     "total1": {
-                        "desc": "TOTAL LIABILITIES AND SHAREHOLDERS\u2019 EQUITY",
+                        "desc": "TOTAL LIABILITIES AND SHAREHOLDERS’ EQUITY",
                         "code": "",
                         "transformed": "Total liabilities and shareholders equity",
                         "value": 23259000.0
-                    }
+                    },
+                    "transformed": "Common stock at stated value"
                 }
-            ],
-            "asof": "may312017"
+            ]
         }
     ],
-    "type": "Balance_sheet",
-    "currency": "USD",
-    "units": "millions",
-    "title": "consolidated balance sheets",
     "company": "nike inc"
 }

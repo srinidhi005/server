@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
-<script src="/public/dist/js/highcharts.src.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 	
@@ -206,22 +206,22 @@
           
           <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
           
-          <li><a href="/index"><i class="fa fa-desktop"></i> KPI Dashboard</a></li>
+          <li><a href="/index"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
         
           
           
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-desktop"></i>
+            <i class="fa fa-pie-chart"></i>
             <span>Monthly Budget</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/adjust"><i class="fa fa-bar-chart-o"></i> Adjust Assumption</a></li>
-            <li><a href="/actual"><i class="fa fa-bar-chart-o"></i> Actuals</a></li>
-            <li><a href="/target"><i class="fa fa-bar-chart-o"></i> Target v/s Actuals</a></li>
+            <li><a href="/adjust"><i class="fa fa-circle-o"></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o"></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
           </ul>
         </li>
           
@@ -230,14 +230,14 @@
           
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-desktop""></i>
+            <i class="fa fa-pie-chart"></i>
             <span>Financial Model</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-		  <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
+            <li><a href="/financial"> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -257,7 +257,16 @@
              <div class="container">
            <div class="form-group" style="width:150px;float:right;margin-top:-30px">
           
-    
+      <label for="sel1"></label>
+      <select class="form-control" id="sel1" style="margin-left: -160px">
+          <form>
+          <option> Select Senario</option>
+              <option>Base Senario</option>
+              <option>Custom Senario1</option>
+              <option>Custom Senario2</option>
+              <option>Custom Senario3</option>
+          </form>
+               </select>
                <div class="btn-group">
                    
         <a href="#"><button type="button" style="color:black;margin-top:-70px;margin-right: 45px">Export</button></a>
@@ -292,9 +301,9 @@
        
         <section class="col-lg-7 connectedSortable" style="width:510px">
           
-                    <div class="box box-success">
+                    <div class="box box-success" style="min-width: 310px; height: 460px">
             <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:125px;font-size:25px;margin-top:10px">Total Revenue</h3>
+              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">Total Revenue</h3>
 <div id="totalrevenue" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 						</div>
             </div>
@@ -306,22 +315,23 @@
             
           
             
-                  <div class="box box-success">
+                  <div class="box box-success" style="min-width: 310px; height: 460px">
             <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:125px;font-size:25px;margin-top:10px">Net Income</h3>
+              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">Net Income</h3>
 				<div id="netincome" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
          
             </div>        
 						</div>
                
             
-          <div class="box box-success">
+          <div class="box box-success" style="min-width: 310px; height: 460px">
 <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:125px;font-size:25px;margin-top:10px">EBIT</h3>
-			  </div>
+              <h3 class="box-title" style="margin-right:180px;font-size:25px;margin-top:10px">EBIT</h3>
+			  
           <div id="ebit" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
             <!-- /.box-body -->
           </div>
+			  </div>
             
             
             
@@ -334,8 +344,8 @@
         <section class="col-lg-5 connectedSortable" style="width:510px;padding-left:5px;margin-right:4px">
             
             
-            <div class="nav-tabs-custom" style="height:150px">
-                   <div class="box box-success">
+           
+                  <div class="box box-success" style="min-width: 310px; height: 460px">
             <div class="box-header with-border">
               <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">Gross Profit</h3>
 <div id="grossprofit" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -343,16 +353,16 @@
             </div>
             
             
-            <div class="box box-success">
+            <div class="box box-success" style="min-width: 310px; height: 460px;margin-top: 25px;margin-left: 5px;">
             <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">EBITDA</h3>
+              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:5px">EBITDA</h3>
 <div id="ebitda" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
           </div>
             </div>
             
-                    <div class="box box-success">
+                   <div class="box box-success" style="min-width: 310px; height: 460px;margin-top: 15px;margin-left: 5px;">
             <div class="box-header with-border">
-              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:10px">EBT</h3>
+              <h3 class="box-title" style="margin-right:255px;font-size:25px;margin-top:5px">EBT</h3>
 <div id="ebt" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
           
           </div>
@@ -450,7 +460,7 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'USD'
+				            text: 'Expenses'
 				        }
 				    },
 				    series: [{
@@ -467,7 +477,7 @@ $.ajax(settings).done(function (response){
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-y",
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -517,7 +527,7 @@ $.ajax(settings).done(function (response){
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-y",
+  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",

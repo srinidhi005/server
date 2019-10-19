@@ -195,7 +195,7 @@
        
            
           <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
-          <li><a href="/"><i class="fa  fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
+          <li><a href="/index"><i class="fa  fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
         
       
         <li class="treeview">
@@ -223,7 +223,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/finan"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
+            <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -249,13 +249,13 @@
          
          
          
-     <section class="content" style="height: 2103px;padding-left: 0px;padding-right: 372px;border-right-width: 0px;margin-right: 90px;padding-bottom: 0px;padding-top: 9px;">
+     <section class="content" style="height: 30000px;min-height:30000px;padding-left: 0px;padding-right: 372px;border-right-width: 0px;margin-right: 90px;padding-bottom: 0px;padding-top: 9px;">
 <div class="container">
     <div class="row">
     
 		
 	<div>
-		<table class="table" border="1" id="tab2">
+		<table class="table" border="0" id="tab2">
   <thead class="thead-dark">
     <tr>
         <th scope="col"  style="text-align:center;padding-right:5px;width:40px;fontWeight: bold">No.</th>
@@ -263,7 +263,7 @@
       <th scope="col"  style="text-align:center;padding-right:10px;width:40px;fontWeight: bold">Period</th>
       <th scope="col"  style="text-align:center;padding-right:20px;width:40px;fontWeight: bold">Created By</th>
        <th scope="col"  style="text-align:center;padding-right:20px;width:40px;fontWeight: bold">Submitted On</th>
-	 <th scope="col"  style="text-align:center;padding-right:180px;width:100px;fontWeight: bold">Title</th>
+	 <th scope="col" style="text-align:center;padding-right:180px;width:40px;fontWeight: bold" >Title</th>
     </tr>
   </thead>
 		</table>
@@ -317,14 +317,14 @@
     </div>
 
 
-        
+       
                 
                     </div>
         </div>
          
     
     </section>
-    <hr>
+   
     </div>
     
     </div>
@@ -399,64 +399,58 @@ $(".edit").click(editHandler);
     <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
 
 	
-	<script>
-		$.ajax({
+	<script>	
+	$.ajax({
     url: 'http://34.67.197.111/statements',
-    type: "GET",
-    dataType: "json",
-    success: function(data, textStatus, jqXHR) {
-        // since we are using jQuery, you don't need to parse response
-        drawTable(data);
-    }
-});
-
-function drawTable(data) {
-	console.log(data);
-    for (var i = 0; i < data.length; i++) {
-        drawRow(data[i]);
-    }
-}
-
-function drawRow(rowData) {
-    var row = $("<tr />")
-    $("#personDataTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
-    row.append($("<td>" + rowData.id + "</td>"));
-    row.append($("<td>" + rowData.company + "</td>"));
-    row.append($("<td>" + rowData.period + "</td>"));
-	row.append($("<td>" + rowData.username + "</td>"));
-	row.append($("<td>" + rowData.created_at + "</td>"));
-	row.append($("<td>" + rowData.filename + "</td>"));
-	
-	
-}
-
-
-		
-		
-		
-	   /* $.ajax({
-    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/statement.json',
     type: 'GET',
 	dataType:'json',
 	cache:false,
     success: function (data) {
-		  drawTable(data);
+	console.log(data);
+    var index;
+    var htmlTable = '';
+    
+    /*statements = [{id:439,company:"Nike-1",period:"Y",username:"user",created_at:"16-10-2019 05:57",filename:"2.Public.Fitbit.pdf"},
+    {"id":449,company:"Nike-1",period:"Y",username:"user",created_at:"16-10-2019 05:57",filename:"2.Public.Fitbit.pdf"}
+    ];*/
+
+    for (index = 0; index < data["statements"].length; index++) {
+		var obj=data["statements"];
+        $("#tab2 tr:last").after('<tr><td> '+ obj[index].id + '</td> <td> '+ obj[index].company  + '</td> <td> '+ obj[index].period  + '</td> <td> '+ obj[index].username  +' </td> <td> '+ obj[index].created_at  +' </td><td style="padding-right:180px"> '+ obj[index].filename  + '</td>  </tr>');
 	}
-		});
-		function drawTable(data) {
-    for (var i = 0; i < data.length; i++) {
-        drawRow(data[i]);
-    }
-}
-		function drawRow(rowData) {
-    var row = $("<tr />")
-    $("#tab2").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
-    row.append($("<td>" + rowData.id + "</td>"));
-    row.append($("<td>" + rowData.company+ "</td>"));
-    row.append($("<td>" + rowData.lastName + "</td>"));
-}
-      */
+	 
+								  }
+	});
 	</script>
+	
+<!--
+	/*$.ajax({
+    url: 'https://storage.googleapis.com/extraction-engine/2ExtractionJSON/statement.json',
+    type: 'GET',
+	dataType:'json',
+	cache:false,
+    success: function (obj) {
+		console.log(obj);
+		var trHTML = '';
+		
+			for (var key in obj) {
+       if (obj.hasOwnProperty(key)) {
+		  '<tr><td class="counterCell";text-align:center"></td><td style="color:black;text-align:right;padding-right: 25px">'+'$'+ item.period[0].Additional[2].value + '</td></tr>';
+          alert(obj[key].id);
+          alert(obj[key].status);
+       }
+    
+			console.log(obj);
+		
+			
+          
+		};
+        $('#tab2').append(trHTML);
+		
+		}
+		});*/
+-->
+
 		
     </body>
 </html>
