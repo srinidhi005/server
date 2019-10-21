@@ -416,7 +416,7 @@ $(".edit").click(editHandler);
 
     for (index = 0; index < data["statements"].length; index++) {
 		var obj=data["statements"];
-        $("#tab2 tr:last").after('<tr><td> '+ obj[index].id + '</td> <td> '+ obj[index].company  + '</td> <td> '+ obj[index].period  + '</td> <td> '+ obj[index].username  +' </td> <td> '+ obj[index].created_at  +' </td><td style="padding-right:180px"> '+ obj[index].filename  + '</td>  </tr>');
+		$("#tab2 tr:last").after('<tr><td> '+ obj[index].id + '</td> <td> '+'<a href="http://34.67.197.111/financial" style="color:black">'+ obj[index].company+'</a>' + '</td> <td> '+ obj[index].period  + '</td> <td> '+ obj[index].username  +' </td> <td> '+ obj[index].created_at  +' </td><td style="padding-right:180px"> '+ obj[index].filename  + '</td>  </tr>');
 	}
 	 
 								  }

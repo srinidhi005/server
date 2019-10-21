@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="/public/dist/js/highcharts.src.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 	
@@ -368,13 +368,12 @@
           </div>
             </div>
                 </div>
-                         </div>
-                        </section>
-                        </div>    
+                         
+                       
+		    
 		  </section>
 	</div>
-	</div>
-	
+		
 		
     
      
@@ -422,6 +421,7 @@ $('.input-group.date').datepicker({
     
     
     <script type="text/javascript">
+		
 	var settings = {
   "async": true,
   "crossDomain": true,
@@ -446,6 +446,11 @@ $.ajax(settings).done(function (response){
    								var name = (obj[i].asof);
    								data1.push(parseInt(obj[i].totalrevenue));
 					 console.log(obj);
+							 Highcharts.setOptions({
+		lang: {
+			thousandsSep: ','
+		}
+	});
 			  Highcharts.chart('totalrevenue', {
 				    chart: {
 				        type: 'column'
@@ -460,12 +465,25 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'In USD'
 				        }
 				    },
+				  plotOptions: {
+				  column: {
+            stacking: 'normal',
+			color:'grey'
+        }
+				  },
+					  tooltip: {
+        yDecimals: 2,
+		valuePrefix:"$",
+		shared:true
+    },
+
 				    series: [{
 						name:"value1",
-						data:data1
+						data:data1,
+						showInLegend: false
 					}]
 				});
 		    }}
@@ -512,12 +530,24 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'In USD'
 				        }
 				    },
+				  plotOptions: {
+				  column: {
+            stacking: 'normal',
+			color:'grey'
+        }
+				  },
+				  tooltip: {
+        yDecimals: 2,
+		valuePrefix:"$",
+		shared:true
+    },
 				    series: [{
 						name:"value1",
-						data:data1
+						data:data1,
+						showInLegend: false
 					}]
 				});
 		    }}
@@ -562,12 +592,25 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'In USD'
 				        }
 				    },
+				  plotOptions: {
+				  column: {
+            stacking: 'normal',
+			color:'grey'
+        }
+				  },
+				  tooltip: {
+        yDecimals: 2,
+		valuePrefix:"$",
+		shared:true
+    },
 				    series: [{
 						name:"value1",
-						data:data1
+						data:data1,
+						showInLegend: false
+						
 					}]
 				});
 		    }}
@@ -613,12 +656,24 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'In USD'
 				        }
 				    },
+				 plotOptions: {
+				  column: {
+            stacking: 'normal',
+			color:'grey'
+        }
+					 },
+				 tooltip: {
+        yDecimals: 2,
+		valuePrefix:"$",
+		shared:true
+    },
 				    series: [{
 						name:"value1",
-						data:data1
+						data:data1,
+						showInLegend: false
 					}]
 				});
 		    }}
@@ -663,12 +718,24 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'In USD'
 				        }
 				    },
+				 plotOptions: {
+				  column: {
+            stacking: 'normal',
+			color:'grey'
+        }
+					 },
+				 tooltip: {
+        yDecimals: 2,
+		valuePrefix:"$",
+		shared:true
+    },
 				    series: [{
 						name:"value1",
-						data:data1
+						data:data1,
+						showInLegend: false
 					}]
 				});
 		    }}
@@ -716,12 +783,24 @@ $.ajax(settings).done(function (response){
 				    yAxis: {
 				        min: 0,
 				        title: {
-				            text: 'Expenses'
+				            text: 'In USD'
 				        }
 				    },
+				 plotOptions: {
+				  column: {
+            stacking: 'normal',
+			color:'grey'
+        }
+					 },
+				 tooltip: {
+        yDecimals: 2,
+		valuePrefix:"$",
+		shared:true
+    },
 				    series: [{
 						name:"value1",
-						data:data1
+						data:data1,
+						showInLegend: false
 					}]
 				});
 		    }}
@@ -731,7 +810,9 @@ $.ajax(settings).done(function (response){
   
     
   
-  
+		  </section>
+	</div>
+	</div>
     
 	
     

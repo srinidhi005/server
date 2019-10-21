@@ -232,22 +232,23 @@
           
           <li><a href="/source"><i class="fa fa-circle-o"></i> Source Data</a></li>
           
-          <li><a href="/"><i class="fa fa-desktop"></i> KPI Dashboard</a></li>
+          <li><a href="/"><i class="fa fa-circle-o"></i> KPI Dashboard</a></li>
         
           
           
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-desktop"></i>
+            <i class="fa fa-pie-chart"></i>
             <span>Monthly Budget</span>
             <span class="pull-right-container">
+				
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/adjust"><i class="fa fa-bar-chart-o"></i> Adjust Assumption</a></li>
-            <li><a href="/actual"><i class="fa fa-bar-chart-o"></i> Actuals</a></li>
-            <li><a href="/target"><i class="fa fa-bar-chart-o"></i> Target v/s Actuals</a></li>
+            <li><a href="/adjust"><i class="fa fa-circle-o"></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o"></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
           </ul>
         </li>
           
@@ -256,14 +257,14 @@
           
           <li class="treeview">
           <a href="#">
-            <i class="fa fa-desktop"></i>
+            <i class="fa fa-pie-chart"></i>
             <span>Financial Model</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-		  <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i>Adjust Financial Model Drivers</a></li>
+            <li><a href="/financial"> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -284,7 +285,7 @@
       <ol class="breadcrumb">
         <a href="#"><button type="button" style="color:black">Edit Dashboard</button></a>
           
-       
+		  <a href="/statement"> <button type="button" style="color:black" >Statements</button></a>
       </ol>
     </section>
          
@@ -647,7 +648,11 @@ $(function() {
 			
 		
 			
+<<<<<<< HEAD
+            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">' +'$'+item.period[0].Additional[1].desc+ '</td></tr>';
+=======
             trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">' +'$'+item.period[0].Additional[1].value+ '</td></tr>';
+>>>>>>> 05e9b2e3d8bab92414a6465d499c66f2af51923f
         });
         $('#records_table').append(trHTML);
 		
@@ -712,12 +717,12 @@ $(function() {
 		var trHTML = '';
 		$(Data).each(function(i,item){
 			
-			
+			for(i=0;i<data.length;i++)
 			console.log(Data);
 			
 		
 			
-            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">'+ '$' + item.period[0].Additional[6].value + '</td></tr>';
+            trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[i].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">'+ '$' + item.period[i].Additional[6].value + '</td></tr>';
         });
         $('#table2').append(trHTML);
 		
@@ -741,7 +746,11 @@ $(function() {
 		var trHTML = '';
 		$(Data).each(function(i,item){
 			
+<<<<<<< HEAD
+			console.log(Data);
+=======
 			Console.log(Data);
+>>>>>>> 05e9b2e3d8bab92414a6465d499c66f2af51923f
 		
 			
           trHTML += '<tr><td style="color:skyblue;padding-right:55px;font-weight: 800;text-align:center">'+'Year to Date'+'<br style="text-align:center">'+'('+item.period[0].asof +')'+'</td><td scope="row" style="color:black">  &nbsp  </td><td style="color:black;text-align:right;padding-right: 25px">' +'$'+ item.period[0].statement[2].value + '</td></tr>';
@@ -754,6 +763,41 @@ $(function() {
 		
 			</script>
 			
+<<<<<<< HEAD
+	<!--		<script>
+					 function statements(ev){ 
+					ev.preventDefault();
+				 $.ajax({
+						type: 'GET',
+					 url:'/statements',
+					 data:data.statements,
+					 success: function(data){
+					 console.log((data));
+       
+        },
+        });
+				 return false;
+    }
+			
+			</script>-->
+			
+			<!--<script>
+			
+			
+			function Statements(ev) {
+				ev.preventDefault();
+		console.log(data.statements)		
+        fetch('/statements').then((resp) => {
+            return resp.json();
+        }).then(data => {
+            
+                statements: data.statements
+           
+        })
+    }
+			</script>-->
+			
+		
 		<!--	
          <script type='text/javascript'>
 $(function(){

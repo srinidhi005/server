@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,27 +27,41 @@
   <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
-  
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
+<div>
   <header class="main-header">
-   
-    <a href="/" class="logo" style='padding-left:0px;background-color:#2c6484;margin-right:-15px'>
+      <nav class="navbar navbar-static-top"    style="height: 15px">
+      <a href="/" class="logo" style='background-color:#008fa6;margin-right:-15px'>
       
       <span class="logo-mini"><img src="\Public\dist\img\logo.png" width="150px" height="50px"></span>
      
       <span class="logo-lg"><img src="\Public\dist\img\logo.png" width="225px" height="30px"></span>
     </a>
-    
-        
-     
-      <nav class="navbar navbar-static-top"    style="height: 15px">
-      
     <!--  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding-left: 5px;margin-top: 0px">
         <span class="sr-only">Toggle navigation</span>
    </a>-->
@@ -261,7 +276,7 @@
            <div class="form-group" style="width:150px;float:right;margin-top:-70px">
           
       <label for="sel1"></label>
-      <select class="form-control" id="sel1" style="margin-left: -120px">
+      <select class="form-control" id="sel1" style="margin-left:-250px">
           <form>
           <option> Select Senario</option>
               <option>Base Senario</option>
@@ -270,10 +285,7 @@
               <option>Custom Senario3</option>
           </form>
                </select>
-               <div class="btn-group">
-                   
-        <a href="#"><button type="button" style="color:black;margin-top:-70px;margin-right: 38px">Export</button></a>
-             </div>
+              
              </div>
              </div>
 			 
@@ -285,6 +297,10 @@
           <a href="excel"> <button type="button" style="color:black;width:50px;margin-top:5px">Excel</button></a>
           <a href="pdf"><button type="button" style="color:black;width:50px;margin-top:5">PDF</button></a>
        
+                     
+				   
+        <button type="button" id="export" style="color:black">Export</button>
+             
       </div>
              <div class="btn-group" style="float:left;margin-top:20px">
         <a href="#"><button type="button" style="color:black;width:150px">All</button></a>
@@ -296,9 +312,278 @@
        
       </div>
 		
-			 <div><iframe style="height:-webkit-fill-available;width:100%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQE7tB2NaXkZkFHmdZRQ7hrVL7w-D0cFy_PM17p7W9an-3r8T6Tg-EQcpkmAS1Im1YSv-lHnX0ZQcjZ/pubhtml?widget=true&amp;headers=false"></iframe></div>
+				 
+
     </section>
+  <div class="content-wrapper" style="margin-left:5px;margin-right:5px" >
+       
+         
+         
+         <section class="content">
+     
+      <div class="row" style="padding-top:50px" id="customer">
+       <div class="col-xs-12">
+        
+                 
+             
+    
+         
+     
+        <table class="display nowrap" id="example" border="1">
+  <thead>
+    <tr>
+        
+		<th scope="row"  style="color:balck;width:350px">&nbsp;</th>
+      <th scope="row"  style="color:black;width:200px;text-align:center">asof</th>
+      <th scope="row"  style="color:black;width:200px;text-align:center">asof</th>
+      <th scope="row"  style="color:black;width:200px;text-align:center">asof</th>
+    
+    </tr>
+ </thead>
+   <tbody>
+    <tr>
+      <th scope="row" style="color:black" style="width:30px">Total Revenue</th>
+      <!--<td style="color:black;text-align:center" >$15,442,262</td>
+      <td  style="color:black;text-align:center">$14,515,726</td>
+      <td  style="color:red;text-align:center">(6.0%)</td>-->
+    </tr>
+      
+      
+      
+      <tr>
+      <th scope="row"  style="color:black">Y-O-Y Growth %</th>
+      <!--<td  style='color:black;text-align:right'>$156,352,901</td>
+      <td  style='color:black;text-align:right'>$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>-->
+    </tr>
+	  <tr>
+      <th scope="row"  style="color:black">(–) Cost of Goods Sold ("COGS")</th>
+      <!--<td  style='color:black;text-align:right'>$156,352,901</td>
+      <td  style='color:black;text-align:right'>$150,832,293</td>
+      <td  style="color:red;text-align:right">(3.5%)</td>-->
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">Gross Profit</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">Gross Margin %</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">(–) Selling, General, & Administrative ("SG&A")</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">EBIT</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">EBIT Margin %</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">(+) Depreciation & Amortization ("D&A")</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">EBITDA</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">EBITDA Margin %</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">EBIT</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">(–) Net Interest Expense</th>
+    </tr>
+	  <tr>
+		  <th scope="col"  style="color:black">(+ / –) Other Income / (Expense)</th>
+    </tr>
+	   <tr>
+      <th scope="col"  style="color:black">EBT</th>
+      
+    </tr>
+	   <tr>
+		   <th scope="col"  style="color:black">(–) Taxes</th>
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">Net Income</th>
+      
+    </tr>
+	  <tr>
+      <th scope="col"  style="color:black">Net Income Margin %</th>
+      
+    </tr>
+		</tbody>	
+</table>
+
+
+      </div>
+      
+        
+  </div>
+                  
+       
+                        
+          
+            
+	  </section>
+         </div>
+               
+		   </div>
+		   
+            
+     
+        
+            
+            
+      
+           
+        
+  </div>
+        
+                    
+            
+        
+                           
+     
+        
+         <!-- jQuery 3 -->
+<script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/dist/js/rmi.min.js"></script>
+<script src="/public/dist/js/demo.js"></script>
+    
+    
+    <script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<script src="/public/bower_components/moment/min/moment.min.js"></script>
+<script src="/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="/public/dist/js/pages/dashboard.js"></script> 
+    <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
+
+        
+    
+    
+<!--<script>
+    
+
+
+$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    } );
+} );
+    </script>-->
+    
   
+    <script type="text/javascript">
+        document.getElementById('export').addEventListener('click',
+  exportPDF);
+
+var specialElementHandlers = {
+  // element with id of "bypass" - jQuery style selector
+  '.no-export': function(element, renderer) {
+    // true = "handled elsewhere, bypass text extraction"
+    return true;
+  }
+};
+
+function exportPDF() {
+
+  var doc = new jsPDF('p', 'pt', 'a4');
+  //A4 - 595x842 pts
+  //https://www.gnu.org/software/gv/manual/html_node/Paper-Keywords-and-paper-size-in-points.html
+
+
+  //Html source 
+  var source = document.getElementById('customer').innerHTML;
+
+  var margins = {
+    top: 10,
+    bottom: 10,
+    left: 10,
+    width: 595
+  };
+
+  doc.fromHTML(
+    source, // HTML string or DOM elem ref.
+    margins.left,
+    margins.top, {
+      'width': margins.width,
+      'elementHandlers': specialElementHandlers
+    },
+
+    function(dispose) {
+      // dispose: object with X, Y of the last line add to the PDF 
+      //          this allow the insertion of new lines after html
+      doc.save('Test.pdf');
+    }, margins);
+}
+
+    </script>
+	
+	
+	<!--<script>
+	var doc = new jsPDF();
+
+// We'll make our own renderer to skip this editor
+var specialElementHandlers = {
+    '#editor': function(element, renderer){
+        return true;
+    }
+};
+
+doc.fromHTML($('#customer').get(0), 15, 15, {
+    'width': 170, 
+    'elementHandlers': specialElementHandlers
+});
+//doc.save('Test.pdf');
+
+$('#export').click(function(){
+  doc.save('TestHTMLDoc.pdf');
+});
+ 
+    
+    </script>-->
+<!--	<script>
+   function exportTableToExcel(tableID, filename = ''){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    
+    // Specify file name
+    filename = filename?filename+'.xls':'excel_data.xls';
+    
+    // Create download link element
+    downloadLink = document.createElement("a");
+    
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+    
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+}
+
+	
+	</script>-->
+
      
         
          <!-- jQuery 3 -->
@@ -332,10 +617,4 @@
     
     
  
-    
-    
-    
- 
-    
-    
     </body></html>

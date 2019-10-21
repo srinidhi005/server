@@ -16,12 +16,14 @@
 
     
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"/>
     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="/public/dist/js/highcharts.src.js"></script>
+ <script src="/public/dist/js/highcharts-drag-drop.js"></script>  
+<!--<script src="https://rawgithub.com/highcharts/draggable-points/master/draggable-points.js"></script>-->
 <!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
-<script src="https://rawgithub.com/highcharts/draggable-points/master/draggable-points.js"></script>
+<!--<script src="https://code.highcharts.com/modules/draggable-points.js"></script>-->
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     
@@ -195,7 +197,7 @@
        
            
           <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
-          <li><a href="/index"><i class="fa fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
+          <li><a href="/index"><i class="fa fa-circle-o" ></i> <span>KPI Dashboard</span></a></li>
         
       
         <li class="treeview">
@@ -207,9 +209,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/adjust"><i class="fa fa-bar-chart-o" ></i> Adjust Assumption</a></li>
-            <li><a href="/actual"><i class="fa fa-bar-chart-o" ></i> Actuals</a></li>
-            <li><a href="/target"><i class="fa fa-bar-chart-o"></i> Target v/s Actuals</a></li>
+            <li><a href="/adjust"><i class="fa fa-circle-o" ></i> Adjust Assumption</a></li>
+            <li><a href="/actual"><i class="fa fa-circle-o" ></i> Actuals</a></li>
+            <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
           </ul>
         </li>
           
@@ -223,7 +225,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-		  <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
+            <li><a href="/financial"> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -256,52 +258,37 @@
          
          
      <section class="content" style="height: 2103px;padding-left: 0px;padding-right: 372px;border-right-width: 0px;margin-right: 90px;padding-bottom: 0px;padding-top: 9px;">
-<div class="container" style="margin-top:175px">
+<div class="container" style="margin-top:10px">
     <div class="row">
-      <!--  <div class="col-md-12" style="margin-top: -220px;margin-right: -40px">
-            <p>
-                <button id="btn-add-tab" type="button" class="btn btn-primary pull-right" style="margin-right:-120px">Add Senario</button>
-            </p>
-             Nav tabs 
-            <ul id="tab-list" class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#chart-container1" role="tab" data-toggle="tab" style="margin-left: 70px"><span>Basic Historic Ratio </span><span class="glyphicon glyphicon-pencil text-muted edit"></span></a></li>
-                                
-            </ul>
-			
-        </div>-->
-		
+      <div class=nav-nav-custom style="height: 400px;padding-top:0px"><h1 style="text-align:left;color:#3c8dbc;font-size: 24px;margin-left:15px;">Assumptions</h1>
 		<div class="scrollbar">
 			<!--<div id="cona2">-->
 			
-		<div class="box" id="revenuegrowth" style="width:315px"></div>
+		<div class="box" id="revenuegrowth" style="width:315px;padding-bottom:5px;"></div>
 		
-		<div class="box" id="cogs" style="width:315px" ></div>
-		<div class="box" id="SG&A" style="width:315px"></div>
-		<div class="box" id="D&A" style="width:315px"></div>
-		<div class="box" id="otheincome"style="width:315px"></div>
-		<div class="box"id="net-ie" style="width:315px"></div>
+		<div class="box" id="cogs" style="width:315px;padding-bottom:5px;" ></div>
+		<div class="box" id="SG&A" style="width:315px;padding-bottom:5px;"></div>
+		<div class="box" id="D&A" style="width:315px;padding-bottom:5px;"></div>
+		<div class="box" id="otheincome"style="width:315px;padding-bottom:5px;"></div>
+		<div class="box"id="net-ie" style="width:315px;padding-bottom:5px;"></div>
+		</div>
 		</div>
 		
+		<div class=nav-nav-custom style="height: 460px;padding-top:0px"><h1 style="text-align:left;color:#3c8dbc;font-size: 24px;margin-left:15px">Projections</h1>
+		<div class="scrolly">
+		<div class="box one"id="projectionOne" style="height: 300px;width: 325px;margin-right:138px;padding-bottom:5px;"></div>
+		<div class="box one"id="projectionTwo" style="height: 300px;width: 325px;right:137px;padding-bottom:5px;"></div>
 		
+		<div class="box one"id="projectionThree" style="height: 300px;width: 325px;overflow: hidden;right:150px;padding-bottom:5px;"></div>
 		
-		<div id="cona">
-		<div class="box one"id="projectionOne" style="height: 300px;width: 325px;overflow: hidden;margin-right:138px"></div>
-		<div class="box one"id="projectionTwo" style="height: 300px;width: 325px;overflow: hidden;right:137px"></div>
-		<div class="box one"id="projectionThree" style="height: 300px;width: 325px;overflow: hidden;right:150px"></div>
-		
-		<div class="box one"id="projectionFour" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;margin-right:138px"></div>
-		<div class="box one"id="projectionFive" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;right:137px"></div>
-		<div class="box one"id="projectionSix" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;right:150px"></div>
+		<div class="box one"id="projectionFour" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;margin-right:138px;padding-bottom:5px;"></div>
+		<div class="box one"id="projectionFive" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;right:137px;padding-bottom:5px;"></div>
+		<div class="box one"id="projectionSix" style="height: 300px;width: 325px;overflow: hidden;bottom: 20px;right:150px;padding-bottom:5px;"></div>
 				</div>
-		
-
-		
 		</div>
-
-        
-		 
-                    </div>
-    
+		</div>
+	</div>
+       
          
     
     </section>
@@ -314,7 +301,7 @@
         
         
         
-        var button='<button class="close" type="button" title="Remove this page">×</button>';
+        var button='<button class="close" type="button" title="Remove this page">Ã—</button>';
 var tabID = 0;
 function resetTab(){
 	var tabs=$("#tab-list li:not(:first)");
@@ -329,7 +316,7 @@ function resetTab(){
 $(document).ready(function() {
     $('#btn-add-tab').click(function() {
         tabID++;
-        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">×</button></a></li>'));
+        $('#tab-list').append($('<li><a href="#tab' + tabID + '" role="tab" data-toggle="tab"><span>Custom Senario ' + tabID + '</span> <span class="glyphicon glyphicon-pencil text-muted edit"></span> <button class="close" type="button" title="Remove this page">Ã—</button></a></li>'));
         $('#tab-content').append($('<div class="tab-pane fade" id="chart-container' + tabID + '">Custom Senario ' + tabID + ' content</div>'));
         $(".edit").click(editHandler);
     });
@@ -380,15 +367,130 @@ $(".edit").click(editHandler);
     <script src="/public/bower_components/jquery/dist/jquery.min1.js"></script>
 
 	<script>
+	
+	
+var yearsArray = [];
+var assumptionArray = [];
+let actualsInput = {
+	"async": true,
+	"crossDomain": true,
+	"url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+	"method": "GET",
+	"headers": {
+		"authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+		"content-type": "application/json",
+		"cache-control": "no-cache",
+		"postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+	},
+	"processData": false,
+}
+	var actualObj = new Map();
+	var rojectionObj = new Map();
+	var actualXAxis = [];
+	var assumptionArray = [];
+	var previousAmount = 0;
+	$.ajax(actualsInput).done(function (response){
+			let resObject = JSON.parse(response);
+			for (let j=0; j<resObject.length; j++) {
+				if( resObject[j].latest === 0){
+					previousAmount = resObject[j].totalrevenue;
+				}
+				actualObj.set(resObject[j].asof,{
+					"totalRevenue":resObject[j].totalrevenue,
+					"p_GrossProfit" : resObject[j].grossprofit, 
+					"p_EBIT" : resObject[j].ebit, 
+					"p_EBITDA" : resObject[j].ebitda, 
+					"p_EBT" : resObject[j].ebt,
+					"p_NetInCome" : resObject[j].netincome,
+					"latest" : resObject[j].latest
+					}
+				);
+			yearsArray.push(resObject[j].asof);
+			}
+		updateProjection(actualObj);			 
+	});
 
-	var previousAmount =36397000;
+
+
+
+let assumptionInput = {
+	"async": true,
+	"crossDomain": true,
+	"url": "http://34.67.197.111:8000/projections?company=Nike-Y&scenario=1",
+	"method": "GET",
+	"headers": {
+		"authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
+		"content-type": "application/json",
+		"cache-control": "no-cache",
+		"postman-token": "648dcbfa-30ef-3359-f29a-31b2038f29ac"
+	},
+	"processData": false,
+}
+	$.ajax(assumptionInput).done(function (response){
+			let resObject = JSON.parse(response);
+			if(Array.isArray(resObject)){
+				assumptionInput.url = "http://34.67.197.111:8000/projections?company=Nike-Y&scenario=0";
+				$.ajax(assumptionInput).done(function (response){
+					resObject = JSON.parse(response);
+					let totalRevenue = 0;
+					let revenueGrowthArray = [];
+					let COGSArray = [];
+					let SGAndAArray = [];
+					let DAndAArray = [];
+					let otherIncomeOrExpenseArray = [];
+					let netinterestdollarsArray = [];
+					for (let j=0; j<resObject.length; j++) {
+						if(j == 0){
+							totalRevenue = Math.round(previousAmount + (previousAmount * (resObject[j].revenuepercent/100)));
+						}else{
+							totalRevenue = Math.round(resObject[j-1].totalRevenue + (resObject[j-1].totalRevenue * (resObject[j].revenuepercent/100)));
+						}
+						actualObj.set(resObject[j].asof,{
+									"totalRevenue": totalRevenue,
+									"revenueGrowth" : resObject[j].revenuepercent, 
+									"COGS" : resObject[j].cogspercent, 
+									"SGAndA" : resObject[j].sgapercent, 
+									"DAndA" : resObject[j].dapercent,
+									"netIterestExpense" : resObject[j].netinterestdollars,
+									"otherIncomeOrExpense" :resObject[j].otherincomepercent,
+									"taxes" :resObject[j].taxespercent,
+									"latest" : resObject[j].latest
+								}
+						);
+					yearsArray.push(resObject[j].asof);
+					assumptionArray.push(resObject[j].asof)
+					revenueGrowthArray.push(resObject[j].revenuepercent);
+					COGSArray.push(resObject[j].cogspercent);
+					SGAndAArray.push(resObject[j].sgapercent);
+					DAndAArray.push(resObject[j].dapercent);
+					otherIncomeOrExpenseArray.push(resObject[j].otherincomepercent);
+					netinterestdollarsArray.push(resObject[j].netinterestdollars);
+					}
+					revenueGrowthChart.series[0].update({data:revenueGrowthArray});
+					COGSChart.series[0].update({data:COGSArray});
+					SGAndAChart.series[0].update({data:SGAndAArray});
+					DAndAChart.series[0].update({data:DAndAArray});
+					otherIncomeOrExpenseChart.series[0].update({data:otherIncomeOrExpenseArray});
+					netIterestExpenseChart.series[0].update({data:netinterestdollarsArray});
+					updateProjection(actualObj);
+				});
+			}			 
+			
+			
+			
+			
+		});
+
+
+
+	/*
 	var obj = new Map();
 	obj.set("2019",{"oldTotalRevenue" : 36397000, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
 	obj.set("2020",{"oldTotalRevenue" : 38580820, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
 	obj.set("2021",{"oldTotalRevenue" : 40895669, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
 	obj.set("2022",{"oldTotalRevenue" : 43349409, "revenueGrowth" : 6, "COGS" : 56, "SGAndA" : 30, "DAndA" : 2,"netIterestExpense" : 54000 ,"otherIncomeOrExpense" :0,"taxes" :21});
 	let tempLastYearTotalRevenue = 0;
-	var yearsArray = ["2019","2020","2021","2022"];
+	//var yearsArray = ["2019","2020","2021","2022"];
 	for (const [key, value] of obj) {
 		if(key === yearsArray[0]){
 			obj.get(key).oldTotalRevenue = previousAmount;
@@ -407,8 +509,8 @@ $(".edit").click(editHandler);
 		obj.get(key).p_taxes = Math.round(obj.get(key).p_EBT * (obj.get(key).taxes/100));
 		obj.get(key).p_NetInCome = obj.get(key).p_EBT - obj.get(key).p_taxes;
 		
-	}
-		
+	}*/
+	/*	
 $(function(){	
     var line,
     clickX,
@@ -434,7 +536,7 @@ $(function(){
         $("#report").text("Value: " + newVal);
         $(document).unbind('.line');
     }
-	var chart = new Highcharts.Chart({
+	var revenueGrowthChart1 = new Highcharts.Chart({
 
     chart: {
         renderTo: 'revenuegrowth',
@@ -446,7 +548,7 @@ $(function(){
     },
 
     xAxis: {
-        categories: yearsArray
+        categories: assumptionArray
     },
 		yAxis: {
 			min : -50,
@@ -458,7 +560,8 @@ $(function(){
 
     plotOptions: {
         series: {
-            point: {
+	
+	point: {
                 events: {
                     drag: function (e) {},
                     drop: function (e) {  
@@ -466,10 +569,11 @@ $(function(){
                     }
                 }
             },
-            stickyTracking: false
+	     stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+	     minPointLength: 2
         },
         line: {
             cursor: 'ns-resize'
@@ -482,7 +586,8 @@ $(function(){
 
     series: [{
 	    name:'',
-        data: [obj.get(yearsArray[0]).revenueGrowth,obj.get(yearsArray[1]).revenueGrowth,obj.get(yearsArray[2]).revenueGrowth,obj.get(yearsArray[3]).revenueGrowth],
+		data : [],
+        //data: [obj.get(yearsArray[0]).revenueGrowth,obj.get(yearsArray[1]).revenueGrowth,obj.get(yearsArray[2]).revenueGrowth,obj.get(yearsArray[3]).revenueGrowth],
         //draggableX: true,
         draggableY: true,
         dragMinY: -50,
@@ -491,8 +596,8 @@ $(function(){
         minPointLength: 2
     }]
 
-},
-function (chart) {
+}*/
+/*function (chart) {
 
         console.log(chart.yAxis[0].plotLinesAndBands[0]);
 
@@ -506,12 +611,12 @@ function (chart) {
             .on('mousedown', start);
 
 
-    });
-});
+    }*///);
+//});
 	</script>
 	<script>
 	
-	COGS = new Highcharts.Chart({
+	/*var revenueGrowthChart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'cogs',
@@ -562,7 +667,8 @@ function (chart) {
 
     series: [{
 	    name: '',
-        data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
+		data : [],
+        //data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
@@ -573,11 +679,82 @@ function (chart) {
     }
     ]
 
-});
+});*/
 	</script>
    <script>
    
-   chartChandu = new Highcharts.Chart({
+   var revenueGrowthChart = new Highcharts.Chart({
+
+    chart: {
+        renderTo: 'revenuegrowth',
+        animation: false
+    },
+    
+    title: {
+        text: 'Revenue Growth'
+    },
+
+    xAxis: {
+        categories: assumptionArray
+    },
+		yAxis: {
+			min : -50,
+			max : 50,
+			title : {
+				text:'In Percentage %'
+			}
+		},
+
+    plotOptions: {
+        series: {
+            point: {
+                events: {
+
+                    drag: function (e) {
+                    },
+                    drop: function (e) {  
+						updateP_TotalRevenueChart(e.y,e.target.category,e.x);
+                    }
+                }
+            },
+            stickyTracking: false
+        },
+        column: {
+            stacking: 'normal',
+			color:'grey'
+        },
+        line: {
+            cursor: 'ns-resize'
+        }
+    },
+
+    tooltip: {
+        yDecimals: 2,
+		 valueDecimals: 0,
+		valueSuffix:"%"
+    },
+
+    series: [{
+	    name: '',
+        data : [],
+		//data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
+        //draggableX: true,
+        draggableY: true,
+        dragMinY: -50,
+        dragMaxY: 50,
+        type: 'column',
+        minPointLength: 2,
+		showInLegend: false
+    }
+    ]
+
+});
+   
+   </script>
+   
+    <script>
+   
+   var COGSChart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'cogs',
@@ -589,7 +766,7 @@ function (chart) {
     },
 
     xAxis: {
-        categories: yearsArray
+        categories: assumptionArray
     },
 		yAxis: {
 			min : 0,
@@ -622,7 +799,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -630,27 +808,33 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+        yDecimals: 2,
+		 valueDecimals: 0,
+		valueSuffix:"%"
     },
 
     series: [{
 	    name: '',
-        data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
+        data : [],
+		//data: [obj.get(yearsArray[0]).COGS,obj.get(yearsArray[1]).COGS,obj.get(yearsArray[2]).COGS,obj.get(yearsArray[3]).COGS],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
         dragMaxY: 100,
         type: 'column',
-        minPointLength: 2
+        minPointLength: 2,
+		showInLegend: false
     }
     ]
 
 });
    
    </script>
+   
+   
 	<script>
 	
-	var chart = new Highcharts.Chart({
+	var SGAndAChart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'SG&A',
@@ -662,7 +846,7 @@ function (chart) {
     },
 
     xAxis: {
-        categories: yearsArray
+        categories: assumptionArray
     },
 		yAxis:{
 			min : 0,
@@ -695,7 +879,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -703,18 +888,22 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+        yDecimals: 2,
+		 valueDecimals: 0,
+		valueSuffix:"%"
     },
 
     series: [{
 	    name:'',
-        data: [obj.get(yearsArray[0]).SGAndA,obj.get(yearsArray[1]).SGAndA,obj.get(yearsArray[2]).SGAndA,obj.get(yearsArray[3]).SGAndA],
+        data : [],
+		//data: [obj.get(yearsArray[0]).SGAndA,obj.get(yearsArray[1]).SGAndA,obj.get(yearsArray[2]).SGAndA,obj.get(yearsArray[3]).SGAndA],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
         dragMaxY: 100,
         type: 'column',
-        minPointLength: 2
+        minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -723,7 +912,7 @@ function (chart) {
    
     <script>
 	
-	var chart = new Highcharts.Chart({
+	var DAndAChart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'D&A',
@@ -735,7 +924,7 @@ function (chart) {
     },
 
     xAxis: {
-        categories: yearsArray
+        categories: assumptionArray
     },
 		yAxis:{
 			min: 0,
@@ -761,14 +950,15 @@ function (chart) {
    
                     },
                     drop: function (e) {
-		    	updatedDAndAChart(e.y,e.target.category,e.x);					
+						updatedDAndAChart(e.y,e.target.category,e.x);					
                     }
                 }
             },
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -776,18 +966,22 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+        yDecimals: 2,
+		 valueDecimals: 0,
+		valueSuffix:"%"
     },
 
     series: [{
 	    name:'',
-        data: [obj.get(yearsArray[0]).DAndA,obj.get(yearsArray[1]).DAndA,obj.get(yearsArray[2]).DAndA,obj.get(yearsArray[3]).DAndA],
+        data : [],
+		//data: [obj.get(yearsArray[0]).DAndA,obj.get(yearsArray[1]).DAndA,obj.get(yearsArray[2]).DAndA,obj.get(yearsArray[3]).DAndA],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
         dragMaxY: 100,
         type: 'column',
-        minPointLength: 2
+        minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -795,7 +989,7 @@ function (chart) {
 	</script>
 	<script>
 	
-	var chart = new Highcharts.Chart({
+	var otherIncomeOrExpenseChart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'otheincome',
@@ -807,7 +1001,7 @@ function (chart) {
     },
 
     xAxis: {
-        categories: yearsArray
+        categories: assumptionArray
     },
 		yAxis:{
 			min:-50,
@@ -839,7 +1033,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -847,18 +1042,22 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+        yDecimals: 2,
+		 valueDecimals: 0,
+		valueSuffix:"%"
     },
 
     series: [{
 	    name:'',
-        data: [obj.get(yearsArray[0]).otherIncomeOrExpense,obj.get(yearsArray[1]).otherIncomeOrExpense,obj.get(yearsArray[2]).otherIncomeOrExpense,obj.get(yearsArray[3]).otherIncomeOrExpense],
+        data : [],
+		//data: [obj.get(yearsArray[0]).otherIncomeOrExpense,obj.get(yearsArray[1]).otherIncomeOrExpense,obj.get(yearsArray[2]).otherIncomeOrExpense,obj.get(yearsArray[3]).otherIncomeOrExpense],
         //draggableX: true,
         draggableY: true,
         dragMinY: -50,
         dragMaxY: 50,
         type: 'column',
-        minPointLength: 2
+        minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -866,7 +1065,7 @@ function (chart) {
 	</script>
         <script>
 
-        var chart = new Highcharts.Chart({
+        var netIterestExpenseChart = new Highcharts.Chart({
 
     chart: {
         renderTo: 'net-ie',
@@ -878,7 +1077,7 @@ function (chart) {
     },
 
     xAxis: {
-        categories: yearsArray
+        categories: assumptionArray
     },
 		yAxis: {
 			title: {
@@ -908,7 +1107,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -916,17 +1116,21 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+        yDecimals: 2,
+		 valueDecimals: 0,
+		valueSuffix:"%"
     },
 
     series: [{
 	    name:'',
-        data: [obj.get(yearsArray[0]).netIterestExpense,obj.get(yearsArray[1]).netIterestExpense,obj.get(yearsArray[2]).netIterestExpense,obj.get(yearsArray[3]).netIterestExpense],
+        data : [],
+		//data: [obj.get(yearsArray[0]).netIterestExpense,obj.get(yearsArray[1]).netIterestExpense,obj.get(yearsArray[2]).netIterestExpense,obj.get(yearsArray[3]).netIterestExpense],
         //draggableX: true,
         draggableY: true,
         dragMinY: 0,
         type: 'column',
-        minPointLength: 2
+        minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -954,7 +1158,7 @@ function (chart) {
     },
 	yAxis : {
 		title : {
-			text : 'In USD $'
+			text : 'In USD'
 		}
 	},
     plotOptions: {
@@ -979,7 +1183,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'blue'
         },
         line: {
             cursor: 'ns-resize'
@@ -998,6 +1203,7 @@ function (chart) {
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1023,7 +1229,7 @@ function (chart) {
 		min : 0,
 		max : 100,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1048,7 +1254,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -1067,6 +1274,7 @@ function (chart) {
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1074,6 +1282,11 @@ function (chart) {
 </script>
 
 <script>
+	 Highcharts.setOptions({
+		lang: {
+			thousandsSep: ','
+		}
+	});
 
         var p_totalRevenueChart = new Highcharts.Chart({
 
@@ -1093,7 +1306,7 @@ function (chart) {
 		min : 0,
 		max : 100000000,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1119,6 +1332,7 @@ function (chart) {
         },
         column: {
             stacking: 'normal'
+		
         },
         line: {
             cursor: 'ns-resize'
@@ -1126,17 +1340,22 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+         yDecimals: 2,
+		valuePrefix:"$",
+		minRange:1
     },
 
     series: [{
         name: '',
-		data: [obj.get(yearsArray[0]).totalRevenue,obj.get(yearsArray[1]).totalRevenue,obj.get(yearsArray[2]).totalRevenue,obj.get(yearsArray[3]).totalRevenue],
+		data : [],
+		//data: [obj.get(yearsArray[0]).totalRevenue,obj.get(yearsArray[1]).totalRevenue,obj.get(yearsArray[2]).totalRevenue,obj.get(yearsArray[3]).totalRevenue],
         //draggableX: true,
         draggableY: false,
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false,
+		color:'grey'
     }
     ]
 
@@ -1165,7 +1384,7 @@ function (chart) {
 		min : 0,
 		max : 100000000,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1190,7 +1409,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -1198,17 +1418,21 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+         yDecimals: 2,
+		valuePrefix:"$",
+		minRange:1
     },
 
     series: [{
         name: '',
-        data: [obj.get(yearsArray[0]).p_GrossProfit,obj.get(yearsArray[1]).p_GrossProfit,obj.get(yearsArray[2]).p_GrossProfit,obj.get(yearsArray[3]).p_GrossProfit],
+        data : [],
+		//data: [obj.get(yearsArray[0]).p_GrossProfit,obj.get(yearsArray[1]).p_GrossProfit,obj.get(yearsArray[2]).p_GrossProfit,obj.get(yearsArray[3]).p_GrossProfit],
         //draggableX: true,
         draggableY: false,
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1235,7 +1459,7 @@ function (chart) {
 		min : 0,
 		max : 50000000,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1260,7 +1484,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -1268,16 +1493,20 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+         yDecimals: 2,
+		valuePrefix:"$",
+		minRange:1
     },
 
     series: [{
         name: '',        
-		data: [obj.get(yearsArray[0]).p_EBIT,obj.get(yearsArray[1]).p_EBIT,obj.get(yearsArray[2]).p_EBIT,obj.get(yearsArray[3]).p_EBIT],
+		data : [],
+		//data: [obj.get(yearsArray[0]).p_EBIT,obj.get(yearsArray[1]).p_EBIT,obj.get(yearsArray[2]).p_EBIT,obj.get(yearsArray[3]).p_EBIT],
         draggableY: false,
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1303,7 +1532,7 @@ function (chart) {
 		min : 0,
 		max : 50000000,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1328,7 +1557,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -1336,17 +1566,21 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+         yDecimals: 2,
+		valuePrefix:"$",
+		minRange:1
     },
 
     series: [{
         name: '',
-		data: [obj.get(yearsArray[0]).p_EBITDA,obj.get(yearsArray[1]).p_EBITDA,obj.get(yearsArray[2]).p_EBITDA,obj.get(yearsArray[3]).p_EBITDA],
+		data : [],
+		//data: [obj.get(yearsArray[0]).p_EBITDA,obj.get(yearsArray[1]).p_EBITDA,obj.get(yearsArray[2]).p_EBITDA,obj.get(yearsArray[3]).p_EBITDA],
         //draggableX: true,
         draggableY: false,
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1372,7 +1606,7 @@ function (chart) {
 		min : 0,
 		max : 50000000,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1397,7 +1631,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -1405,17 +1640,21 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+         yDecimals: 2,
+		valuePrefix:"$",
+		minRange:1
     },
 
     series: [{
         name: '',
-        data: [obj.get(yearsArray[0]).p_EBT,obj.get(yearsArray[1]).p_EBT,obj.get(yearsArray[2]).p_EBT,obj.get(yearsArray[3]).p_EBT],
+        data : [],
+		//data: [obj.get(yearsArray[0]).p_EBT,obj.get(yearsArray[1]).p_EBT,obj.get(yearsArray[2]).p_EBT,obj.get(yearsArray[3]).p_EBT],
         //draggableX: true,
         draggableY: false,
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1441,7 +1680,7 @@ function (chart) {
 		min : 0,
 		max : 50000000,
                 title : {
-                        text : 'In USD $'
+                        text : 'In USD '
                 }
         },
     plotOptions: {
@@ -1466,7 +1705,8 @@ function (chart) {
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
@@ -1474,17 +1714,21 @@ function (chart) {
     },
 
     tooltip: {
-        yDecimals: 2
+         yDecimals: 2,
+		valuePrefix:"$",
+		minRange:1
     },
 
     series: [{
         name: '',
-         data: [obj.get(yearsArray[0]).p_NetInCome,obj.get(yearsArray[1]).p_NetInCome,obj.get(yearsArray[2]).p_NetInCome,obj.get(yearsArray[3]).p_NetInCome],
-       //draggableX: true,
+        data : [],
+		//data: [obj.get(yearsArray[0]).p_NetInCome,obj.get(yearsArray[1]).p_NetInCome,obj.get(yearsArray[2]).p_NetInCome,obj.get(yearsArray[3]).p_NetInCome],
+        //draggableX: true,
         draggableY: false,
         dragMinY: 0,
         type: 'column',
         minPointLength: 2,
+		showInLegend: false
     }
     ]
 
@@ -1560,55 +1804,38 @@ function (chart) {
 });
 
 function updateP_TotalRevenueChart(x,y,index){
-	obj.get(y).revenueGrowth = x;
-	let flag = false;
-	let lastYearTotalRevenue = 0;
-	for (const [key, value] of obj) {
-		if(flag){
-			obj.get(key).oldTotalRevenue = lastYearTotalRevenue;
-			obj.get(key).totalRevenue = obj.get(key).oldTotalRevenue + (obj.get(key).oldTotalRevenue * (obj.get(key).revenueGrowth/100));
-			lastYearTotalRevenue = obj.get(key).totalRevenue;
-		}
-		if(key === y){
-			obj.get(key).totalRevenue = obj.get(key).oldTotalRevenue + (obj.get(key).oldTotalRevenue * (obj.get(key).revenueGrowth/100));
-			lastYearTotalRevenue = obj.get(key).totalRevenue;
-			flag = true;
-		} 
-		
-	}
-	updateProjection();
+	actualObj.get(y).revenueGrowth = x;
+	updateProjection(actualObj);
 }
-
 function updatedCOGSChart(x,y,index){
-
-	obj.get(y).COGS = x;
-	updateProjection();
-}
-function updatedCOGSChart1(x,y,index){
-	obj.get(y).COGS = x;
-	updateProjection();
+	actualObj.get(y).COGS = x;
+	updateProjection(actualObj);
 }
 function updatedSGAndAChart(x,y,index){
-	obj.get(y).SGAndA = x;
-	updateProjection();
+	actualObj.get(y).SGAndA = x;
+	updateProjection(actualObj);
 }
 function updatedDAndAChart(x,y,index){
-	obj.get(y).DAndA = x;
-	updateProjection();
+	actualObj.get(y).DAndA = x;
+	updateProjection(actualObj);
 }
 function updatedOtherIncomeChart(x,y,index){
-	obj.get(y).otherIncomeOrExpense = x;
-	updateProjection();
+	actualObj.get(y).otherIncomeOrExpense = x;
+	updateProjection(actualObj);
 }
 
-function updateProjection(){
+function updateProjection(obj){
 	let totalRevenueArray = [];
 	let p_GrossProfitArray = [];
 	let p_EBITArray = [];
 	let p_EBITDAArray = [];
 	let p_EBTArray = [];
 	let p_NetInComeArray =[];
-	for (const [key, value] of obj) {
+	//let revenueGrowthArray =[];
+	let lastKey = 0;
+	for (let [key, value] of obj) {
+		if(typeof obj.get(key).COGS !== 'undefined'){
+			obj.get(key).totalRevenue = Math.round(obj.get(lastKey).totalRevenue + (obj.get(lastKey).totalRevenue * (obj.get(key).revenueGrowth/100)));
 			obj.get(key).p_COGS = Math.round(obj.get(key).totalRevenue * (obj.get(key).COGS/100));
 			obj.get(key).p_GrossProfit = Math.round(obj.get(key).totalRevenue - obj.get(key).p_COGS);
 			obj.get(key).p_SGAndA = Math.round(obj.get(key).totalRevenue * (obj.get(key).SGAndA/100));
@@ -1620,13 +1847,15 @@ function updateProjection(){
 			obj.get(key).p_EBT = Math.round(obj.get(key).p_EBIT - obj.get(key).p_NIE - obj.get(key).p_OIOrE);
 			obj.get(key).p_taxes = Math.round(obj.get(key).p_EBT * (obj.get(key).taxes/100));
 			obj.get(key).p_NetInCome = obj.get(key).p_EBT - obj.get(key).p_taxes;
-			
+			//revenueGrowthArray.push(obj.get(key).revenueGrowth);
+			}
 			totalRevenueArray.push(obj.get(key).totalRevenue);
 			p_GrossProfitArray.push(obj.get(key).p_GrossProfit);
 			p_EBITArray.push(obj.get(key).p_EBIT);
 			p_EBITDAArray.push(obj.get(key).p_EBITDA);
 			p_EBTArray.push(obj.get(key).p_EBT);
 			p_NetInComeArray.push(obj.get(key).p_NetInCome);
+			lastKey = key;
 	}
 	
 	p_totalRevenueChart.series[0].update({data: totalRevenueArray});
@@ -1635,6 +1864,7 @@ function updateProjection(){
 	p_EBITDAChart.series[0].update({data:p_EBITDAArray});
 	p_EBTChart.series[0].update({data:p_EBTArray});
 	p_NetInComeArrayChart.series[0].update({data:p_NetInComeArray});
+	//revenueGrowthChart.series[0].update({data:revenueGrowthArray});
 }
 </script>
 	
