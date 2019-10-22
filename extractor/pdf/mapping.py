@@ -1,65 +1,29 @@
 # -*- coding: utf-8 -*-
 
-dicti = {'Cash Equivalents': ['Cash', 'Cash Equivalents', 'Cash & Equivalents', 'Cash and cash equivalents',
-                              'Cash and equivalents', 'Cash & Cash Equivalents', 'Money Market',
-                              'Money Market Securities', 'Marketable securities'],
-         'Shareholders Equity': ['Shareholders’ Equity', 'Stockholders’ Equity', 'Owners’ Equity', 'Equity'],
-         'Net Income/Loss': ['Net loss (Income)', 'Net loss/Income', 'Net Income (loss)', 'Net Income/loss',
-                             'Net Income', 'Net loss'],
-         'Retained Earnings': ['Retained earnings', 'Accumulated Deficit', 'Retained earnings (Accumulated Deficit)',
-                               'Accumulated Deficit (Retained earnings)'],
-         'Accounts Receivable': ['Receivables', 'Accounts receivable', 'Accounts receivable,net', 'AR'],
-         'Inventories': ['Inventories', 'Inventories - Total', 'Inventory'],
-         'Other current assets': ['Prepaid Expenditures', 'Prepayments', 'Prepayables', 'Prepaid Expenses',
-                                  'Prepaid Expenses and other current assets', 'Current Assets-Other',
-                                  'Other Current Assets', 'Other Short Term Current Assets',
-                                  'Other Short-Term Current Assets'],
-         'Total Current Assets': ['Current Assets-Total', 'Total Current Assets'],
-         'PPE': ['Plant,Property & Equip(Gross)', 'Plant,Property & Equipment', 'Plant,Property and Equipment', 'PPE'],
-         'PPE(Net)': ['Property,plant and equipment,net', 'Plant,Property & Equipment,net',
-                      'Property,plant and equipment,less accumulated depreciation', 'Property and equipment,net',
-                      'Plant and equipment,net', 'Plant,Property & Equip(net)', 'Plant,property & Equipment(Net)',
-                      'Plant,property and Equipment(Net)', 'PPE(Net)'],
-         'Intangible Assets': ['Identifiable intangible assets, net', 'Other intangible assets',
-                               'Intangible assets, net',
-                               'Identifiable intangible assets, less accumulated amortization',
-                               'Other intangible assets, net'],
-         'Net Revenue': ['Net Sales', 'Net Revenue', 'Net Revenues', 'Revenue', 'Revenues', 'Net Sale'],
-         'Cost of Revenue': ['Cost of Sales', 'Cost of Revenues', 'Cost of Sale', 'Cost of Revenue', 'COGs',
-                             'Cost of goods sold'],
-         'Gross Profit': ['Gross Margin', 'Gross Profit'],
-         'Operating Income/loss': ['Operating income', 'Operating loss', 'Operating income (loss)', 'Operating Profit',
-                                   'Income from operations', 'Operating Income/Loss', 'Loss from operations',
-                                   'Profit from operations', 'Operating income or loss'],
-         'Total Operating Expenses': ['Total operating expenses', 'Operating expenses'],
-         'Research and Development': ['Research and development', 'R & D'],
-         'Earnings before Income Taxes': ['Loss before income taxes', 'Income before provision for income taxes',
-                                          'Earnings before income taxes', 'income (loss) before income taxes'],
-         'Provision for income taxes': ['Income tax expense', 'Income tax expense (benefit)',
-                                        'provison/(benefit) for taxes on income', 'Income tax benefit (provision)',
-                                        'Provision for income taxes'],
-         'Net change in cash': ['Net increase (decrease) in cash and cash equivalents',
-                                'Net increase (decrease) in cash, cash equivalents, and restricted cash',
-                                'net decrease (increase) in cash and cash equivalents',
-                                'Increase/(Decrease) in cash and cash equivalents',
-                                'Net increase/(Decrease) in cash and cash equivalents',
-                                'Net increase (decrease) in cash and equivalents',
-                                'Cash and cash equivalents: Increase', 'Net decrease in cash and cash equivalents',
-                                'Net increase in cash and cash equivalents'],
-         'Cash Beginning': ['Cash and cash equivalents at beginning of period',
-                            'Cash, cash equivalents, and restricted cash at beginning of period',
-                            'Cash and cash equivalents-beginning of year',
-                            'Cash and cash equivalents , beginning of period',
-                            'Cash and equivalents, beginning of year',
-                            'Cash and cash equivalents: Balance at beginning of year',
-                            'Cash and cash equivalents, beginning', 'Cash and cash equivalents at beginning of year'],
-         'Cash Ending': ['Cash and cash equivalents at end of period',
-                         'Cash, cash equivalents, and restricted cash at end of period',
-                         'Cash and cash equivalents, end', 'Cash and cash equivalents , end of period',
-                         'Cash and equivalents, end of year', 'Cash and cash equivalents-end of year',
-                         'Cash and cash equivalents: Balance at end of year',
-                         'Cash and cash equivalents at end of year', 'Cash and cash equivalents , end of the year']
-         }
+dicti={'Cash Equivalents':['Cash','Cash Equivalents','Cash & Equivalents','Cash and cash equivalents', 'Cash and equivalents','Cash & Cash Equivalents','Money Market','Money Market Securities', 'Marketable securities'],
+'Shareholders Equity': ['Shareholders’ Equity','Stockholders’ Equity','Owners’ Equity','Equity'],
+'Net Income/Loss':['Net loss (Income)','Net loss/Income','Net Income (loss)','Net Income/loss','Net Income','Net loss'],
+'Retained Earnings':['Retained earnings','Accumulated Deficit','Retained earnings (Accumulated Deficit)','Accumulated Deficit (Retained earnings)'],
+'Accounts Receivable':['Receivables','Accounts receivable','Accounts receivable,net','AR'],
+'Inventories':['Inventories','Inventories - Total','Inventory'],
+'Other current assets':['Prepaid Expenditures','Prepayments','Prepayables','Prepaid Expenses','Prepaid Expenses and other current assets','Current Assets-Other','Other Current Assets','Other Short Term Current Assets','Other Short-Term Current Assets'],
+'Total Current Assets':['Current Assets-Total','Total Current Assets'],
+'PPE':['Plant,Property & Equip(Gross)','Plant,Property & Equipment','Plant,Property and Equipment','PPE'],
+'PPE(Net)':['Property,plant and equipment,net','Plant,Property & Equipment,net','Property,plant and equipment,less accumulated depreciation','Property and equipment,net','Plant and equipment,net','Plant,Property & Equip(net)','Plant,property & Equipment(Net)','Plant,property and Equipment(Net)','PPE(Net)'],
+'Intangible Assets':['Identifiable intangible assets, net','Other intangible assets','Intangible assets, net','Identifiable intangible assets, less accumulated amortization','Other intangible assets, net'],
+'Net Revenue':['Net Sales','Net Revenue','Net Revenues','Revenue','Revenues','Net Sale'],
+'Cost of Revenue':['Cost of Sales','Cost of Revenues','Cost of Sale','Cost of Revenue', 'COGs', 'Cost of goods sold','Cost reimbursement revenue','Total cost of revenues'],
+'Gross Profit':['Gross Margin','Gross Profit'],
+'Operating Income/loss':['Operating income','Operating loss','Operating income (loss)','Operating Profit','Income from operations','Operating Income/Loss','Loss from operations','Profit from operations','Operating income or loss'],
+'Total Operating Expenses':['Total operating expenses','Operating expenses'],
+'Research and Development':['Research and development','R & D'],
+'Earnings before Income Taxes':['Loss before income taxes','Income before provision for income taxes','Earnings before income taxes','income (loss) before income taxes'],
+'Provision for income taxes':['Income tax expense','Income tax expense (benefit)','provison/(benefit) for taxes on income','Income tax benefit (provision)','Provision for income taxes'],
+'Net change in cash':['Net increase (decrease) in cash and cash equivalents','Net increase (decrease) in cash, cash equivalents, and restricted cash','net decrease (increase) in cash and cash equivalents','Increase/(Decrease) in cash and cash equivalents','Net increase/(Decrease) in cash and cash equivalents','Net increase (decrease) in cash and equivalents','Cash and cash equivalents: Increase','Net decrease in cash and cash equivalents','Net increase in cash and cash equivalents'],
+'Cash Beginning':['Cash and cash equivalents at beginning of period','Cash, cash equivalents, and restricted cash at beginning of period','Cash and cash equivalents-beginning of year','Cash and cash equivalents , beginning of period','Cash and equivalents, beginning of year','Cash and cash equivalents: Balance at beginning of year','Cash and cash equivalents, beginning','Cash and cash equivalents at beginning of year'],
+'Cash Ending':['Cash and cash equivalents at end of period','Cash, cash equivalents, and restricted cash at end of period','Cash and cash equivalents, end','Cash and cash equivalents , end of period','Cash and equivalents, end of year','Cash and cash equivalents-end of year','Cash and cash equivalents: Balance at end of year','Cash and cash equivalents at end of year','Cash and cash equivalents , end of the year']
+}
+
 
 code_dict = {'Net Revenue': 'AM_IS_I',
              'Gross Profit': 'AM_IS_GP',
@@ -545,8 +509,8 @@ for i in range(pages):
             k1 = k
 
         del nt[:n]
-        #with open(sys.argv[2] + "{}.json".format(out_m), "w") as outfile:
-        #    json.dump(main_json, outfile, indent=4)
+        with open(sys.argv[2] + "{}.json".format(out_m), "w") as outfile:
+            json.dump(main_json, outfile, indent=4)
         json_collection.append(main_json)
         out_m += 1
         main_json = {}
@@ -653,15 +617,15 @@ def inject_db(json_data,latest_enum):
     con = db_connect()  # connect to database
     if con is not None:
         cursor = con.cursor()
-        query = "delete from company_actuals where companyname='"+sys.argv[4]+"'"
+        query = "delete from company_actuals where companyname='"+json_data["company"]+"'"
         cursor.execute(query)
         con.commit()
         for data in json_data["period"]:
-            if data["asof"] ==  latest_enum[0] :
+            if data["asof"][-4:] ==  latest_enum[0] :
                 continue
             for key,val in latest_enum.items():
                 # print(key, val)
-                if val.lower() == (data["asof"]).lower():
+                if val.lower() == (data["asof"][-4:]).lower():
                     latest = key
                     break
 
@@ -678,10 +642,16 @@ def inject_db(json_data,latest_enum):
                     AM_IS_OE = int(code["value"])
 
             for code in data["statement"]:
-                if code["code"] == "AM_IS_I":
-                    AM_IS_I = int(code["value"])
-                if code["code"] == "AM_IS_CORS":
-                    AM_IS_CORS = int(code["value"])
+                try:
+                    if code["code"] == "AM_IS_I":
+                        AM_IS_I = int(code["value"])
+                except:
+                    AM_IS_I = 0
+                try:
+                    if code["code"] == "AM_IS_CORS":
+                        AM_IS_CORS = int(code["value"])
+                except:
+                    AM_IS_CORS = 0
             gross_profit = AM_IS_I - AM_IS_CORS
             ebit = gross_profit - AM_IS_EXP
             ebitda = ebit + AM_IS_DEP_AMO
@@ -695,7 +665,7 @@ def inject_db(json_data,latest_enum):
 
             query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
                     "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
-                    "'" + sys.argv[4] + "'," +str(int(str(datetime.strptime(data["asof"], "%b%d%Y"))[:4])) + "," + str(
+                    "'" + sys.argv[4] + "'," + str(data["asof"][-4:]) + "," + str(
                 latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                 AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(gross_profit) + "," + str(ebit) + "" \
               "," + str(ebitda) + "," + str(netincome) + "," + str(grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "" \
@@ -703,10 +673,10 @@ def inject_db(json_data,latest_enum):
             cursor.execute(query)
             con.commit()
         for data in json_data["period"]:
-            if data["asof"] ==  latest_enum[0] :
+            if data["asof"][-4:] ==  latest_enum[0] :
                 for key, val in latest_enum.items():
                     # print(key,val)
-                    if val.lower() == (data["asof"]).lower():
+                    if val.lower() == (data["asof"][-4:]).lower():
                         latest = key
                         break
 
@@ -723,10 +693,16 @@ def inject_db(json_data,latest_enum):
                         AM_IS_OE = int(code["value"])
 
                 for code in data["statement"]:
-                    if code["code"] == "AM_IS_I":
-                        AM_IS_I = int(code["value"])
-                    if code["code"] == "AM_IS_CORS":
-                        AM_IS_CORS = int(code["value"])
+                    try:
+                        if code["code"] == "AM_IS_I":
+                            AM_IS_I = int(code["value"])
+                    except:
+                        AM_IS_I = 0
+                    try:
+                        if code["code"] == "AM_IS_CORS":
+                            AM_IS_CORS = int(code["value"])
+                    except:
+                        AM_IS_CORS = 0
                 gross_profit = AM_IS_I - AM_IS_CORS
                 ebit = gross_profit - AM_IS_EXP
                 ebitda = ebit + AM_IS_DEP_AMO
@@ -740,8 +716,7 @@ def inject_db(json_data,latest_enum):
 
                 query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
                         "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
-                        "'" + sys.argv[4] + "'," + str(int(str(
-                    datetime.strptime(data["asof"], "%b%d%Y"))[:4])) + "," + str(
+                        "'" + sys.argv[4] + "'," + str(data["asof"][-4:]) + "," + str(
                     latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                     AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(
                     gross_profit) + "," + str(ebit) + "," + str(ebitda) + "," + str(netincome) + "," + str(
@@ -753,10 +728,12 @@ def inject_db(json_data,latest_enum):
 
 
 def map_to_date_obj(date):
-    return datetime.strptime(date,"%b%d%Y")
+    # return datetime.strptime(date,"%b%d%Y")
+    return date[-4:]
 def sort_dict(json_data):
     dates = [date["asof"] for date in json_data["period"]]
     dates = list(map(map_to_date_obj,dates))
+
     dates.sort()
     return dates
 
@@ -764,11 +741,10 @@ def map_to_string(date):
     return datetime.strftime(date,"%b%d%Y")
 
 dates = sort_dict(json_copy)
-dates = list(map(map_to_string,dates))
+# dates = list(map(map_to_string,dates))
 
 latest_enum = {}
 for i, j in enumerate(dates, -(len(dates) - 1)):
     latest_enum[i] = j
 # print(latest_enum,"Latest Enum")
 inject_db(json_copy,latest_enum)
-
