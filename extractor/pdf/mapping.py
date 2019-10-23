@@ -509,7 +509,7 @@ for i in range(pages):
             k1 = k
 
         del nt[:n]
-        with open(sys.argv[2] + "{}.json".format(out_m), "w") as outfile:
+        with open("output/{}.json".format(out_m), "w") as outfile:
             json.dump(main_json, outfile, indent=4)
         json_collection.append(main_json)
         out_m += 1

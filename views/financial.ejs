@@ -210,7 +210,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="/adjust"><i class="fa fa-circle-o" ></i> Adjust Assumption</a></li>
-            <li><a href="/actual"><i class="fa fa-circle-o" ></i> Actuals</a></li>
+            <li><a href="/actual" id="actualsId"><i class="fa fa-circle-o" ></i> Actuals</a></li>
             <li><a href="/target"><i class="fa fa-circle-o"></i> Target v/s Actuals</a></li>
           </ul>
         </li>
@@ -370,11 +370,14 @@ $(".edit").click(editHandler);
 	
 	
 var yearsArray = [];
+var companyName = window.location.href.split("=")[1];
+
+$("#actualsId").attr("href","/actual?CompanyName="+companyName);
 var assumptionArray = [];
 let actualsInput = {
 	"async": true,
 	"crossDomain": true,
-	"url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+	"url": "http://34.67.197.111:8000/actuals?company="+companyName,
 	"method": "GET",
 	"headers": {
 		"authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -416,7 +419,7 @@ let actualsInput = {
 let assumptionInput = {
 	"async": true,
 	"crossDomain": true,
-	"url": "http://34.67.197.111:8000/projections?company=Nike-Y&scenario=1",
+	"url": "http://34.67.197.111:8000/projections?company="+companyName+"&scenario=0",
 	"method": "GET",
 	"headers": {
 		"authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -429,7 +432,7 @@ let assumptionInput = {
 	$.ajax(assumptionInput).done(function (response){
 			let resObject = JSON.parse(response);
 			if(Array.isArray(resObject)){
-				assumptionInput.url = "http://34.67.197.111:8000/projections?company=Nike-Y&scenario=0";
+				assumptionInput.url = "http://34.67.197.111:8000/projections?company="+companyName+"&scenario=0";
 				$.ajax(assumptionInput).done(function (response){
 					resObject = JSON.parse(response);
 					let totalRevenue = 0;
@@ -727,7 +730,10 @@ $(function(){
             cursor: 'ns-resize'
         }
     },
-
+colors: [	
+	'grey',
+       	'skyblue'
+ ],
     tooltip: {
         yDecimals: 2,
 		 valueDecimals: 0,
@@ -800,12 +806,15 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
         },
         line: {
             cursor: 'ns-resize'
         }
     },
+    colors: [
+	                    'grey',
+			                    'skyblue'
+						                ],
 
     tooltip: {
         yDecimals: 2,
@@ -886,6 +895,10 @@ $(function(){
             cursor: 'ns-resize'
         }
     },
+    colors: [
+	                    'grey',
+			                    'skyblue'
+						                ],
 
     tooltip: {
         yDecimals: 2,
@@ -1184,12 +1197,14 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'blue'
+	    colorByPoint:true'
         },
         line: {
             cursor: 'ns-resize'
         }
     },
+    colors: [
+	   'grey','skyblue'],
 
     tooltip: {
         yDecimals: 2
@@ -1255,7 +1270,7 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
+			colorByPoint:true
         },
         line: {
             cursor: 'ns-resize'
@@ -1265,6 +1280,8 @@ $(function(){
     tooltip: {
         yDecimals: 2
     },
+    colors: [
+	    			     'grey','skyblue'],
 
     series: [{
         name: '',
@@ -1331,7 +1348,8 @@ $(function(){
             stickyTracking: false
         },
         column: {
-            stacking: 'normal'
+            stacking: 'normal',
+	    colorByPoint:true,
 		
         },
         line: {
@@ -1344,7 +1362,8 @@ $(function(){
 		valuePrefix:"$",
 		minRange:1
     },
-
+colors: [
+				     'grey','skyblue'],
     series: [{
         name: '',
 		data : [],
@@ -1410,7 +1429,7 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
+			colorByPoint:true
         },
         line: {
             cursor: 'ns-resize'
@@ -1422,7 +1441,8 @@ $(function(){
 		valuePrefix:"$",
 		minRange:1
     },
-
+colors: [
+				     'grey','skyblue'],
     series: [{
         name: '',
         data : [],
@@ -1485,7 +1505,7 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
+			colorByPoint:true
         },
         line: {
             cursor: 'ns-resize'
@@ -1497,6 +1517,8 @@ $(function(){
 		valuePrefix:"$",
 		minRange:1
     },
+    colors: [
+	    			     'grey','skyblue'],
 
     series: [{
         name: '',        
@@ -1558,7 +1580,7 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
+			colorByPoint:true
         },
         line: {
             cursor: 'ns-resize'
@@ -1570,6 +1592,8 @@ $(function(){
 		valuePrefix:"$",
 		minRange:1
     },
+    colors: [
+	    			     'grey','skyblue'],
 
     series: [{
         name: '',
@@ -1632,7 +1656,7 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
+			colorByPoint:true
         },
         line: {
             cursor: 'ns-resize'
@@ -1644,7 +1668,8 @@ $(function(){
 		valuePrefix:"$",
 		minRange:1
     },
-
+colors: [
+				     'grey','skyblue'],
     series: [{
         name: '',
         data : [],
@@ -1706,7 +1731,7 @@ $(function(){
         },
         column: {
             stacking: 'normal',
-			color:'grey'
+			colorByPoint:true
         },
         line: {
             cursor: 'ns-resize'
@@ -1718,7 +1743,8 @@ $(function(){
 		valuePrefix:"$",
 		minRange:1
     },
-
+colors: [
+				     'grey','skyblue'],
     series: [{
         name: '',
         data : [],

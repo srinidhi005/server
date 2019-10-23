@@ -237,7 +237,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/financial"> Adjust Financial Model Drivers</a></li>
+            <li><a href="/financial" id="financialId"> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -421,11 +421,12 @@ $('.input-group.date').datepicker({
     
     
     <script type="text/javascript">
-		
+	var companyName = window.location.href.split("=")[1];
+       $("#financialId").attr("href","/actual?CompanyName="+companyName);
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "url": "http://34.67.197.111:8000/actuals?company="+companyName,
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -495,7 +496,7 @@ $.ajax(settings).done(function (response){
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "url": "http://34.67.197.111:8000/actuals?company="+companyName,
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -557,7 +558,7 @@ $.ajax(settings).done(function (response){
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "url": "http://34.67.197.111:8000/actuals?company="+companyName,
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -621,7 +622,7 @@ $.ajax(settings).done(function (response){
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "url": "http://34.67.197.111:8000/actuals?company="+companyName,
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -684,7 +685,7 @@ $.ajax(settings).done(function (response){
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "url": "http://34.67.197.111:8000/actuals?company="+companyName,
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",
@@ -746,7 +747,7 @@ $.ajax(settings).done(function (response){
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://34.67.197.111:8000/actuals?company=Nike-Y",
+  "url": "http://34.67.197.111:8000/actuals?company="+companyName,
   "method": "GET",
   "headers": {
     "authorization": "Basic cm1pX3VzZXI6cm1pMzIxIUAj",

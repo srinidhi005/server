@@ -195,7 +195,7 @@
        
            
           <li><a href="/source"><i class="fa fa-circle-o" ></i><span>Source Data</span></a></li>
-          <li><a href="/index"><i class="fa  fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
+          <li><a href="/"><i class="fa  fa-desktop" ></i> <span>KPI Dashboard</span></a></li>
         
       
         <li class="treeview">
@@ -223,7 +223,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/financial"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
+            <li><a href="/finan"><i class="fa  fa-bar-chart-o" ></i> Adjust Financial Model Drivers</a></li>
           
           </ul>
         </li>
@@ -416,7 +416,7 @@ $(".edit").click(editHandler);
 
     for (index = 0; index < data["statements"].length; index++) {
 		var obj=data["statements"];
-		$("#tab2 tr:last").after('<tr><td> '+ obj[index].id + '</td> <td> '+'<a href="http://34.67.197.111/financial" style="color:black">'+ obj[index].company+'</a>' + '</td> <td> '+ obj[index].period  + '</td> <td> '+ obj[index].username  +' </td> <td> '+ obj[index].created_at  +' </td><td style="padding-right:180px"> '+ obj[index].filename  + '</td>  </tr>');
+        $("#tab2 tr:last").after('<tr><td> '+ obj[index].id + '</td> <td style="color:black">'+'<a style="color:black"  href="http://34.67.197.111/financial?companyName='+obj[index].company+'&senario=0'+'">'+ obj[index].company +'</a>' + '</td> <td> '+ obj[index].period  + '</td> <td> '+ obj[index].username  +' </td> <td> '+ obj[index].created_at  +' </td><td style="padding-right:180px"> '+ obj[index].filename  + '</td>  </tr>');
 	}
 	 
 								  }

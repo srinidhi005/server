@@ -1,603 +1,297 @@
 {
-    "type": "Balance_sheet",
     "period": [
         {
+            "asof": "may312018",
             "statement": [
                 {
-                    "items": [],
-                    "transformed": "Assets",
-                    "heading": "Assets",
+                    "value": 36397000.0,
+                    "transformed": "Net revenue",
+                    "desc": "Revenues",
+                    "code": "AM_IS_I"
+                },
+                {
+                    "value": 20441000.0,
+                    "transformed": "Cost of revenue",
+                    "desc": "Cost of sales",
+                    "code": "AM_IS_CORS"
+                },
+                {
+                    "value": 15956000.0,
+                    "transformed": "Gross profit",
+                    "desc": "Gross profit",
+                    "code": "AM_IS_GP"
+                },
+                {
+                    "value": 3577000.0,
+                    "transformed": "Demand creation expense",
+                    "desc": "Demand creation expense",
                     "code": ""
+                },
+                {
+                    "value": 7934000.0,
+                    "transformed": "Operating overhead expense",
+                    "desc": "Operating overhead expense",
+                    "code": ""
+                },
+                {
+                    "value": 11511000.0,
+                    "transformed": "Total selling and administrative expense",
+                    "desc": "Total selling and administrative expense",
+                    "code": ""
+                },
+                {
+                    "value": 54000.0,
+                    "transformed": "Interest expense income net",
+                    "desc": "Interest expense -income net",
+                    "code": ""
+                },
+                {
+                    "value": 66000.0,
+                    "transformed": "Other expense income net",
+                    "desc": "Other expense -income net",
+                    "code": ""
+                },
+                {
+                    "value": 4325000.0,
+                    "transformed": "Income before income taxes",
+                    "desc": "Income before income taxes",
+                    "code": ""
+                },
+                {
+                    "value": 2392000.0,
+                    "transformed": "Provision for income taxes",
+                    "desc": "Income tax expense",
+                    "code": ""
+                },
+                {
+                    "value": 1933000.0,
+                    "transformed": "Net income/loss",
+                    "desc": "NET INCOME",
+                    "code": "AM_BS_NI"
                 },
                 {
                     "items": [
                         {
-                            "desc": "Cash and cash equivalents",
-                            "transformed": "Cash equivalents",
-                            "value": 3367914.0,
-                            "code": "AM_BS_BA"
-                        },
-                        {
-                            "desc": "Restricted cash",
-                            "transformed": "Restricted cash",
-                            "value": 155323.0,
+                            "value": 1.19,
+                            "transformed": "Basic",
+                            "desc": "Basic",
                             "code": ""
                         },
                         {
-                            "desc": "Accounts receivable net",
-                            "transformed": "Accounts receivable",
-                            "value": 515381.0,
-                            "code": "AM_BS_AR"
-                        },
-                        {
-                            "desc": "Inventory",
-                            "transformed": "Inventories",
-                            "value": 2263537.0,
+                            "value": 1.17,
+                            "transformed": "Diluted",
+                            "desc": "Diluted",
                             "code": ""
                         },
                         {
-                            "desc": "Prepaid expenses and other current assets",
-                            "transformed": "Other current assets",
-                            "value": 268365.0,
-                            "code": "AM_BS_OCA"
-                        }
-                    ],
-                    "transformed": "Current assets",
-                    "heading": "Current assets",
-                    "total": {
-                        "desc": "Total current assets",
-                        "transformed": "Total current assets",
-                        "value": 6570520.0,
-                        "code": "AM_BS_CA"
-                    },
-                    "code": ""
-                },
-                {
-                    "desc": "Operating lease vehicles net",
-                    "transformed": "Operating lease vehicles net",
-                    "value": 4116604.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Solar energy systems leased and to be leased net",
-                    "transformed": "Solar energy systems leased and to be leased net",
-                    "value": 6347490.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Property plant and equipment net",
-                    "transformed": "Ppe(net)",
-                    "value": 10027522.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Intangible assets net",
-                    "transformed": "Intangible assets",
-                    "value": 361502.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Goodwill",
-                    "transformed": "Goodwill",
-                    "value": 60237.0,
-                    "code": ""
-                },
-                {
-                    "desc": "MyPower customer notes receivable net of current portion",
-                    "transformed": "Mypower customer notes receivable net of current portion",
-                    "value": 456652.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Restricted cash net of current portion",
-                    "transformed": "Restricted cash net of current portion",
-                    "value": 441722.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Other assets",
-                    "transformed": "Other assets",
-                    "total": {
-                        "desc": "Total assets",
-                        "transformed": "Total assets",
-                        "value": 28655372.0,
-                        "code": ""
-                    },
-                    "value": 273123.0,
-                    "code": ""
-                },
-                {
-                    "items": [],
-                    "transformed": "Liabilities",
-                    "heading": "Liabilities",
-                    "code": ""
-                },
-                {
-                    "items": [
-                        {
-                            "desc": "Accounts payable",
-                            "transformed": "Accounts payable",
-                            "value": 2390250.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Accrued liabilities and other",
-                            "transformed": "Accrued liabilities and other",
-                            "value": 1731366.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Deferred revenue",
-                            "transformed": "Deferred revenue",
-                            "value": 1015253.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Resale value guarantees",
-                            "transformed": "Resale value guarantees",
-                            "value": 787333.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Customer deposits",
-                            "transformed": "Customer deposits",
-                            "value": 853919.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Current portion of long-term debt and capital leases",
-                            "transformed": "Current portion of long term debt and capital leases",
-                            "value": 796549.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Current portion of solar bonds and promissory notes issued to related parties",
-                            "transformed": "Current portion of solar bonds and promissory notes issued to related parties",
-                            "value": 100000.0,
+                            "value": 0.78,
+                            "transformed": "Dividends declared per common share",
+                            "desc": "Dividends declared per common share",
                             "code": ""
                         }
                     ],
-                    "transformed": "Current liabilities",
-                    "heading": "Current liabilities",
-                    "total": {
-                        "desc": "Total current liabilities",
-                        "transformed": "Total current liabilities",
-                        "value": 7674670.0,
-                        "code": ""
-                    },
-                    "code": ""
-                },
-                {
-                    "desc": "Long-term debt and capital leases net of current portion",
-                    "transformed": "Long term debt and capital leases net of current portion",
-                    "value": 9415700.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Solar bonds issued to related parties net of current portion",
-                    "transformed": "Solar bonds issued to related parties net of current portion",
-                    "value": 100.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Convertible senior notes issued to related parties",
-                    "transformed": "Convertible senior notes issued to related parties",
-                    "value": 2519.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Deferred revenue net of current portion",
-                    "transformed": "Deferred revenue net of current portion",
-                    "value": 1177799.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Resale value guarantees net of current portion",
-                    "transformed": "Resale value guarantees net of current portion",
-                    "value": 2309222.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Other long-term liabilities",
-                    "transformed": "Other long term liabilities",
-                    "total": {
-                        "desc": "Total liabilities",
-                        "transformed": "Total liabilities",
-                        "value": 23022980.0,
-                        "code": ""
-                    },
-                    "value": 2442970.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Redeemable noncontrolling interests in subsidiaries",
-                    "transformed": "Redeemable noncontrolling interests in subsidiaries",
-                    "value": 397734.0,
-                    "code": ""
-                },
-                {
-                    "items": [],
-                    "transformed": "Shareholders equity",
-                    "heading": "Equity",
-                    "code": "AM_BS_E"
-                },
-                {
-                    "items": [],
-                    "transformed": "Shareholders equity",
-                    "heading": "Stockholders' equity",
-                    "code": "AM_BS_E"
-                },
-                {
-                    "items": [
-                        {
-                            "desc": "no shares issued and outstanding",
-                            "transformed": "No shares issued and outstanding",
-                            "value": "",
-                            "code": ""
-                        }
-                    ],
-                    "transformed": "Preferred stock par value shares authorized",
-                    "heading": "Preferred stock; 0.001 par value; 100000 shares authorized;",
-                    "code": ""
-                },
-                {
-                    "items": [],
-                    "transformed": "Common stock par value shares authorized and",
-                    "heading": "Common stock; 0.001 par value; 2000000 shares authorized; 168797 and 161561",
-                    "code": ""
-                },
-                {
-                    "items": [
-                        {
-                            "desc": "respectively",
-                            "transformed": "Respectively",
-                            "value": 169.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Additional paid-in capital",
-                            "transformed": "Additional paid in capital",
-                            "value": 9178024.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Accumulated other comprehensive gain -loss",
-                            "transformed": "Accumulated other comprehensive gain loss",
-                            "value": 33348.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Accumulated deficit",
-                            "transformed": "Retained earnings",
-                            "value": -4974299.0,
-                            "code": ""
-                        }
-                    ],
-                    "transformed": "Shares issued and outstanding as of december and december",
-                    "heading": "shares issued and outstanding as of December 31 2017 and December 31 2016",
-                    "total": {
-                        "desc": "Total stockholders' equity",
-                        "transformed": "Total stockholders equity",
-                        "value": 4237242.0,
-                        "code": ""
-                    },
-                    "code": ""
-                },
-                {
-                    "desc": "Noncontrolling interests in subsidiaries",
-                    "transformed": "Noncontrolling interests in subsidiaries",
-                    "total": {
-                        "desc": "Total liabilities and equity",
-                        "transformed": "Total liabilities and equity",
-                        "value": 28655372.0,
-                        "code": ""
-                    },
-                    "value": 997346.0,
-                    "code": ""
+                    "code": "",
+                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:"
                 }
-            ],
-            "asof": "december312017"
+            ]
         },
         {
+            "asof": "may312017",
             "statement": [
                 {
-                    "items": [],
-                    "transformed": "Assets",
-                    "heading": "Assets",
+                    "value": 34350000.0,
+                    "transformed": "Net revenue",
+                    "desc": "Revenues",
+                    "code": "AM_IS_I"
+                },
+                {
+                    "value": 19038000.0,
+                    "transformed": "Cost of revenue",
+                    "desc": "Cost of sales",
+                    "code": "AM_IS_CORS"
+                },
+                {
+                    "value": 15312000.0,
+                    "transformed": "Gross profit",
+                    "desc": "Gross profit",
+                    "code": "AM_IS_GP"
+                },
+                {
+                    "value": 3341000.0,
+                    "transformed": "Demand creation expense",
+                    "desc": "Demand creation expense",
                     "code": ""
+                },
+                {
+                    "value": 7222000.0,
+                    "transformed": "Operating overhead expense",
+                    "desc": "Operating overhead expense",
+                    "code": ""
+                },
+                {
+                    "value": 10563000.0,
+                    "transformed": "Total selling and administrative expense",
+                    "desc": "Total selling and administrative expense",
+                    "code": ""
+                },
+                {
+                    "value": 59000.0,
+                    "transformed": "Interest expense income net",
+                    "desc": "Interest expense -income net",
+                    "code": ""
+                },
+                {
+                    "value": -196000.0,
+                    "transformed": "Other expense income net",
+                    "desc": "Other expense -income net",
+                    "code": ""
+                },
+                {
+                    "value": 4886000.0,
+                    "transformed": "Income before income taxes",
+                    "desc": "Income before income taxes",
+                    "code": ""
+                },
+                {
+                    "value": 646000.0,
+                    "transformed": "Provision for income taxes",
+                    "desc": "Income tax expense",
+                    "code": ""
+                },
+                {
+                    "value": 4240000.0,
+                    "transformed": "Net income/loss",
+                    "desc": "NET INCOME",
+                    "code": "AM_BS_NI"
                 },
                 {
                     "items": [
                         {
-                            "desc": "Cash and cash equivalents",
-                            "transformed": "Cash equivalents",
-                            "value": 3393216.0,
-                            "code": "AM_BS_BA"
-                        },
-                        {
-                            "desc": "Restricted cash",
-                            "transformed": "Restricted cash",
-                            "value": 105519.0,
+                            "value": 2.56,
+                            "transformed": "Basic",
+                            "desc": "Basic",
                             "code": ""
                         },
                         {
-                            "desc": "Accounts receivable net",
-                            "transformed": "Accounts receivable",
-                            "value": 499142.0,
-                            "code": "AM_BS_AR"
-                        },
-                        {
-                            "desc": "Inventory",
-                            "transformed": "Inventories",
-                            "value": 2067454.0,
+                            "value": 2.51,
+                            "transformed": "Diluted",
+                            "desc": "Diluted",
                             "code": ""
                         },
                         {
-                            "desc": "Prepaid expenses and other current assets",
-                            "transformed": "Other current assets",
-                            "value": 194465.0,
-                            "code": "AM_BS_OCA"
-                        }
-                    ],
-                    "transformed": "Current assets",
-                    "heading": "Current assets",
-                    "total": {
-                        "desc": "Total current assets",
-                        "transformed": "Total current assets",
-                        "value": 6259796.0,
-                        "code": "AM_BS_CA"
-                    },
-                    "code": ""
-                },
-                {
-                    "desc": "Operating lease vehicles net",
-                    "transformed": "Operating lease vehicles net",
-                    "value": 3134080.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Solar energy systems leased and to be leased net",
-                    "transformed": "Solar energy systems leased and to be leased net",
-                    "value": 5919880.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Property plant and equipment net",
-                    "transformed": "Ppe(net)",
-                    "value": 5982957.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Intangible assets net",
-                    "transformed": "Intangible assets",
-                    "value": 376145.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Goodwill",
-                    "transformed": "Goodwill",
-                    "value": "",
-                    "code": ""
-                },
-                {
-                    "desc": "MyPower customer notes receivable net of current portion",
-                    "transformed": "Mypower customer notes receivable net of current portion",
-                    "value": 506302.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Restricted cash net of current portion",
-                    "transformed": "Restricted cash net of current portion",
-                    "value": 268165.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Other assets",
-                    "transformed": "Other assets",
-                    "total": {
-                        "desc": "Total assets",
-                        "transformed": "Total assets",
-                        "value": 22664076.0,
-                        "code": ""
-                    },
-                    "value": 216751.0,
-                    "code": ""
-                },
-                {
-                    "items": [],
-                    "transformed": "Liabilities",
-                    "heading": "Liabilities",
-                    "code": ""
-                },
-                {
-                    "items": [
-                        {
-                            "desc": "Accounts payable",
-                            "transformed": "Accounts payable",
-                            "value": 1860341.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Accrued liabilities and other",
-                            "transformed": "Accrued liabilities and other",
-                            "value": 1210028.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Deferred revenue",
-                            "transformed": "Deferred revenue",
-                            "value": 763126.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Resale value guarantees",
-                            "transformed": "Resale value guarantees",
-                            "value": 179504.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Customer deposits",
-                            "transformed": "Customer deposits",
-                            "value": 663859.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Current portion of long-term debt and capital leases",
-                            "transformed": "Current portion of long term debt and capital leases",
-                            "value": 984211.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Current portion of solar bonds and promissory notes issued to related parties",
-                            "transformed": "Current portion of solar bonds and promissory notes issued to related parties",
-                            "value": 165936.0,
+                            "value": 0.7,
+                            "transformed": "Dividends declared per common share",
+                            "desc": "Dividends declared per common share",
                             "code": ""
                         }
                     ],
-                    "transformed": "Current liabilities",
-                    "heading": "Current liabilities",
-                    "total": {
-                        "desc": "Total current liabilities",
-                        "transformed": "Total current liabilities",
-                        "value": 5827005.0,
-                        "code": ""
-                    },
-                    "code": ""
-                },
-                {
-                    "desc": "Long-term debt and capital leases net of current portion",
-                    "transformed": "Long term debt and capital leases net of current portion",
-                    "value": 5860049.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Solar bonds issued to related parties net of current portion",
-                    "transformed": "Solar bonds issued to related parties net of current portion",
-                    "value": 99164.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Convertible senior notes issued to related parties",
-                    "transformed": "Convertible senior notes issued to related parties",
-                    "value": 10287.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Deferred revenue net of current portion",
-                    "transformed": "Deferred revenue net of current portion",
-                    "value": 851790.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Resale value guarantees net of current portion",
-                    "transformed": "Resale value guarantees net of current portion",
-                    "value": 2210423.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Other long-term liabilities",
-                    "transformed": "Other long term liabilities",
-                    "total": {
-                        "desc": "Total liabilities",
-                        "transformed": "Total liabilities",
-                        "value": 16750167.0,
-                        "code": ""
-                    },
-                    "value": 1891449.0,
-                    "code": ""
-                },
-                {
-                    "desc": "Redeemable noncontrolling interests in subsidiaries",
-                    "transformed": "Redeemable noncontrolling interests in subsidiaries",
-                    "value": 367039.0,
-                    "code": ""
-                },
-                {
-                    "items": [],
-                    "transformed": "Shareholders equity",
-                    "heading": "Equity",
-                    "code": "AM_BS_E"
-                },
-                {
-                    "items": [],
-                    "transformed": "Shareholders equity",
-                    "heading": "Stockholders' equity",
-                    "code": "AM_BS_E"
-                },
-                {
-                    "items": [
-                        {
-                            "desc": "no shares issued and outstanding",
-                            "transformed": "No shares issued and outstanding",
-                            "value": "",
-                            "code": ""
-                        }
-                    ],
-                    "transformed": "Preferred stock par value shares authorized",
-                    "heading": "Preferred stock; 0.001 par value; 100000 shares authorized;",
-                    "code": ""
-                },
-                {
-                    "items": [],
-                    "transformed": "Common stock par value shares authorized and",
-                    "heading": "Common stock; 0.001 par value; 2000000 shares authorized; 168797 and 161561",
-                    "code": ""
-                },
-                {
-                    "items": [
-                        {
-                            "desc": "respectively",
-                            "transformed": "Respectively",
-                            "value": 161.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Additional paid-in capital",
-                            "transformed": "Additional paid in capital",
-                            "value": 7773727.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Accumulated other comprehensive gain -loss",
-                            "transformed": "Accumulated other comprehensive gain loss",
-                            "value": -23740.0,
-                            "code": ""
-                        },
-                        {
-                            "desc": "Accumulated deficit",
-                            "transformed": "Retained earnings",
-                            "value": -2997237.0,
-                            "code": ""
-                        }
-                    ],
-                    "transformed": "Shares issued and outstanding as of december and december",
-                    "heading": "shares issued and outstanding as of December 31 2017 and December 31 2016",
-                    "total": {
-                        "desc": "Total stockholders' equity",
-                        "transformed": "Total stockholders equity",
-                        "value": 4752911.0,
-                        "code": ""
-                    },
-                    "code": ""
-                },
-                {
-                    "desc": "Noncontrolling interests in subsidiaries",
-                    "transformed": "Noncontrolling interests in subsidiaries",
-                    "total": {
-                        "desc": "Total liabilities and equity",
-                        "transformed": "Total liabilities and equity",
-                        "value": 22664076.0,
-                        "code": ""
-                    },
-                    "value": 785175.0,
-                    "code": ""
+                    "code": "",
+                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:"
                 }
-            ],
-            "asof": "december312016"
+            ]
+        },
+        {
+            "asof": "may312016",
+            "statement": [
+                {
+                    "value": 32376000.0,
+                    "transformed": "Net revenue",
+                    "desc": "Revenues",
+                    "code": "AM_IS_I"
+                },
+                {
+                    "value": 17405000.0,
+                    "transformed": "Cost of revenue",
+                    "desc": "Cost of sales",
+                    "code": "AM_IS_CORS"
+                },
+                {
+                    "value": 14971000.0,
+                    "transformed": "Gross profit",
+                    "desc": "Gross profit",
+                    "code": "AM_IS_GP"
+                },
+                {
+                    "value": 3278000.0,
+                    "transformed": "Demand creation expense",
+                    "desc": "Demand creation expense",
+                    "code": ""
+                },
+                {
+                    "value": 7191000.0,
+                    "transformed": "Operating overhead expense",
+                    "desc": "Operating overhead expense",
+                    "code": ""
+                },
+                {
+                    "value": 10469000.0,
+                    "transformed": "Total selling and administrative expense",
+                    "desc": "Total selling and administrative expense",
+                    "code": ""
+                },
+                {
+                    "value": 19000.0,
+                    "transformed": "Interest expense income net",
+                    "desc": "Interest expense -income net",
+                    "code": ""
+                },
+                {
+                    "value": -140000.0,
+                    "transformed": "Other expense income net",
+                    "desc": "Other expense -income net",
+                    "code": ""
+                },
+                {
+                    "value": 4623000.0,
+                    "transformed": "Income before income taxes",
+                    "desc": "Income before income taxes",
+                    "code": ""
+                },
+                {
+                    "value": 863000.0,
+                    "transformed": "Provision for income taxes",
+                    "desc": "Income tax expense",
+                    "code": ""
+                },
+                {
+                    "value": 3760000.0,
+                    "transformed": "Net income/loss",
+                    "desc": "NET INCOME",
+                    "code": "AM_BS_NI"
+                },
+                {
+                    "items": [
+                        {
+                            "value": 2.21,
+                            "transformed": "Basic",
+                            "desc": "Basic",
+                            "code": ""
+                        },
+                        {
+                            "value": 2.16,
+                            "transformed": "Diluted",
+                            "desc": "Diluted",
+                            "code": ""
+                        },
+                        {
+                            "value": 0.62,
+                            "transformed": "Dividends declared per common share",
+                            "desc": "Dividends declared per common share",
+                            "code": ""
+                        }
+                    ],
+                    "code": "",
+                    "transformed": "Earnings per common share",
+                    "heading": "Earnings per common share:"
+                }
+            ]
         }
     ],
-    "company": "tesla inc",
-    "units": "thousands",
-    "title": "consolidated balance sheets",
-    "currency": "USD"
+    "currency": "USD",
+    "title": "consolidated statements of income",
+    "type": "statement_of_income",
+    "units": "millions",
+    "company": "nike inc"
 }

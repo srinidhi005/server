@@ -1,167 +1,112 @@
-                                                                                   Tesla, Inc.
-                                                                           Consolidated Balance Sheets
-                                                                      (in thousands, except per share data)
-                                                                                                                         December 31,          December 31,
-                                                                                                                             2017                  2016
-Assets
-Current assets
-    Cash and cash equivalents                                                                                       $            3,367,914   $         3,393,216
-    Restricted cash                                                                                                                155,323               105,519
-    Accounts receivable, net                                                                                                       515,381               499,142
-    Inventory                                                                                                                    2,263,537             2,067,454
-    Prepaid expenses and other current assets                                                                                      268,365               194,465
-        Total current assets                                                                                                     6,570,520             6,259,796
-Operating lease vehicles, net                                                                                                    4,116,604             3,134,080
-Solar energy systems, leased and to be leased, net                                                                               6,347,490             5,919,880
-Property, plant and equipment, net                                                                                              10,027,522             5,982,957
-Intangible assets, net                                                                                                             361,502               376,145
-Goodwill                                                                                                                            60,237                    —
-MyPower customer notes receivable, net of current portion                                                                          456,652               506,302
-Restricted cash, net of current portion                                                                                            441,722               268,165
-Other assets                                                                                                                       273,123               216,751
-        Total assets                                                                                                $           28,655,372   $        22,664,076
-Liabilities
-Current liabilities
-    Accounts payable                                                                                                $            2,390,250   $         1,860,341
-    Accrued liabilities and other                                                                                                1,731,366             1,210,028
-    Deferred revenue                                                                                                             1,015,253               763,126
-    Resale value guarantees                                                                                                        787,333               179,504
-    Customer deposits                                                                                                              853,919               663,859
-    Current portion of long-term debt and capital leases                                                                           796,549               984,211
-    Current portion of solar bonds and promissory notes issued to related parties                                                  100,000               165,936
-        Total current liabilities                                                                                                7,674,670             5,827,005
-Long-term debt and capital leases, net of current portion                                                                        9,415,700             5,860,049
-Solar bonds issued to related parties, net of current portion                                                                          100                99,164
-Convertible senior notes issued to related parties                                                                                   2,519                10,287
-Deferred revenue, net of current portion                                                                                         1,177,799               851,790
-Resale value guarantees, net of current portion                                                                                  2,309,222             2,210,423
-Other long-term liabilities                                                                                                      2,442,970             1,891,449
-        Total liabilities                                                                                                       23,022,980            16,750,167
-Commitments and contingencies (Note 17)
-Redeemable noncontrolling interests in subsidiaries                                                                                397,734               367,039
-Convertible senior notes (Note 13)                                                                                                      70                 8,784
-Equity
-Stockholders' equity
-    Preferred stock; $0.001 par value; 100,000 shares authorized;
-      no shares issued and outstanding                                                                                                  —                     —
-    Common stock; $0.001 par value; 2,000,000 shares authorized; 168,797 and 161,561
-      shares issued and outstanding as of December 31, 2017 and December 31, 2016,
-      respectively                                                                                                                     169                   161
-    Additional paid-in capital                                                                                                   9,178,024             7,773,727
-    Accumulated other comprehensive gain (loss)                                                                                     33,348               (23,740 )
-    Accumulated deficit                                                                                                         (4,974,299 )          (2,997,237 )
-        Total stockholders' equity                                                                                               4,237,242             4,752,911
-Noncontrolling interests in subsidiaries                                                                                           997,346               785,175
-        Total liabilities and equity                                                                                $           28,655,372   $        22,664,076
-                                           The accompanying notes are an integral part of these consolidated financial statements.
-                                                                                       63
-                                                                        Tesla, Inc.
-                                                        Consolidated Statements of Operations
-                                                          (in thousands, except per share data)
-                                                                                                                   Year Ended December 31,
-                                                                                                    2017                    2016             2015
-Revenues
-    Automotive sales                                                                         $        8,534,752      $       5,589,007     $  3,431,587
-    Automotive leasing                                                                                1,106,548                761,759          309,386
-       Total automotive revenues                                                                      9,641,300              6,350,766        3,740,973
-    Energy generation and storage                                                                     1,116,266                181,394            14,477
-    Services and other                                                                                1,001,185                467,972          290,575
-       Total revenues                                                                               11,758,751               7,000,132        4,046,025
-Cost of revenues
-    Automotive sales                                                                                  6,724,480              4,268,087        2,639,926
-    Automotive leasing                                                                                  708,224                481,994          183,376
-       Total automotive cost of revenues                                                              7,432,704              4,750,081        2,823,302
-    Energy generation and storage                                                                       874,538                178,332            12,287
-    Services and other                                                                                1,229,022                472,462          286,933
-       Total cost of revenues                                                                         9,536,264              5,400,875        3,122,522
-Gross profit                                                                                          2,222,487              1,599,257          923,503
-Operating expenses
-    Research and development                                                                          1,378,073                834,408          717,900
-    Selling, general and administrative                                                               2,476,500              1,432,189          922,232
-       Total operating expenses                                                                       3,854,573              2,266,597        1,640,132
-Loss from operations                                                                                 (1,632,086 )             (667,340 )       (716,629 )
-Interest income                                                                                          19,686                   8,530            1,508
-Interest expense                                                                                       (471,259 )             (198,810 )       (118,851 )
-Other (expense) income, net                                                                            (125,373 )              111,272          (41,652 )
-Loss before income taxes                                                                             (2,209,032 )             (746,348 )       (875,624 )
-Provision for income taxes                                                                               31,546                  26,698           13,039
-Net loss                                                                                             (2,240,578 )             (773,046 )       (888,663 )
-Net loss attributable to noncontrolling interests and
-  redeemable noncontrolling interests in subsidiaries                                                  (279,178 )               (98,132 )             —
-Net loss attributable to common stockholders                                                 $       (1,961,400 )    $        (674,914 )   $   (888,663 )
-Net loss per share of common stock attributable
-  to common stockholders
-       Basic                                                                                 $            (11.83 )   $            (4.68 )  $       (6.93 )
-       Diluted                                                                               $            (11.83 )   $            (4.68 )  $       (6.93 )
-Weighted average shares used in computing net loss
-  per share of common stock
-       Basic                                                                                            165,758                144,212          128,202
-       Diluted                                                                                          165,758                144,212          128,202
-                                    The accompanying notes are an integral part of these consolidated financial statements.
-                                                                             64
-                                                                                                   Tesla, Inc.
-                                                                                     Consolidated Statements of Cash Flows
-                                                                                                (in thousands)
-                                                                                                                                            Year Ended December 31,
-                                                                                                                           2017                      2016               2015
-Cash Flows from Operating Activities
-Net loss                                                                                                             $         (2,240,578 ) $              (773,046 ) $       (888,663 )
-Adjustments to reconcile net loss to net cash used in operating activities:
-     Depreciation and amortization                                                                                              1,636,003                   947,099            422,590
-     Stock-based compensation                                                                                                     466,760                   334,225            197,999
-     Amortization of debt discounts and issuance costs                                                                             91,037                    94,690             78,054
-     Inventory write-downs                                                                                                        131,665                    65,520             44,940
-     Loss on disposals of fixed assets                                                                                            105,770                    34,633             37,723
-     Foreign currency transaction losses (gains)                                                                                   52,309                   (29,183 )           55,765
-     Loss (gain) related to SolarCity acquisition                                                                                  57,746                   (88,727 )               —
-     Non-cash interest and other operating activities                                                                             135,237                   (15,179 )           20,382
-     Changes in operating assets and liabilities, net of effect of business combinations:
-       Accounts receivable                                                                                                        (24,635 )                (216,565 )           46,267
-       Inventories                                                                                                               (178,850 )                (632,867 )         (369,364 )
-       Operating lease vehicles                                                                                                (1,522,573 )              (1,832,836 )       (1,204,496 )
-       Prepaid expenses and other current assets                                                                                  (72,084 )                  56,806            (29,595 )
-       MyPower customer notes receivable and other assets                                                                         (15,453 )                 (49,353 )          (24,362 )
-       Accounts payable and accrued liabilities                                                                                   388,206                   750,640            263,345
-       Deferred revenue                                                                                                           468,902                   382,962            322,203
-       Customer deposits                                                                                                          170,027                   388,361             36,721
-       Resale value guarantee                                                                                                     208,718                   326,934            442,295
-       Other long-term liabilities                                                                                                 81,139                   132,057             23,697
-          Net cash used in operating activities                                                                                   (60,654 )                (123,829 )         (524,499 )
-Cash Flows from Investing Activities
-Purchases of property and equipment excluding capital leases, net of sales                                                     (3,414,814 )              (1,280,802 )       (1,634,850 )
-Maturities of short-term marketable securities                                                                                         —                     16,667                 —
-Purchases of solar energy systems, leased and to be leased                                                                       (666,540 )                (159,669 )               —
-Increases in restricted cash                                                                                                     (223,090 )                (206,149 )          (26,441 )
-Business combinations, net of cash acquired                                                                                      (114,523 )                 213,523            (12,260 )
-          Net cash used in investing activities                                                                                (4,418,967 )              (1,416,430 )       (1,673,551 )
-Cash Flows from Financing Activities
-Proceeds from issuances of common stock in public offerings                                                                       400,175                 1,701,734            730,000
-Proceeds from issuances of convertible and other debt                                                                           7,138,055                 2,852,964            318,972
-Repayments of convertible and other debt                                                                                       (3,995,484 )              (1,857,594 )               —
-Repayments of borrowings under Solar Bonds issued to related parties                                                             (165,000 )                      —                  —
-Collateralized lease borrowings                                                                                                   511,321                   769,709            568,745
-Proceeds from exercises of stock options and other stock issuances                                                                259,116                   163,817            106,611
-Principal payments on capital leases                                                                                             (103,304 )                 (46,889 )         (203,780 )
-Common stock and debt issuance costs                                                                                              (63,111 )                 (20,042 )          (17,025 )
-Purchases of convertible note hedges                                                                                             (204,102 )                      —                  —
-Proceeds from settlements of convertible note hedges                                                                              287,213                        —                  —
-Proceeds from issuances of warrants                                                                                                52,883                        —                  —
-Proceeds from issuance of common stock in private placement                                                                            —                         —              20,000
-Payments for settlements of warrants                                                                                             (230,385 )                      —                  —
-Proceeds from investments by noncontrolling interests in subsidiaries                                                             789,704                   201,527                 —
-Distributions paid to noncontrolling interests in subsidiaries                                                                   (261,844 )                 (21,250 )               —
-Payments for buy-outs of noncontrolling interests in subsidiaries                                                                    (373 )                      —                  —
-          Net cash provided by financing activities                                                                             4,414,864                 3,743,976          1,523,523
-Effect of exchange rate changes on cash and cash equivalents                                                                       39,455                    (7,409 )          (34,278 )
-Net (decrease) increase in cash and cash equivalents                                                                              (25,302 )               2,196,308           (708,805 )
-Cash and cash equivalents, beginning of period                                                                                  3,393,216                 1,196,908          1,905,713
-Cash and cash equivalents, end of period                                                                             $          3,367,914   $             3,393,216   $      1,196,908
-Supplemental Non-Cash Investing and Financing Activities
-Shares issued in connection with business combinations and assumed vested awards                                     $             10,528   $             2,145,977   $             —
-Acquisitions of property and equipment included in liabilities                                                       $            914,108   $               663,771   $        267,334
-Estimated fair value of facilities under build-to-suit leases                                                        $            313,483   $               307,879   $        174,749
-Supplemental Disclosures
-Cash paid during the period for interest, net of amounts capitalized                                                 $            182,571   $                38,693   $         32,060
-Cash paid during the period for taxes, net of refunds                                                                $             65,695   $                16,385   $          9,461
-                                                   The accompanying notes are an integral part of these consolidated financial statements.
-                                                                                                       67
+   PART II
+   NIKE, Inc. Consolidated Statements of Income
+                                                                                                                     Year Ended May 31,
+    (In millions, except per share data)                                                                     2018            2017        2016
+    Revenues                                                                                               $    36,397 $        34,350 $    32,376
+    Cost of sales                                                                                               20,441          19,038      17,405
+    Gross profit                                                                                                15,956          15,312      14,971
+    Demand creation expense                                                                                      3,577           3,341       3,278
+    Operating overhead expense                                                                                   7,934           7,222       7,191
+    Total selling and administrative expense                                                                    11,511          10,563      10,469
+    Interest expense (income), net                                                                                  54              59          19
+    Other expense (income), net                                                                                     66            (196)       (140)
+    Income before income taxes                                                                                   4,325           4,886       4,623
+    Income tax expense                                                                                           2,392             646         863
+    NET INCOME                                                                                             $     1,933 $         4,240 $     3,760
+    Earnings per common share:
+      Basic                                                                                                $      1.19 $          2.56 $      2.21
+      Diluted                                                                                              $      1.17 $          2.51 $      2.16
+    Dividends declared per common share                                                                    $      0.78 $          0.70 $      0.62
+   The accompanying Notes to the Consolidated Financial Statements are an integral part of this statement.
+94
+   PART II
+   NIKE, Inc. Consolidated Balance Sheets
+                                                                                                                     May 31,
+    (In millions)                                                                                            2018            2017
+    ASSETS
+    Current assets:
+      Cash and equivalents                                                                                 $    4,249 $         3,808
+      Short-term investments                                                                                      996           2,371
+      Accounts receivable, net                                                                                  3,498           3,677
+      Inventories                                                                                               5,261           5,055
+      Prepaid expenses and other current assets                                                                 1,130           1,150
+    Total current assets                                                                                       15,134          16,061
+      Property, plant and equipment, net                                                                        4,454           3,989
+      Identifiable intangible assets, net                                                                         285              283
+      Goodwill                                                                                                    154              139
+      Deferred income taxes and other assets                                                                    2,509           2,787
+    TOTAL ASSETS                                                                                           $   22,536 $        23,259
+    LIABILITIES AND SHAREHOLDERS’ EQUITY
+    Current liabilities:
+      Current portion of long-term debt                                                                    $         6 $             6
+      Notes payable                                                                                               336              325
+      Accounts payable                                                                                          2,279           2,048
+      Accrued liabilities                                                                                       3,269           3,011
+      Income taxes payable                                                                                        150               84
+    Total current liabilities                                                                                   6,040           5,474
+      Long-term debt                                                                                            3,468           3,471
+      Deferred income taxes and other liabilities                                                               3,216           1,907
+      Commitments and contingencies (Note 15)
+      Redeemable preferred stock                                                                                    —               —
+      Shareholders’ equity:
+      Common stock at stated value:
+        Class A convertible — 329 and 329 shares outstanding                                                        —               —
+        Class B — 1,272 and 1,314 shares outstanding                                                                 3               3
+      Capital in excess of stated value                                                                         6,384           5,710
+      Accumulated other comprehensive loss                                                                         (92)           (213)
+      Retained earnings                                                                                         3,517           6,907
+    Total shareholders’ equity                                                                                  9,812          12,407
+    TOTAL LIABILITIES AND SHAREHOLDERS’ EQUITY                                                             $   22,536 $        23,259
+   The accompanying Notes to the Consolidated Financial Statements are an integral part of this statement.
+96
+                                                                                                                                                                  PART II
+NIKE, Inc. Consolidated Statements of Cash Flows
+                                                                                                                                       Year Ended May 31,
+(In millions)                                                                                                               2018              2017               2016
+Cash provided by operations:
+Net income                                                                                                             $         1,933 $          4,240 $           3,760
+Adjustments to reconcile net income to net cash provided by operations:
+ Depreciation                                                                                                                      747               706                649
+ Deferred income taxes                                                                                                             647              (273)                (80)
+ Stock-based compensation                                                                                                          218               215                236
+ Amortization and other                                                                                                              27               10                  13
+ Net foreign currency adjustments                                                                                                   (99)            (117)                 98
+Changes in certain working capital components and other assets and liabilities:
+ Decrease (increase) in accounts receivable                                                                                         187             (426)                 60
+ (Increase) in inventories                                                                                                         (255)            (231)               (590)
+ Decrease (increase) in prepaid expenses and other current and non-current assets                                                    35             (120)               (161)
+ Increase (decrease) in accounts payable, accrued liabilities and other current and
+ non-current liabilities                                                                                                         1,515             (158)             (586)
+Cash provided by operations                                                                                                      4,955            3,846             3,399
+Cash provided (used) by investing activities:
+ Purchases of short-term investments                                                                                            (4,783)           (5,928)           (5,367)
+ Maturities of short-term investments                                                                                            3,613             3,623             2,924
+                                                                                                                                                                                     FORM 10-K
+ Sales of short-term investments                                                                                                 2,496             2,423             2,386
+ Investments in reverse repurchase agreements                                                                                        —                 —               150
+ Additions to property, plant and equipment                                                                                     (1,028)           (1,105)           (1,143)
+ Disposals of property, plant and equipment                                                                                           3                13               10
+ Other investing activities                                                                                                         (25)              (34)               6
+Cash provided (used) by investing activities                                                                                       276            (1,008)           (1,034)
+Cash used by financing activities:
+ Net proceeds from long-term debt issuance                                                                                           —             1,482               981
+ Long-term debt payments, including current portion                                                                                   (6)             (44)            (106)
+ Increase (decrease) in notes payable                                                                                                13              327                (67)
+ Payments on capital lease and other financing obligations                                                                          (23)              (17)                (7)
+ Proceeds from exercise of stock options and other stock issuances                                                                 733               489               507
+ Repurchase of common stock                                                                                                     (4,254)           (3,223)           (3,238)
+ Dividends — common and preferred                                                                                               (1,243)           (1,133)           (1,022)
+ Tax payments for net share settlement of equity awards                                                                             (55)              (29)              (22)
+Cash used by financing activities                                                                                               (4,835)           (2,148)           (2,974)
+Effect of exchange rate changes on cash and equivalents                                                                              45               (20)            (105)
+Net increase (decrease) in cash and equivalents                                                                                    441               670              (714)
+Cash and equivalents, beginning of year                                                                                          3,808             3,138             3,852
+CASH AND EQUIVALENTS, END OF YEAR                                                                                      $         4,249 $           3,808 $           3,138
+Supplemental disclosure of cash flow information:
+Cash paid during the year for:
+ Interest, net of capitalized interest                                                                                 $           125     $         98      $           70
+ Income taxes                                                                                                                      529              703                 748
+Non-cash additions to property, plant and equipment                                                                                294              266                 252
+Dividends declared and not paid                                                                                                    320              300                 271
+The accompanying Notes to the Consolidated Financial Statements are an integral part of this statement.
+                                                                                                          NIKE, INC.       2018 Annual Report and Notice of Annual Meeting      97
