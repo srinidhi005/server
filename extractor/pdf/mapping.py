@@ -664,12 +664,12 @@ def inject_db(json_data,latest_enum):
             netincomemargin = (netincome / AM_IS_I) * 100
 
             query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
-                    "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
+                    "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin,ebt) values(" \
                     "'" + sys.argv[4] + "'," + str(data["asof"][-4:]) + "," + str(
                 latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                 AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(gross_profit) + "," + str(ebit) + "" \
               "," + str(ebitda) + "," + str(netincome) + "," + str(grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "" \
-              "," + str(ebitmargin) + "," + str(netincomemargin) + ")"
+              "," + str(ebitmargin) + "," + str(netincomemargin) + "," + str(ebt) +")"
             cursor.execute(query)
             con.commit()
         for data in json_data["period"]:
@@ -715,13 +715,13 @@ def inject_db(json_data,latest_enum):
                 netincomemargin = (netincome / AM_IS_I) * 100
 
                 query = "insert into company_actuals (companyname,asof,latest,totalrevenue,cogs,sga,da,netinterest,otherincome," \
-                        "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin) values(" \
+                        "taxes,grossprofit,ebit,ebitda,netincome,grossprofitmargin,ebitmargin,ebitdamargin,ebtmargin,netincomemargin,ebt) values(" \
                         "'" + sys.argv[4] + "'," + str(data["asof"][-4:]) + "," + str(
                     latest) + "," + str(AM_IS_I) + "," + str(AM_IS_CORS) + "," + str(AM_IS_EXP) + "," + str(
                     AM_IS_DEP_AMO) + "," + str(AM_IS_NIEXP) + "," + str(AM_IS_OE) + "," + str(AM_IS_TX) + "," + str(
                     gross_profit) + "," + str(ebit) + "," + str(ebitda) + "," + str(netincome) + "," + str(
                     grossprofitmargin) + "," + str(ebitmargin) + "," + str(ebitdamargin) + "," + str(
-                    ebitmargin) + "," + str(netincomemargin) + ")"
+                    ebitmargin) + "," + str(netincomemargin) + "," + str(ebt) +")"
                 cursor.execute(query)
                 con.commit()
                 break
