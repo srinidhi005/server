@@ -33,7 +33,7 @@
     "redis": "^2.8.0",
     "request": "^2.88.0",
     "rimraf": "^2.6.3",
-    "sequelize": "^4.44.3",
+    "sequelize": "^5.15.1",
     "startup": "^1.1.0"
   },
   "devDependencies": {
