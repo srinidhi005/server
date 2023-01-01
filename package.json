@@ -37,6 +37,6 @@
     "startup": "^1.1.0"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^5.0.0"
+    "copy-webpack-plugin": "^11.0.0"
   }
 }
